@@ -1,0 +1,34 @@
+.espacehdp {
+  margin: 50px;
+}
+
+h1 {
+  color: #000000;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+section .aligntoptext {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+section p {
+  text-align: justify;
+  font-size: 18px;
+}
+section button {
+  margin: 30px;
+  border: 1px solid;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
