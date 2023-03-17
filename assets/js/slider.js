@@ -1,52 +1,37 @@
-// Variables
-const leftButton = document.querySelector('#leftButton')
-const rightButton = document.querySelector('#rightButton')
-const indexHeader = document.querySelector('.slider-hautswipe')
-const imagesTable = [
-  { image: '/assets/images/slider/photo-slider1.jpg' },
-  { image: '/assets/images/slider/photo-slider2.jpg' },
-  { image: '/assets/images/slider/photo-slider3.jpg' },
-  { image: '/assets/images/slider/photo-slider4.jpg' },
-  { image: '/assets/images/slider/photo-slider5.jpg' },
-  { image: '/assets/images/slider/photo-slider6.jpg' },
-  { image: '/assets/images/slider/photo-slider7.jpg' }
-]
-let slides = 0
+let isDown = false
+let startX
+let scrollLeft
+const slider = document.querySelector('.slider')
 
-// Fonctions
-function nextSlide() {
-  indexHeader.style.backgroundImage = 'url(' + imagesTable[slides].image + ')'
-  if (slides == imagesTable.length - 1) {
-    slides = 0
-  } else {
-    slides++
-  }
+const end = () => {
+  isDown = false
+  slider.classList.remove('active')
 }
 
-function previousSlide() {
-  indexHeader.style.backgroundImage = 'url(' + imagesTable[slides].image + ')'
-  if (slides == 0) {
-    slides = imagesTable.length - 1
-  } else {
-    slides--
-  }
+const start = e => {
+  isDown = true
+  slider.classList.add('active')
+  startX = e.pageX || e.touches[0].pageX - slider.offsetLeft
+  scrollLeft = slider.scrollLeft
 }
 
-function autoPlay() {
-  myInterval = setInterval(nextSlide, 4000)
+const move = e => {
+  if (!isDown) return
+
+  e.preventDefault()
+  const x = e.pageX || e.touches[0].pageX - slider.offsetLeft
+  const dist = x - startX
+  slider.scrollLeft = scrollLeft - dist
 }
 
-// Evenements
-window.onload = autoPlay()
+;(() => {
+  slider.addEventListener('mousedown', start)
+  slider.addEventListener('touchstart', start)
 
-rightButton.addEventListener('click', () => {
-  nextSlide()
-  clearInterval(myInterval)
-  autoPlay()
-})
+  slider.addEventListener('mousemove', move)
+  slider.addEventListener('touchmove', move)
 
-leftButton.addEventListener('click', () => {
-  previousSlide()
-  clearInterval(myInterval)
-  autoPlay()
-})
+  slider.addEventListener('mouseleave', end)
+  slider.addEventListener('mouseup', end)
+  slider.addEventListener('touchend', end)
+})()
