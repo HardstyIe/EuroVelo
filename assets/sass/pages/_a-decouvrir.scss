@@ -60,9 +60,7 @@ article .milieuPage {
     display: flex;
     justify-content: center;
     img {
-        max-width: 100%;
-        height: auto;
-       margin-right: 300px;
+        margin-right: 300px;
         
     }
 .traitorange {
@@ -79,18 +77,22 @@ article .milieuPage {
  .titreListe {
     position: absolute;
     left: 68%;
-    top: 55%;
+    top: 63%;
+    
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    height: 40%;
+    height: 60%;
         h2 {
             padding: 10px;
             background-color: white;
         }
         // Penser à remettre les points devant la liste ul
+        ul {
+            list-style-type: disc;
+        }
 li {
-    margin-bottom: 35px;
+    margin-bottom: 65px;
     margin-left: 45px;
 }
     }
@@ -98,7 +100,7 @@ li {
 
 
 .basDePage {
-    margin-left: 740px;
+    margin-left: 600px;
         text-align: justify;
         h3 {
             font-size: 1.5em;
@@ -106,6 +108,13 @@ li {
         }
         .espaceTitreBas {
             margin: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 50px;
+        }
+        p { 
+            margin: 10px;
         }
 }
 
@@ -118,7 +127,7 @@ a {
 aside {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 740px;
+    margin-left: 600px;
     gap: 30px;
     width: 40%;
     h4 {
@@ -127,6 +136,7 @@ aside {
     }
        ol {
         margin-bottom: 10px;
+        margin-left: 40px;
        }
 
 }
