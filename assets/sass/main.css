@@ -1,0 +1,21 @@
+.espacehdp {
+  margin: 50px;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+section button {
+  margin: 30px;
+}/*# sourceMappingURL=main.css.map */
