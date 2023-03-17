@@ -1,13 +1,15 @@
+// Mise en page pour tous les blocs
 .quiSommeNous {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-
     background-size: cover;
 }
 
+// Mise en place de l'image de fond
 .imageDeFondQuiSommeNous {
-    background-image: url('/assets/images/eurovelo-logo/photoQuiSommeNous2.jpg');
+    background-image: url('/assets/images/eurovelo-logo/32114475218_076e0ba288_o.jpg');
+    background-size: cover;
     position: fixed;
     left: 0;
     right: 0;
@@ -18,14 +20,15 @@
     filter: blur(5px);
 }
 
+// Positionne le bloc au dessus de l'iamge de font
 .ensembleTexteQuiSommeNous {
-
     font-weight: bold;
     position: absolute;
     z-index: 2;
     width: 100%;
 }
 
+// Mise en forme de la partie du logo et des liens facebook et insta
 .imagesQuiSommeNous {
     display: flex;
     justify-content: space-around;
@@ -33,10 +36,12 @@
     margin-bottom: 4%;
 }
 
+// Défini la taille de l'image avec les étoiles 
 .logo5QuiSommeNous {
     width: 4%;
 }
 
+// Mise en forme  de la partie des liens facebook et insta
 .logoQuiSommeNous {
     display: flex;
     justify-content: center;
@@ -44,26 +49,26 @@
     gap: 15px;
 }
 
-.facebookQuiSommeNous {
-    text-align: center;
-}
-
+// Mise en forme de  la partie du texte et des liens
 .deuxiemePartiQuiSommeNous {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+// Taille du titre
 .deuxiemePartiQuiSommeNous h2 {
     font-size: 30px;
     margin-bottom: 2%;
 }
 
+// Taille de la boite texte
 .texteQuiSommeNous {
     width: 30%;
     margin-left: 23%;
 }
 
+// Mise en forme des liens
 .liensQuiSommeNous {
     margin-right: 20%;
     margin-left: 5%;
@@ -73,6 +78,7 @@
     width: 30%;
 }
 
+// Mise en forme du lien "en savoir plus"
 .enSavoirPlusQuiSommeNous {
     color: rgb(18, 238, 238);
     border: 2px solid white;
@@ -86,6 +92,7 @@
     border-radius: 5% 5% 5% 5%;
 }
 
+// Mise en forme du lien "nous contacter"
 .contacterQuiSommeNous {
     color: white;
     border: 2px solid rgb(18, 238, 238);

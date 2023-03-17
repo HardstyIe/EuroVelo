@@ -6,7 +6,8 @@
 }
 
 .imageDeFondQuiSommeNous {
-  background-image: url("/assets/images/eurovelo-logo/photoQuiSommeNous2.jpg");
+  background-image: url("/assets/images/eurovelo-logo/32114475218_076e0ba288_o.jpg");
+  background-size: cover;
   position: fixed;
   left: 0;
   right: 0;
@@ -40,10 +41,6 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-}
-
-.facebookQuiSommeNous {
-  text-align: center;
 }
 
 .deuxiemePartiQuiSommeNous {
