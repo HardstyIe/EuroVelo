@@ -1,2 +1,4 @@
-sass/main.css
-sass/main.css.map
+*main.css
+*main.css.map
+.DS_Store
+.vscode/

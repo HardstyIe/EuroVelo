@@ -3,6 +3,7 @@
 @import "../sass/utils/function";
 @import "../sass/base/font";
 @import "../sass/composant/footer";
+@import "../sass/composant/formulaireNav";
 @import "../sass/composant/nav";
 @import "../sass/pages/a-decouvrir";
 @import "../sass/pages/cookieGestion";
@@ -14,5 +15,7 @@
 @import "../sass/pages/mention";
 @import "../sass/pages/press";
 @import "../sass/pages/velo-transport";
-@import "composant/formulaireContact";
-@import "composant/quiSommeNous";
+@import "../sass/composant/formulaireContact";
+@import "../sass/composant/quiSommeNous";
+@import "../sass/composant/header";
+@import "../sass/pages/acceuil";

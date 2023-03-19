@@ -1,0 +1,9 @@
+@mixin font-bold {
+  font-family: $font-secondary-titlebold;
+  font-weight: bold;
+}
+
+@mixin font-light {
+  font-family: $font-primary-light;
+  font-weight: 100;
+}
