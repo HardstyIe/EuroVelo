@@ -1,8 +1,16 @@
 // Variables
 const leftButton = document.querySelector('#leftButton')
 const rightButton = document.querySelector('#rightButton')
-const indexHeader = document.querySelector('.slider')
-const imagesTable = [{ image: '' }, { image: '' }, { image: '' }]
+const indexHeader = document.querySelector('.slider-hautswipe')
+const imagesTable = [
+  { image: '/assets/images/slider/photo-slider1.jpg' },
+  { image: '/assets/images/slider/photo-slider2.jpg' },
+  { image: '/assets/images/slider/photo-slider3.jpg' },
+  { image: '/assets/images/slider/photo-slider4.jpg' },
+  { image: '/assets/images/slider/photo-slider5.jpg' },
+  { image: '/assets/images/slider/photo-slider6.jpg' },
+  { image: '/assets/images/slider/photo-slider7.jpg' }
+]
 let slides = 0
 
 // Fonctions
