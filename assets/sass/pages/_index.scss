@@ -1,0 +1,40 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 90px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    .zzz {
+        background-color: white;
+        color: black;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            margin-right: 15px;
+        }
+    
+    
+    }
+
+    .footerPartiDroite {
+        display: flex;
+        align-items: center;
+    }
+    .veloFranceTourisme {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .bzzz {
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .rea {
+        margin-top: 5px;
+    }
+}
+
