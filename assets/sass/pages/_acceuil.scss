@@ -1,0 +1,19 @@
+body {
+  width: 100%;
+}
+
+.slider-hautswipe {
+  border: 1px solid #000000;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  background-image: url("/assets/images/slider/fond-ecran-slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: #ffffff;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
