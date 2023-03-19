@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/sass/vendors/normalize.css" />
   <link rel="stylesheet" href="assets/sass/vendors/flaticons.css" />
   <link rel="stylesheet" href="assets/sass/vendors/themify-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/sass/main.css" />
   <link rel="stylesheet" href="/assets/leaflet(map)/leaflet.css" />
   <title>Document</title>
@@ -15,8 +16,6 @@
 
 <body>
 
-  <script src="../EuroVelo/assets/js/slider.js"></script>
-  <script src="../EuroVelo/assets/js/burger.js"></script>
   <header id="navigation">
     <div class="hautNav">
       <div class="lienReseaux">
@@ -74,12 +73,20 @@
     </div>
   </header>
 
-  <div class="slider">
-    <div class="backdropaccueil">
-      <div class="slider-hautswipe">
-        <h1>L'Eurovélo5</h1>
-        <h2>L'Eurovélo5 , L'Europe en vélo</h2>
-      </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <img src="/assets/images/slider/photo-slider1.jpg" class="swiper-slide" />
+      <img src="/assets/images/slider/photo-slider2.jpg" class="swiper-slide" />
+      <img src="/assets/images/slider/photo-slider3.jpg" class="swiper-slide" />
+      <img src="/assets/images/slider/photo-slider4.jpg" class="swiper-slide" />
+      <img src="/assets/images/slider/photo-slider5.jpg" class="swiper-slide" />
+      <img src="/assets/images/slider/photo-slider6.jpg" class="swiper-slide" />
+      <img src="/assets/images/slider/photo-slider7.jpg" class="swiper-slide image-slider-center-bottom" />
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="text-swiper">
+      <h1>L'Eurovélo 5</h1>
+      <p>L'Eurovélo, L'Europe en roue libre !</p>
     </div>
   </div>
 
@@ -105,6 +112,9 @@
       </div>
   </footer>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/assets/js/slider.js"></script>
   <script src="/assets/js/burger.js"></script>
   <script src="/assets/js/nav.js"></script>

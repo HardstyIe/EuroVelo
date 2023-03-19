@@ -1,52 +1,9 @@
-// Variables
-const leftButton = document.querySelector('#leftButton')
-const rightButton = document.querySelector('#rightButton')
-const indexHeader = document.querySelector('.slider-hautswipe')
-const imagesTable = [
-  { image: '/assets/images/slider/photo-slider1.jpg' },
-  { image: '/assets/images/slider/photo-slider2.jpg' },
-  { image: '/assets/images/slider/photo-slider3.jpg' },
-  { image: '/assets/images/slider/photo-slider4.jpg' },
-  { image: '/assets/images/slider/photo-slider5.jpg' },
-  { image: '/assets/images/slider/photo-slider6.jpg' },
-  { image: '/assets/images/slider/photo-slider7.jpg' }
-]
-let slides = 0
-
-// Fonctions
-function nextSlide() {
-  indexHeader.style.backgroundImage = 'url(' + imagesTable[slides].image + ')'
-  if (slides == imagesTable.length - 1) {
-    slides = 0
-  } else {
-    slides++
+//  <!-- Initialize Swiper -->
+var swiper = new Swiper('.mySwiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true
   }
-}
-
-function previousSlide() {
-  indexHeader.style.backgroundImage = 'url(' + imagesTable[slides].image + ')'
-  if (slides == 0) {
-    slides = imagesTable.length - 1
-  } else {
-    slides--
-  }
-}
-
-function autoPlay() {
-  myInterval = setInterval(nextSlide, 4000)
-}
-
-// Evenements
-window.onload = autoPlay()
-
-rightButton.addEventListener('click', () => {
-  nextSlide()
-  clearInterval(myInterval)
-  autoPlay()
-})
-
-leftButton.addEventListener('click', () => {
-  previousSlide()
-  clearInterval(myInterval)
-  autoPlay()
 })
