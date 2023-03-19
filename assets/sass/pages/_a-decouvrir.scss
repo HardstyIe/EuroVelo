@@ -1,5 +1,19 @@
+html {
+    @include font-light;
+}
+h1,
+h2,
+h3,
+h4,
+.boldEnd {
+    @include font-bold;
+}
+
+body {
+    margin: 0;
+}
 .espacehdp {
-    margin: 50px;
+    margin: 100px;
 }
 
 h1 {
@@ -22,6 +36,7 @@ section  {
         flex-wrap: wrap;
         margin-left: -15px;
         margin-right: -15px;
+        width: 40%;
     }
     
     p {
@@ -32,10 +47,96 @@ section  {
     
     button {
         margin: 30px;
-        border: 1px solid;
+        border: 2px solid;
         padding: 10px 10px 10px 10px;
         //Mettre le texte et les bordures en bleu ciel 
         font-weight: bold;
+        color: $color-secondary-aquaBlue;
+        
     }
 }
 
+article .milieuPage {
+    display: flex;
+    justify-content: center;
+    img {
+        margin-right: 300px;
+        
+    }
+.traitorange {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 30px;
+    height: 4px;
+    margin: 0 10px;
+    background-color: $color-secondary-orange;
+    z-index: 1;
+   
+}
+ .titreListe {
+    position: absolute;
+    left: 68%;
+    top: 63%;
+    
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    height: 60%;
+        h2 {
+            padding: 10px;
+            background-color: white;
+        }
+        // Penser à remettre les points devant la liste ul
+        ul {
+            list-style-type: disc;
+        }
+li {
+    margin-bottom: 65px;
+    margin-left: 45px;
+}
+    }
+}
+
+
+.basDePage {
+    margin-left: 600px;
+        text-align: justify;
+        h3 {
+            font-size: 1.5em;
+            
+        }
+        .espaceTitreBas {
+            margin: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 50px;
+        }
+        p { 
+            margin: 10px;
+        }
+}
+
+
+a {
+    color: $color-secondary-aquaBlue;
+}
+
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 600px;
+    gap: 30px;
+    width: 40%;
+    h4 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+       ol {
+        margin-bottom: 10px;
+        margin-left: 40px;
+       }
+
+}
