@@ -1,41 +1,43 @@
 .espacehdp {
-    margin: 50px;
+  margin: 50px;
 }
 
-h1 {
+.topPage {
+
+  h1 {
     color: #000000;
     font-weight: bold;
     display: flex;
     justify-content: center;
     font-size: 3em;
+  }
 }
 
-section  {
+.conteneurhdp {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+
+  .aligntoptext {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 
+  p {
+    text-align: justify;
+    font-size: 18px;
 
-    .aligntoptext {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    
-    p {
-        text-align: justify;
-        font-size: 18px;
-        
-    }
-    
-    button {
-        margin: 30px;
-        border: 1px solid;
-        padding: 10px 10px 10px 10px;
-        //Mettre le texte et les bordures en bleu ciel 
-        font-weight: bold;
-    }
+  }
+
+  button {
+    margin: 30px;
+    border: 1px solid;
+    padding: 10px 10px 10px 10px;
+    //Mettre le texte et les bordures en bleu ciel 
+    font-weight: bold;
+  }
 }
-
