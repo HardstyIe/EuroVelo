@@ -38,14 +38,18 @@
 }
 
 @media(max-width: 800px) {
+    .titreMentionsLegales {
+        margin-bottom: 10%;
+    }
+
     .editeurDuSite,
-.conceptionDuSite,
-.confidentialite,
-.responsabilite,
-.propriete,
-.duree,
-.loi,
-.donneesPersonnelles {
-    margin-bottom: 15%;
-}
+    .conceptionDuSite,
+    .confidentialite,
+    .responsabilite,
+    .propriete,
+    .duree,
+    .loi,
+    .donneesPersonnelles {
+        margin-bottom: 15%;
+    }
 }
