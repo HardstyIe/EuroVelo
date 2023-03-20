@@ -36,3 +36,16 @@
 .texteMention {
     margin-bottom: 1%;
 }
+
+@media(max-width: 800px) {
+    .editeurDuSite,
+.conceptionDuSite,
+.confidentialite,
+.responsabilite,
+.propriete,
+.duree,
+.loi,
+.donneesPersonnelles {
+    margin-bottom: 15%;
+}
+}
