@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 10px;
+      display: inline-flex;
+
+      a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    .actuNav {
+      color: #db3e0e;
+    }
+
+    .passNav {
+      color: #0da249;
+    }
+  }
