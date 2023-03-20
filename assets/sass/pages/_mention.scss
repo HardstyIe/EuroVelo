@@ -1,0 +1,61 @@
+.titreMentionsLegales {
+    text-align: center;
+    margin: 5%;
+    padding-top: 10%;
+    font-size: 400%;
+}
+
+.mentionsLegales {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.editeurDuSite,
+.conceptionDuSite,
+.confidentialite,
+.responsabilite,
+.propriete,
+.duree,
+.loi,
+.donneesPersonnelles {
+    margin-bottom: 5%;
+}
+
+.editeurDuSite h2,
+.conceptionDuSite h2,
+.confidentialite h2,
+.responsabilite h2,
+.propriete h2,
+.duree h2,
+.loi h2,
+.donneesPersonnelles h2 {
+    margin-bottom: 2%;
+    font-size: 180%;
+}
+
+.texteMention {
+    margin-bottom: 1%;
+}
+
+.footerMention {
+    margin-top: 10%;
+}
+
+@media(max-width: 800px) {
+    .titreMentionsLegales {
+        margin-bottom: 10%;
+    }
+
+    .editeurDuSite,
+    .conceptionDuSite,
+    .confidentialite,
+    .responsabilite,
+    .propriete,
+    .duree,
+    .loi,
+    .donneesPersonnelles {
+        margin-bottom: 15%;
+    }
+}
