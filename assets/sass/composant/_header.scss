@@ -12,32 +12,32 @@ header {
 .hautNav {
   display: flex;
   flex-direction: row;
-  // width: 100%;
+  justify-content: space-between;
   color: #f4f4f4;
 
   .lienReseaux {
-    width: 10%;
     padding-top: 10px;
-    padding-bottom: 12px;
+    padding-bottom: 1.3%;
     font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 25%;
 
     i {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 15px;
     }
 
-  }
+    a {
+      color: #f4f4f4;
+    }
 
-  .vide {
-    width: 25%;
   }
 
   .lienPersoNav {
+    width: 70%;
     font-weight: bold;
-    width: 35%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -50,11 +50,24 @@ header {
 
 }
 
+.hautNavGauche {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+}
+
+.hautNavDroite {
+  width: 50%;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
 .basNav {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
-  // width: 100%;
 
   .logoNav {
     width: 10%;
