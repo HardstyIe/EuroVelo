@@ -58,13 +58,13 @@ header {
   width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between ;
+  justify-content: space-between;
 }
 
 .hautNavDroite {
   width: 50%;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
@@ -77,12 +77,12 @@ header {
     width: 10%;
     display: flex;
     justify-content: center;
+    padding-left: 3px;
     padding-top: 3px;
     padding-bottom: 3px;
 
     img {
-
-      width: 80px;
+      width: 50%;
     }
   }
 
@@ -92,16 +92,53 @@ header {
   }
 
   .navDroite {
-    width: 20%;
+    width: 10%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 50px;
+    // margin-right: 50px;
     align-items: center;
 
     .ti-search {
+      margin-right: 50px;
       color: #0da249;
       font-size: 30px;
+    }
+  }
+}
+
+
+@media (max-width:1200px) {
+  .hautNav {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .basNav {
+    justify-content: flex-end;
+
+    .navGauche {
+      width: 0%;
+      display: none;
+    }
+
+    .navDroite {
+      width: 25%;
+
+      .ti-search {
+        margin-right: 20px;
+      }
+    }
+
+    .logoNav {
+      width: 50%;
+
+      img {
+        width: 100px;
+      }
     }
   }
 }
