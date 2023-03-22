@@ -169,3 +169,22 @@ aside {
   }
 
 }
+
+
+// Media queries
+// max-width : dès que l'écran est plus petit que 
+// min-width : dès que l'écran est plus grand que
+
+
+@media screen and (max-width: 1107px) {
+  .aligntoptext, p {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  article .milieuPage .titreListe ul li .traitorange{
+   display: flex;
+   flex-direction: column;
+
+  }
+}
