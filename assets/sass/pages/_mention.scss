@@ -1,6 +1,6 @@
 .titreMentionsLegales {
     text-align: center;
-    margin: 5%;
+    margin-bottom: 5%;
     padding-top: 10%;
     font-size: 400%;
 }
@@ -59,4 +59,12 @@
     .donneesPersonnelles {
         margin-bottom: 15%;
     }
+}
+
+#hautNavMention {
+    color: black;
+}
+
+#lienPersoNavMention a{
+    color: black;
 }
