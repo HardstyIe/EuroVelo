@@ -5,15 +5,309 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../EuroVelo/assets/sass/vendors/normalize.css">
-  <link rel="stylesheet" href="../EuroVelo/assets/sass/vendors/flaticons.css">
-  <link rel="stylesheet" href="../EuroVelo/assets/sass/vendors/themify-icons.css">
-  <link rel="stylesheet" href="../EuroVelo/assets/sass/main.scss">
+  <link rel="stylesheet" href="../sass/vendors/normalize.css">
+  <link rel="stylesheet" href="../sass/vendors/flaticons.css">
+  <link rel="stylesheet" href="../sass/vendors/themify-icons.css">
+  <link rel="stylesheet" href="../sass/main.css">
   <link rel="stylesheet" href="/path/to/leaflet.css" />
   <title>Document</title>
 </head>
 
 <body>
+
+  <header id="navigation">
+    <div class="hautNav">
+      <div class="lienReseaux">
+        <div class="instagramNav">
+          <i class="ti-instagram"></i>
+        </div>
+        <div class="youtubeNav">
+          <i class="ti-youtube"></i>
+        </div>
+        <div class="facebookNav">
+          <i class="ti-facebook"></i>
+        </div>
+      </div>
+      <form class="submitNav">
+        <div class="formNewsletter">
+          <label for="mailNewsletter">S'abonner à la newsletter</label>
+          <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail" />
+        </div>
+        <div class="inscritNav">
+          <input type="submit" class="boutonFormNav" value="JE M'INSCRIS" />
+        </div>
+      </form>
+      <div class="vide"></div>
+      <div class="lienPersoNav">
+        <a href="">Espace pro</a>
+        <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
+        <a href="">Espace personnel</a>
+        <a href=""><img src="assets/images/image-nav/france.png" alt="français" /></a>
+      </div>
+    </div>
+    <div class="basNav">
+      <div class="logoNav">
+        <img src="assets/images/eurovelo-logo/logo-eurovelo.png" alt="" />
+      </div>
+      <div class="navGauche">
+        <nav>
+          <ul>
+            <li><a href="#">L'ITINERAIRE</a></li>
+            <li><a href="#">TEMOIGNAGES</a></li>
+            <li><a href="#">INFOS PRATIQUES</a></li>
+            <li><a href="#">SUGGESTIONS</a></li>
+            <li><a href="#">INSPIRATIONS</a></li>
+            <li>
+              <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu" /></a>
+            </li>
+            <li>
+              <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navDroite">
+        <a href=""><i class="ti-search"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h1 class="titreMentionsLegales">Mentions légales</h1>
+
+    <div class="mentionsLegales">
+
+      <section class="editeurDuSite">
+
+        <h2>EDITEUR DU SITE</h2>
+
+        <h3>Nord Attractivité</h3>
+
+        <p>
+          4 rue du Web
+          59321 Valenciennes
+        </p>
+        <a href="tel:+0320000000">tel : 0320000000</a>
+        <a href="mailto:tourisme@nord.fr">tourisme@nord.fr</a>
+
+      </section>
+
+      <section class="conceptionDuSite">
+
+        <h2>CONCEPTION DU SITE</h2>
+
+        <h3>Simplon Haut-de-France</h3>
+
+        <p>
+          Les Ateliers Numériques
+          59321 Valenciennes
+        </p>
+        <a href="mailto:tourisme@nord.fr">simplon59@nord.fr</a>
+
+      </section>
+
+      <section class="confidentialite">
+
+        <h2>CONFIDANTIALITE - DONNEES PERSONNELLES</h2>
+
+        <p>
+          Toutes les données personnelles recueillies sur le site www.lavelomaritime.fr sont traitées avec la plus
+          stricte
+          confidentialité. Nous vous rappelons que vous disposez d'un droit d'accès, de modification, de rectification
+          et
+          de suppression des données qui vous concernent (art. 34 de la loi " Informatique et Libertés " du 6 janvier
+          1978).
+        </p>
+
+        <p>
+          Pour exercer ce droit, adressez-vous à : eurovelo5@gmail.com
+        </p>
+
+      </section>
+
+      <section class="responsabilite">
+
+        <h2>RESPONSABILITE</h2>
+
+        <p class="texteMention">
+          La responsabilité de Nord Attractivité ne saurait être engagée pour tous les inconvénients ou dommages
+          inhérents
+          à l'utilisation du réseau Internet, notamment une rupture du service, une intrusion extérieure ou la présence
+          de
+          virus informatiques, ou de tout fait qualifié de force majeure, conformément à la jurisprudence.
+        </p>
+
+        <p class="texteMention">
+          Bien qu'une très grande attention ait été apportée à la réalisation de ce site, Nord Attractivité ne saurait
+          être tenu responsable des éventuelles erreurs qui pourraient s'y trouver.
+        </p>
+
+        <p class="texteMention">
+          Nord Attractivité ne garantit pas l'exactitude et l'exhaustivité de l'information diffusée sur le Site.
+          Nord Attractivité ne saurait donc être tenu pour responsable des dommages directs ou indirects, subis par
+          les utilisateurs ou par des tiers qui trouveraient leur source dans l'information diffusée sur le Site, et de
+          manière plus générale, dans la consultation et l'utilisation du Site. Les tarifs sont donnés à titre
+          indicatif.
+        </p>
+
+        <p>
+          Nord Attractivité ne saurait dans ces conditions être tenu pour responsable des dommages directs ou
+          indirects, subis par les Utilisateurs ou par des tiers qui trouveraient leur source dans l'information
+          diffusée
+          sur le Site, relative aux offres de séjour, ainsi que dans la relation commerciale éventuellement engagée avec
+          les prestataires de services chargés de la commercialisation de ces offres. Nord Attractivité n'exerce par
+          ailleurs aucune surveillance sur les sites reliés au Site par le biais de liens hypertexte, et décline toute
+          responsabilité liée à ces sites et aux contenus qui s'y trouvent.
+        </p>
+
+      </section>
+
+      <section class="propriete">
+
+        <h2>PROPRIÉTÉ INTELLECTUELLE</h2>
+
+        <p class="texteMention">
+          Tous les éléments du site www.eurovelo5.fr, y compris les documents téléchargeables, sont protégés par le
+          droit d'auteur, des marques ou des brevets. Nord Attractivité et/ou ses partenaires sont les titulaires
+          exclusifs de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du
+          site www.eurovelo5.fr et ce dans le monde entier.
+        </p>
+
+        <p>
+          En conséquence, vous ne pouvez en aucun cas et d'aucune
+          manière, reproduire, représenter, diffuser, modifier, concéder tout ou partie de l'un quelconque des éléments
+          reproduits sur le site et tout ou partie du site sans l'accord préalable et express de Nord Attractivité.
+        </p>
+
+      </section>
+
+      <section class="duree">
+
+        <h2>DURÉE</h2>
+
+        <p>
+          Les présentes conditions s'appliquent pendant toute la durée de mise en ligne des services offerts par Nord
+          Attractivité sur le site www.eurovelo5.fr
+        </p>
+
+      </section>
+
+      <section class="loi">
+
+        <h2>LOI APPLICABLE ET COMPÉTENCE</h2>
+
+        <p>
+          Les présentes conditions sont soumises à la loi française. L'attribution de compétence en cas de litige, et à
+          défaut d'accord amiable entre les parties, est donnée aux tribunaux français compétents.
+        </p>
+
+      </section>
+
+      <section class="donneesPersonnelles">
+
+        <h2>DONNÉES PERSONNELLES DE L’UTILISATEUR</h2>
+
+        <p class="texteMention">
+          L'accès à certains contenus au site eurovelo5.fr suppose que l'utilisateur nous transmette des données
+          personnelles le concernant.
+        </p>
+
+        <p>
+          Ces informations et leur nature sont indiquées sur la page du site qui comporte ces demandes d'information.
+        </p>
+
+      </section>
+
+    </div>
+
+  </div>
+
+  <div>
+
+    <article class="quiSommeNous">
+
+      <!-- DIV pour pouvoir appliquer l'image en fond -->
+      <div class="imageDeFondQuiSommeNous"></div>
+  
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
+  
+        <!-- DIV contenant les images -->
+        <div class="imagesQuiSommeNous">
+  
+          <!-- Images avec les étoiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+  
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
+  
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png" alt="logo facebook"></a>
+  
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
+  
+          </div>
+  
+        </div>
+  
+  
+        <!-- Partie contenant le texte et les liens -->
+        <section class="deuxiemePartiQuiSommeNous">
+  
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
+  
+            <h2>Qui sommes-nous?</h2>
+  
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore magni perferendis velit
+              laborum id?</p>
+  
+          </div>
+  
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
+  
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+  
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+  
+          </div>
+  
+        </section>
+  
+      </div>
+  
+    </article>
+
+  </div>
+  
+
+  <footer class="footerMention">
+    <div class="footerPartiGauche">
+      <ul>
+        <li><a href="">Espace pro / presse</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="/assets/html-pages/mention.html">Mentions légales</a></li>
+        <li><a href="">Gestion des cookies</a></li>
+      </ul>
+    </div>
+    <div class="footerPartiDroite">
+      <div>
+        <ul>
+          <li class="rea">Réalisation</li>
+          <li><a class="bzzz" href="www.moustic.biz">B<span class="zzz">ZZZZZZZZ</span></a></li>
+        </ul>
+      </div>
+      <div class="veloFranceTourisme">
+        <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
+            src="assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
+      </div>
+  </footer>
+
+
   <script src="../EuroVelo/assets/js/slider.js"></script>
   <script src="../EuroVelo/assets/js/burger.js"></script>
   <script src="/path/to/leaflet.js"></script>

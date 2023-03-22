@@ -14,65 +14,81 @@
 </head>
 
 <body>
-    <main class="main-contact">
-        <div class="titreContact">       
-             <h1>Demande d'information</h1>
-        </div>
-
-        <div>
-            <p class="marge-paragraphe">Vous avez une question ? Votre réponse se trouve peut-être <a href="f
-                ">ici</a>
-            </p>
-            <form action="">
-                <div class="formu">
-                    <label for="nom">Votre nom<span>*</span></label><br>
-                    <input type="text" name="nom" id="nom" required><br>
-        
-                    <label for="prenom">Votre prénom<span>*</span></label><br>
-                    <input type="text" name="prenom" id="prenom" required><br>
-        
-                    <label for="mail">Votre adresse mail<span>*</span></label><br>
-                    <input type="email" name="mail" id="mail" required><br>
-        
-                    <label for="obj">Objet<span>*</span></label><br>
-                    <input type="text" name="obj" id="obj" required><br>
-        
-                    <label for="msg">Message<span>*</span></label><br>
-                    <textarea name="msg" id="msg" required></textarea>
-                </div>
-        
-        
-               <div class="caseAcocher">
-                    <input type="checkbox" name="caseAcceptation" id="caseAcceptation" required>
-                    <label for="caseAcceptation">En soummettant ce formulaire, j'accepte que les informations saisies soient utilisées pour répondre à ma demande d'information<span>*</span></label>
-               </div>
-
-               <div class="boutonEnvoyerContact">
-                <input class="buttonContact" type="submit" value="ENVOYER LE MESSAGE">
-               </div>
-               
-               <p>
-                Les données collectées dans le cadre de ce formulaire font l’objet d’un traitement par La Vélomaritime ayant pour finalité de répondre à votre demande d’informations. Conformément à la réglementation en vigueur relative à la protection des données personnelles, vous pouvez exercer vos droits ou obtenir toute information complémentaire en saisissant le Délégué à la protection des données par <a href="contact.html">courriel</a>.
-                </p>
-
-            </form>
-
-        </div>
-
-    </main>
-
-
-    <div id="popup-contact-bas">
-        <div class="popup-contactGauche">
-            <p>Comment rejoindre la Vélomaritine par le train.</p>
-        </div>
-        <div class="popup-contactDroite">
-            <a href="">En savoir plus</a>
-        </div>
+  <main class="main-contact">
+    <div class="titreContact">
+      <h1>Demande d'information</h1>
     </div>
 
-<script src="/assets/js/popup.js"></script>
+    <div>
+      <p class="marge-paragraphe">Vous avez une question ? Votre réponse se trouve peut-être <a href="f
+                ">ici</a>
+      </p>
+      <form action="">
+        <div class="formu">
+          <label for="nom">Votre nom<span>*</span></label><br>
+          <input type="text" name="nom" id="nom" required><br>
 
+          <label for="prenom">Votre prénom<span>*</span></label><br>
+          <input type="text" name="prenom" id="prenom" required><br>
+
+          <label for="mail">Votre adresse mail<span>*</span></label><br>
+          <input type="email" name="mail" id="mail" required><br>
+
+          <label for="obj">Objet<span>*</span></label><br>
+          <input type="text" name="obj" id="obj" required><br>
+
+          <label for="msg">Message<span>*</span></label><br>
+          <textarea name="msg" id="msg" required></textarea>
+        </div>
+
+
+        <div class="caseAcocher">
+          <input type="checkbox" name="caseAcceptation" id="caseAcceptation" required>
+          <label for="caseAcceptation">En soummettant ce formulaire, j'accepte que les informations saisies soient
+            utilisées pour répondre à ma demande d'information<span>*</span></label>
+        </div>
+
+        <div class="boutonEnvoyerContact">
+          <input class="buttonContact" type="submit" value="ENVOYER LE MESSAGE">
+        </div>
+
+        <p>
+          Les données collectées dans le cadre de ce formulaire font l’objet d’un traitement par La Vélomaritime ayant
+          pour finalité de répondre à votre demande d’informations. Conformément à la réglementation en vigueur relative
+          à la protection des données personnelles, vous pouvez exercer vos droits ou obtenir toute information
+          complémentaire en saisissant le Délégué à la protection des données par <a href="contact.html">courriel</a>.
+        </p>
+
+      </form>
+
+    </div>
+
+  </main>
+
+
+  <div id="popup-contact-bas">
+    <div class="popup-contactGauche">
+      <p>Comment rejoindre la Vélomaritine par le train.</p>
+    </div>
+    <div class="popup-contactDroite">
+      <a href="">En savoir plus</a>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const popUp = document.querySelector('#popup-contact-bas');
+      const scrollable = document.documentElement.scrollHeight = window.innerHeight;
+      const scrolled = window.scrollY;
+
+      if (Math.ceil(scrolled) === scrollable) {
+        return popUp;
+      }
+    }
+    );
+
+
+
+  </script>
 </body>
 
 </html>

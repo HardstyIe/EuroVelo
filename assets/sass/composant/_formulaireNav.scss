@@ -1,0 +1,36 @@
+.submitNav {
+    width: 70%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    label {
+        font-weight: 800;
+    }
+
+    .mailNav {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-left: 10px;
+        padding: 8px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .inscritNav {
+        background-color: #0da249;
+        padding: 8px;
+        font-weight: 800;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.formNewsletter {
+    display: flex;
+    flex-direction: row;
+}
+
+.labelNav {
+    margin-top: 1.5%;
+}

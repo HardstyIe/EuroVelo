@@ -1,44 +1,65 @@
-// Variables
-const leftButton = document.querySelector('#leftButton')
-const rightButton = document.querySelector('#rightButton')
-const indexHeader = document.querySelector('.slider')
-const imagesTable = [{ image: '' }, { image: '' }, { image: '' }]
-let slides = 0
-
-// Fonctions
-function nextSlide() {
-  indexHeader.style.backgroundImage = 'url(' + imagesTable[slides].image + ')'
-  if (slides == imagesTable.length - 1) {
-    slides = 0
-  } else {
-    slides++
+//  <!-- Initialize Swiper -->
+var swiper = new Swiper('.mySwiper', {
+  loop: true,
+  autoplay: true,
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true
   }
-}
-
-function previousSlide() {
-  indexHeader.style.backgroundImage = 'url(' + imagesTable[slides].image + ')'
-  if (slides == 0) {
-    slides = imagesTable.length - 1
-  } else {
-    slides--
-  }
-}
-
-function autoPlay() {
-  myInterval = setInterval(nextSlide, 4000)
-}
-
-// Evenements
-window.onload = autoPlay()
-
-rightButton.addEventListener('click', () => {
-  nextSlide()
-  clearInterval(myInterval)
-  autoPlay()
 })
 
-leftButton.addEventListener('click', () => {
-  previousSlide()
-  clearInterval(myInterval)
-  autoPlay()
+// Slider middle page
+
+var swiper = new Swiper('.mySwiper2', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: '3',
+  navigation: true,
+  keyboard: true,
+
+  coverflowEffect: {
+    rotate: 20,
+    stretch: -50,
+    depth: 50,
+    modifier: 1,
+    slideShadows: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+})
+
+var swiper = new Swiper('.mySwiper3', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: '3',
+  navigation: true,
+  keyboard: true,
+  loop: true,
+
+  coverflowEffect: {
+    rotate: 20,
+    stretch: -50,
+    depth: 50,
+    modifier: 1,
+    slideShadows: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
 })
