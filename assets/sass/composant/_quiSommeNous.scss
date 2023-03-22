@@ -10,7 +10,7 @@
 .imageDeFondQuiSommeNous {
     background-image: url('/assets/images/eurovelo-logo/32114475218_076e0ba288_o.jpg');
     background-size: cover;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     z-index: 1;
@@ -107,15 +107,32 @@
     border-radius: 5% 5% 5% 5%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
+    .imageDeFondQuiSommeNous {
+        height: 50%;
+    }
+
+    .logo5QuiSommeNous {
+        width: 10%;
+    }
+
     .deuxiemePartiQuiSommeNous {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
+
+    .texteQuiSommeNous {
+        align-items: flex-start;
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    
+
     .liensQuiSommeNous {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 }

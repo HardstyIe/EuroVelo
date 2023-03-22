@@ -1,6 +1,6 @@
 .submitNav {
+    width: 70%;
     margin-left: 10px;
-    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,4 +24,13 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+}
+
+.formNewsletter {
+    display: flex;
+    flex-direction: row;
+}
+
+.labelNav {
+    margin-top: 1.5%;
 }
