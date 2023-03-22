@@ -14,7 +14,7 @@
   <!-- Ajout essaie -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha384-qj3VUhp87zxt5l5a5OYTfF7VjKodZxM7VwBY2Y+G7jFknEc9tnB4d4v1SdNpk7Hl" crossorigin="">
-    <!-- --------------------------------------------- -->
+  <!-- --------------------------------------------- -->
   <title>Document</title>
 </head>
 
@@ -83,10 +83,20 @@
       </div>
 
       <div class="navDroite">
-        <a href=""><i class="ti-search"></i></a>
+        <i class="ti-search"></i>
       </div>
 
     </div>
+    <div class="search-container">
+      <form action="/search">
+          <input type="text" placeholder="Recherche..." name="q">
+      </form>
+
+      <div class="boutonBarre">
+            <a href="#"><i class="ti-search"></i></a>
+      </div>
+    </div>
+
 
   </header>
 
@@ -139,7 +149,7 @@
   <!-- Ajout essaie -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha384-nmKwMtovgFbRihU9L5QNpvCHvJ1Yqy5DJ93D8p+0ccFvbbZq3AgK0MKa8VTfvW1d" crossorigin=""></script>
-    <!-- ----------------------- -->
+  <!-- ----------------------- -->
 </body>
 
 </html>

@@ -12,3 +12,16 @@ window.addEventListener('scroll', () => {
         nav.style.position = 'static';
     }
 })
+////////////////////////////////////////////////////////////////////////////////
+
+
+const searchIcon = document.querySelector('.ti-search');
+const searchContainer = document.querySelector('.search-container');
+
+searchIcon.addEventListener('click', function() {
+  if (searchContainer.style.display === 'none') {
+    searchContainer.style.display = 'flex';
+  } else {
+    searchContainer.style.display = 'none';
+  }
+});
