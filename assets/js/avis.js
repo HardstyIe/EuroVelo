@@ -44,7 +44,7 @@ let promise = fetch('http://90.110.218.245:5003/api/avis')
 
       // On rattache la balise article a la section Fiches
 
-      sectionFiches.appendChild(avisElement)
+      sectionFiches?.appendChild(avisElement)
       avisElement.appendChild(datesElement)
       avisElement.appendChild(nomElement)
       avisElement.appendChild(courseElement)
