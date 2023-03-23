@@ -19,67 +19,57 @@ body {
 }
 
 .topPage {
-
   h1 {
     color: #000000;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
     font-size: 3em;
+    text-align: center;
+  }
+
+  .conteneurhdp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+  
+
+    .aligntoptext {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      width: 60%;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    .boutonSection {
+      margin-top: 30px;
+      border: 2px solid;
+      padding: 10px;
+      font-weight: bold;
+      color: $color-secondary-aquaBlue;
+    }
   }
 }
 
-.conteneurhdp {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
 
-  .aligntoptext {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  p {
-    text-align: justify;
-    font-size: 18px;
-  }
-
-  .aligntoptext {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    width: 40%;
-  }
-
-  p {
-    text-align: justify;
-    font-size: 18px;
-
-  }
-
-  button {
-    margin: 30px;
-    border: 2px solid;
-    padding: 10px 10px 10px 10px;
-    //Mettre le texte et les bordures en bleu ciel 
-    font-weight: bold;
-    color: $color-secondary-aquaBlue;
-
-  }
-}
 
 article .milieuPage {
+  position: relative;
+  margin: auto;
+  max-width: 960px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   img {
     margin-right: 300px;
-
   }
 
   .traitorange {
@@ -91,15 +81,17 @@ article .milieuPage {
     margin: 0 10px;
     background-color: $color-secondary-orange;
     z-index: 1;
-
   }
 
   .titreListe {
-    position: relative;
-    right: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
     background-color: white;
-    padding: 20px;
-    height: 60%;
+    padding: 10px;
+    width: calc(100% - 350px);
+    max-width: 600px;
 
     h2 {
       padding: 10px;
@@ -120,7 +112,7 @@ article .milieuPage {
 
 
 .basDePage {
-  margin-left: 600px;
+  margin-left: 300px;
   text-align: justify;
 
   h3 {
@@ -151,7 +143,7 @@ a {
 aside {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 600px;
+  margin-left: 300px;
   gap: 30px;
   width: 40%;
 
@@ -172,19 +164,66 @@ aside {
 // max-width : dès que l'écran est plus petit que 
 // min-width : dès que l'écran est plus grand que
 
-
-@media screen and (max-width: 1107px) {
-
-  .aligntoptext,
-  p {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+@media only screen and (max-width: 1200px) {
+  article .milieuPage {
+    img {
+      margin-right: 150px;
+    }
+    .titreListe {
+      width: calc(100% - 200px);
+      max-width: unset;
+    }
   }
+  .basDePage {
+    margin-left: 0;
+    text-align: center;
+  }
+  aside {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 
-  article .milieuPage .titreListe ul li .traitorange {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+  .topPage .conteneurhdp .aligntoptext {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  article .milieuPage {
+    img {
+      margin-right: 0;
+    }
+    .titreListe {
+      position: static;
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .espacehdp {
+    margin: 50px;
+  }
+  .topPage .conteneurhdp .aligntoptext {
+    font-size: 14px;
+  }
+  article .milieuPage .titreListe {
+    h2 {
+      font-size: 18px;
+    }
+    li {
+      margin-bottom: 45px;
+      margin-left: 35px;
+    }
+  }
+  .basDePage {
+    font-size: 14px;
+  }
+  aside {
+    ol {
+      margin-left: 30px;
+    }
   }
 }
