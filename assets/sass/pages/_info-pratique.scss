@@ -1,15 +1,236 @@
 .imageInfoGeneralesInfoPratique {
     background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .imageseGuider1InfoPratique {
     background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .imageHebergementsInfoPratique {
     background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .imageService1InfoPratique {
     background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageOrganisationInfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imagePratique1InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imagePratique2InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageseGuider2InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageService2InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageService3InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageService4InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageTemoignagesInfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageActualites1InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imagePratique3InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imageActualites2InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imagePratique4InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imagePratique5InfoPratique {
+    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.mainInfoPratique {
+    padding-top: 10%;
+}
+
+.h1InfoPratique {
+    text-align: center;
+    font-size: 50px;
+}
+
+.sectionInfoPratique {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.container1InfoPratique {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    gap: 20px;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.box7InfoPratique {
+    grid-column: 1 / 3;
+}
+
+.box8InfoPratique {
+    grid-column: 3 / 4;
+}
+
+.coeurInfoPratique {
+    position: relative;
+    left: 88%;
+    top: -2%;
+}
+
+.coeur2InfoPratique {
+    position: relative;
+    left: 88%;
+    top: 8%
+}
+
+.texteInfoPratique {
+    text-align: center;
+    position: relative;
+    top: 6%;
+    left: 30%;
+    border: solid orange;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+}
+
+.texte3InfoPratique {
+    text-align: center;
+    position: relative;
+    top: 6%;
+    left: 30%;
+    border: solid orange;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    width: 45%;
+}
+
+.texte2InfoPratique {
+    text-align: center;
+    position: relative;
+    top: -2%;
+    left: 40%;
+    border: solid orange;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+}
+
+.h2InfoPratique {
+    color: white;
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+.h2InfoPratique2 {
+    color: white;
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    position: relative;
+    top: 50%;
 }
