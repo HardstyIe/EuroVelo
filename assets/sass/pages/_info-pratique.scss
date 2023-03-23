@@ -1,5 +1,5 @@
 .imageInfoGeneralesInfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/presentation.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .imageseGuider1InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/carteVeloHDF.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -15,7 +15,7 @@
 }
 
 .imageHebergementsInfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/oudormir.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .imageService1InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/louervelo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -31,7 +31,7 @@
 }
 
 .imageOrganisationInfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/organiser.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -39,7 +39,7 @@
 }
 
 .imagePratique1InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/faq.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -47,7 +47,7 @@
 }
 
 .imagePratique2InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/lillegare-blog.avif);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -55,7 +55,7 @@
 }
 
 .imageseGuider2InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/gps.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -63,7 +63,7 @@
 }
 
 .imageService2InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/porte-velo.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -71,7 +71,7 @@
 }
 
 .imageService3InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/transfert.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -79,7 +79,7 @@
 }
 
 .imageService4InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/eurovelo-logo/32114475218_076e0ba288_o.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -87,7 +87,7 @@
 }
 
 .imageTemoignagesInfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/VisiteVelodejour_H0001.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -95,7 +95,7 @@
 }
 
 .imageActualites1InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/amenagement.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -103,7 +103,7 @@
 }
 
 .imagePratique3InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/signalement_avec_logo.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -111,7 +111,7 @@
 }
 
 .imageActualites2InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/infos-travaux.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -119,7 +119,7 @@
 }
 
 .imagePratique4InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique2.jpg);
+    background-image: url(/assets/images/infoPratiques/utileSurPlace.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -127,7 +127,7 @@
 }
 
 .imagePratique5InfoPratique {
-    background-image: url(/assets/images/infoPratiques/infoPratique1.jpg);
+    background-image: url(/assets/images/infoPratiques/itineraires-connectes.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -151,11 +151,12 @@
 .container1InfoPratique {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 250px;
     gap: 20px;
     margin-bottom: 2%;
     margin-left: 20%;
     margin-right: 20%;
+    height: 100%;
 }
 
 .box7InfoPratique {
