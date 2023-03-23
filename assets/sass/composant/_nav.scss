@@ -1,27 +1,38 @@
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
 
-    li {
-      margin: 0 10px;
-      display: inline-flex;
 
-      a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        font-weight: bold;
+  li {
+    margin: 0 10px;
+    display: inline-flex;
+
+    a {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+
+      a:hover {
+        color: #0da249;
       }
     }
 
+
     .actuNav {
       color: #db3e0e;
+
+      a:hover {
+        color: #0da249;
+      }
     }
 
     .passNav {
       color: #0da249;
     }
   }
+}
