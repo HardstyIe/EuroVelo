@@ -50,8 +50,14 @@ margin: 100px;
 }
 
 .firstGrid {
+  
    h2 {
     padding-left: 30px;
+   }
+   a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
    }
   
   .gridTop {
@@ -66,11 +72,56 @@ margin: 100px;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      cursor: pointer;
+      
+      img:hover {
+        filter: blur(4px);
+      }
+#heart {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 50px;
+  left: 70%;
+  z-index: 3;
+}
+
+#heartDeux {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 50px;
+  left: 55%;
+  z-index: 3;
+}
+
+      .alasemaine {
+        position: relative;
+        top: 50px;
+        border: 1px solid;
+        background-color: white;
+        border-color: white;
+        transform: translateX(200%);
+        z-index: 3;
+      }
+
+      .dureeSejour {
+        position: relative;
+        top: 50px;
+        background-color: white;
+        border-color: white;
+        transform: translateX(100%);
+        z-index: 3;
+
+      }
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: relative;
+        top: 10px;
+        left: 10px;
       }
     }
   }
