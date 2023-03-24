@@ -1,0 +1,78 @@
+html {
+    @include font-light;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  .boldEnd {
+    @include font-bold;
+  }
+
+.titleparcours {
+    display: flex;
+    justify-content: center;
+    h1 {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+    }
+}
+
+.espacetp {
+margin: 100px;
+}
+
+.boutonsParcous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    
+    button {
+        color: $color-secondary-aquaBlue;
+        border: 1px solid;
+        border-color: $color-secondary-aquaBlue;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+.reinitial {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    a {
+        text-decoration: none;
+        color: $color-secondary-blueSky;
+    }
+}
+
+.firstGrid {
+   h2 {
+    padding-left: 30px;
+   }
+  
+  .gridTop {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 500px);
+    grid-gap: 20px;
+    justify-content: space-evenly;
+  
+    .grid-itemTop {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+} 
+ 

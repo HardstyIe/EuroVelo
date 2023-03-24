@@ -10,9 +10,6 @@ h4,
   @include font-bold;
 }
 
-body {
-  margin: 0;
-}
 
 .espacehdp {
   margin: 100px;
@@ -22,7 +19,7 @@ body {
   h1 {
     color: #000000;
     font-weight: bold;
-    font-size: 3em;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     text-align: center;
   }
 
@@ -112,7 +109,7 @@ article .milieuPage {
 
 
 .basDePage {
-  margin-left: 300px;
+  margin-left: 400px;
   text-align: justify;
 
   h3 {
@@ -143,7 +140,7 @@ a {
 aside {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 300px;
+  margin-left: 400px;
   gap: 30px;
   width: 40%;
 
