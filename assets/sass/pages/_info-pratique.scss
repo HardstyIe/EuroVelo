@@ -8,6 +8,10 @@
     z-index: 1;
 }
 
+.imageInfoGeneralesInfoPratique:hover {
+    filter: blur(0.5px);
+}
+
 .imageseGuider1InfoPratique {
     background-image: url(/assets/images/infoPratiques/carteVeloHDF.png);
     background-repeat: no-repeat;
@@ -78,6 +82,7 @@
     background-size: 100%;
     width: 100%;
     height: 100%;
+    z-index: 2;
 }
 
 .imageService4InfoPratique {
@@ -191,7 +196,6 @@
     color: white;
     font-weight: bold;
     width: 40%;
-
 }
 
 .texte3InfoPratique {
@@ -204,7 +208,6 @@
     color: white;
     font-weight: bold;
     width: 45%;
-    z-index: 1;
 }
 
 .texte2InfoPratique {
@@ -227,7 +230,6 @@
     text-align: center;
     position: relative;
     top: 50%;
-    z-index: 2
     ;
 }
 
@@ -253,8 +255,3 @@
     color: black;
 }
 
-.blur-image {
-    filter: blur(5px);
-  }
-
-  
