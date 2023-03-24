@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/sass/vendors/normalize.css">
-  <link rel="stylesheet" href="assets/sass/vendors/flaticons.css">
-  <link rel="stylesheet" href="assets/sass/vendors/themify-icons.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/normalize.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/flaticons.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/themify-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
   <link rel="stylesheet" href="/assets/leaflet(map)/leaflet.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <link rel="stylesheet" href="assets/sass/main.css" />
+  <link rel="stylesheet" href="/assets/sass/main.css" />
   <title>Document</title>
 </head>
 
@@ -35,6 +35,7 @@
             <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
           </div>
         </div>
+
         <form class="submitNav">
           <div class="formNewsletter">
             <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
@@ -58,45 +59,44 @@
     </div>
 
     <div class="basNav">
+      
+        <div class="logoNav">
+          <img id="logo" src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
+          <img id="logoMarque" src="/assets/images/eurovelo-logo/Capture d’écran 2023-03-23 134727.png" alt="">
+        </div>
 
-      <div class="logoNav">
-        <img id="logo" src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
-        <img id="logoMarque" src="/assets/images/eurovelo-logo/Capture d’écran 2023-03-23 134727.png" alt="">
+        <div class="navGauche">
+          <nav>
+            <ul>
+              <li><a href="#">L'ITINERAIRE</a></li>
+              <li><a href="#">TEMOIGNAGES</a></li>
+              <li><a href="#">INFOS PRATIQUES</a></li>
+              <li><a href="#">SUGGESTIONS</a></li>
+              <li><a href="#">INSPIRATIONS</a></li>
+              <li>
+                <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
+              </li>
+              <li>
+                <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navDroite">
+          <i class="ti-search"></i>
+        </div>
+
       </div>
+      <div class="search-container">
+        <form action="/search">
+          <input type="text" placeholder="Recherche..." name="q">
+        </form>
 
-      <div class="navGauche">
-        <nav>
-          <ul>
-            <li><a href="#">L'ITINERAIRE</a></li>
-            <li><a href="#">TEMOIGNAGES</a></li>
-            <li><a href="#">INFOS PRATIQUES</a></li>
-            <li><a href="#">SUGGESTIONS</a></li>
-            <li><a href="#">INSPIRATIONS</a></li>
-            <li>
-              <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
-            </li>
-            <li>
-              <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
-            </li>
-          </ul>
-        </nav>
+        <div class="boutonBarre">
+          <a href="#"><i class="ti-search"></i></a>
+        </div>
       </div>
-
-      <div class="navDroite">
-        <i class="ti-search"></i>
-      </div>
-
-    </div>
-    <div class="search-container">
-      <form action="/search">
-        <input type="text" placeholder="Recherche..." name="q">
-      </form>
-
-      <div class="boutonBarre">
-        <a href="#"><i class="ti-search"></i></a>
-      </div>
-    </div>
-
 
   </header>
 

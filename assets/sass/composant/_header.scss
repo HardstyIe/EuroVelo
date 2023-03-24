@@ -168,6 +168,7 @@ header {
 
   .basNav {
     justify-content: flex-end;
+    width: 100%;
 
     .navGauche {
       width: 0%;
@@ -178,16 +179,15 @@ header {
       width: 25%;
 
       .ti-search {
-        margin-right: 20px;
+        margin-right: 30px;
+      }
+      .ti-close {
+        margin-right: 30px;
       }
     }
 
     .logoNav {
       width: 50%;
-
-      img {
-        width: 100px;
-      }
     }
   }
 }

@@ -9,3 +9,5 @@ document.querySelector('#open-menu').addEventListener('click', () => {
     openMenu.src = '/assets/images/menu-burger.png'
   }
 })
+
+
