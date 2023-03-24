@@ -1,0 +1,23 @@
+.notesAvis {
+  display: flex;
+  gap: 20px;
+}
+
+.avisHtml {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 70px;
+
+  article {
+    background-color: #bebebe;
+    padding: 20px;
+    line-height: 30px;
+
+    .avisComment {
+      line-height: 20px;
+    }
+  }
+}
