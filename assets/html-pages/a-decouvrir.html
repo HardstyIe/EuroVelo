@@ -10,28 +10,105 @@
   <link rel="stylesheet" href="../sass/vendors/themify-icons.css">
   <link rel="stylesheet" href="../sass/main.css">
   <link rel="stylesheet" href="../path/to/leaflet.css">
-  <title>Document</title>
+  <title>À découvrir</title>
 </head>
 
 <body>
+  <!--Mettre la navbar-->
+  <header id="navigation">
+
+    <div class="hautNav" id="hautNav">
+
+      <div class="hautNavGauche">
+        <div class="lienReseaux">
+          <div class="instagramNav">
+            <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><i class="ti-instagram"></i></a>
+          </div>
+          <div class="youtubeNav">
+            <a href="https://www.youtube.com/watch?v=NuIbOMSzZPQin" target="_blank"><i class="ti-youtube"></i></a>
+          </div>
+          <div class="facebookNav">
+            <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
+          </div>
+        </div>
+        <form class="submitNav">
+          <div class="formNewsletter">
+            <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
+            <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
+            <div class="inscritNav">
+              <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="hautNavDroite">
+        <div class="lienPersoNav">
+          <a href="">Espace pro</a>
+          <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
+          <a href="">Espace personnel</a>
+          <a href=""><img src="/assets/images/image-nav/france.png" alt="français"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="basNav">
+
+      <div class="logoNav">
+        <img src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
+      </div>
+
+      <div class="navGauche">
+        <nav>
+          <ul>
+            <li><a href="#">L'ITINERAIRE</a></li>
+            <li><a href="#">TEMOIGNAGES</a></li>
+            <li><a href="#">INFOS PRATIQUES</a></li>
+            <li><a href="#">SUGGESTIONS</a></li>
+            <li><a href="#">INSPIRATIONS</a></li>
+            <li>
+              <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
+            </li>
+            <li>
+              <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="navDroite">
+        <i class="ti-search"></i>
+      </div>
+
+    </div>
+    <div class="search-container">
+      <form action="/search">
+        <input type="text" placeholder="Recherche..." name="q">
+      </form>
+
+      <div class="boutonBarre">
+        <a href="#"><i class="ti-search"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- Fin de la navbar -->
+
+  <main>
   <!-- La classe topPage représente le haut de la page -->
-  <main class="topPage">
+  <div class="topPage">
     <h1>Devenir Accueil Vélo</h1>
-    <div class="espacehdp"> </div>
-    <!-- La classe conteneur servira de conteneur pour placer les éléments à l'intérieur du bloc -->
     <section class="conteneurhdp">
       <div class="aligntoptext">
-        <p>
-          Le vélotourisme est en plein essor dans un contexte économique déprimé. Cette activité, qui répond à de
-          nouvelles aspirations des clientèles, est en croissance constante avec de nouveaux itinéraires aménagés et des
-          services adaptés aux cyclistes.
-        </p>
+        <p>Le vélotourisme est en plein essor dans un contexte économique déprimé. Cette activité, qui répond à de nouvelles aspirations des clientèles, est en croissance constante avec de nouveaux itinéraires aménagés et des services adaptés aux cyclistes.</p>
       </div>
-      <button>AJOUTER À UN CARNET DE VOYAGE <!-- ajouter le logo du coeur avec le + ici--> </button>
-
+      <button class="boutonSection">AJOUTER À UN CARNET DE VOYAGE</button>
     </section>
+  
+  
 
     <article>
+      <!-- Ici on met l'image et le bloc de texte qui devra se situer en partie sur l'image -->
       <div class="milieuPage">
         <img src="../images/a-propos/devenir-accueil-velo.jpg" alt="Photo de présentation Accueil Velo">
 
@@ -40,8 +117,7 @@
           <h2>Pourquoi devenir Accueil Vélo ?</h2>
           <ul>
             <li>Améliorer votre visibilité auprès des touristes à vélo et des agences de voyages spécialisées vélo</li>
-            <li>Présence sur les différents supports de la Vélomaritime (web et papier) ainsi que sur
-              francevelotourisme.com (moteur de recherche, cartes interactives)</li>
+            <li>Présence sur les différents supports de l'Eurovélo 5 (web et papier)</li>
             <li>Référencement possible dans les topoguides vélos</li>
             <li>Devenir acteur d'une dynamique en pleine croissance et entrer dans un réseau local et national de
               prestataires</li>
@@ -51,7 +127,7 @@
       </div>
 
     </article>
-  </main>
+  <!-- Listes se situants en bas de la page -->
   <div class="basDePage">
     <h3>Puis-je devenir Accueil Vélo ?</h3>
     <div class="espaceTitreBas"></div>
@@ -69,24 +145,24 @@
       l'organisme évaluateur).</p>
     <div class="espaceBas"> </div>
     <p>Je dois remplir l'ensemble des critères obligatoires du <a
-        href="https://www.francevelotourisme.com/sites/default/files/accueil-velo-guide-pratique.pdf">référentiel de
+        href="/index.html">référentiel de
         qualité Accueil
         Vélo </a>correspondant à <br>mon domaine d'activité.</p>
   </div>
-
+  </div>
   <aside>
     <h4>Comment devenir accueil Vélo</h4>
     <ol>
       <li>1. Envoyer une demande à mon organisme évaluateur via le <a
-          href="https://www.lavelomaritime.fr/contact/devenir_accueil_velo">formulaire en ligne</a> </li>
+          href="contact.html">formulaire en ligne</a> </li>
       <li>2. L'évaluateur organise une visite de contrôle pour vérifier que l'établissement respecte les <a
           href="https://www.francevelotourisme.com/sites/default/files/accueil-velo-guide-pratique.pdf">critères du
           référentiel de qualité.</a></li>
       <li>3. Autorisation d'utiliser la marque pour 3 ans si les critères du <a
-          href="https://www.francevelotourisme.com/sites/default/files/accueil-velo-guide-pratique.pdf">référentiel
+          href="/index.html">référentiel
           Accueil Vélo</a>sont respectés.</li>
       <li>4. Signature de l'engagement du <a
-          href="https://www.francevelotourisme.com/sites/default/files/accueil-velo-guide-pratique.pdf">référentiel
+          href="/index.html">référentiel
           Accueil Vélo</a>et paiement à l'organisme évaluateur d'une contribution financière à la mise en œuvre de la
         marque Accueil Vélo, d'un montant de 200 euros pour 3 ans (la contribution financière est destinée à couvrir les
         frais inhérents à la visite de contrôle et à la mise à disposition des outils de communication: la plaque de
@@ -96,15 +172,105 @@
 
 
 
+  <!-- Partie de page "quiSommeNous" -->
+  <article class="quiSommeNous">
+    <div class="backdrop_quiSommeNous">
+
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
+
+        <!-- DIV contenant les images -->
+        <div class="imagesQuiSommeNous">
+
+          <!-- Images avec les Ã©toiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
+
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
+                alt="logo facebook"></a>
+
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
+
+          </div>
+
+        </div>
 
 
+        <!-- Partie contenant le texte et les liens -->
+        <section class="deuxiemePartiQuiSommeNous">
 
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
 
+            <h2>Qui sommes-nous?</h2>
+
+            <p>L'eurovélo 5 est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une ambition commune : positionner l'eurovélo 5 comme un itinéraire d'excellence du tourisme à vélo en France et à travers l'Europe.</p>
+
+          </div>
+
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
+
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </article>
+</main>
+<!--Mettre le footer-->
+<footer>
+  <div class="footerPartiGauche">
+    <ul>
+      <li><a href="">Espace pro / presse</a></li>
+      <li><a href="">FAQ</a></li>
+      <li><a href="/assets/html-pages/mention.html">Mentions légales</a></li>
+      <li><a href="">Gestion des cookies</a></li>
+    </ul>
+  </div>
+  <div class="footerPartiDroite">
+    <div>
+      <ul>
+        <li class="rea">Réalisation</li>
+        <li><a class="bzzz" href="www.moustic.biz">B<span class="zzz">ZZZZZZZZ</span></a></li>
+      </ul>
+    </div>
+    <div class="veloFranceTourisme">
+      <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
+          src="/assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
+    </div>
+  </div>
+</footer>
+<!-- Ajout du popup qui apparaît lorsqu'on scroll -->
+<div id="popup-contact-bas">
+  <div class="popup-contactGauche">
+    <p>Découvrir le tracé Eurovélo 5 : </p>
+  </div>
+  <div class="popup-contactDroite">
+    <a href="/index.html">En savoir plus</a>
+  </div>
+</div>
+<!-- Mettre les balises script pour lier le HTML aux fichiers JavaScript -->
 
 
   <script src="../EuroVelo/assets/js/slider.js"></script>
   <script src="../EuroVelo/assets/js/burger.js"></script>
+  <script src="/assets/js/nav.js"></script>
   <script src="/path/to/leaflet.js"></script>
+  <script src="/assets/js/popup.js"></script>
+
 </body>
 
 </html>
+<!-- Fin de la page -->
+<!-- 2 "warning" au w3c validator, pas d'erreurs. -->
