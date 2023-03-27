@@ -43,6 +43,7 @@
 @media(max-width: 800px) {
     .titreMentionsLegales {
         margin-bottom: 10%;
+        padding-top: 30%;
     }
 
     .editeurDuSite,
@@ -55,6 +56,12 @@
     .donneesPersonnelles
     {
         margin-bottom: 15%;
+    }
+}
+
+@media(max-width: 400px) {
+    .titreMentionsLegales {
+        padding-top: 30%;
     }
 }
 
