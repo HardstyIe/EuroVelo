@@ -5,7 +5,7 @@ body {
 header {
   position: absolute;
   width: 100%;
-  z-index: 2;
+  z-index: 200;
 }
 
 
@@ -14,6 +14,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   color: #f4f4f4;
+}
 
   .lienReseaux {
     padding-top: 10px;
@@ -52,7 +53,7 @@ header {
     }
   }
 
-}
+
 
 .hautNavGauche {
   width: 50%;
@@ -72,6 +73,7 @@ header {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
+  z-index: 2;
 
   .logoNav {
     width: 10%;
@@ -148,6 +150,9 @@ header {
       color: #f4f4f4;
     }
   }
+}
+#navigation {
+  z-index: 3;
 }
 
 

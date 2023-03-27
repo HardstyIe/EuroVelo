@@ -50,7 +50,10 @@ margin: 100px;
 }
 
 .firstGrid {
-  
+  .mirrorTop {
+    display: flex;
+    justify-content: space-around;
+  }
    h2 {
     padding-left: 30px;
    }
@@ -58,6 +61,7 @@ margin: 100px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    padding-left: 30px;
    }
   
   .gridTop {
