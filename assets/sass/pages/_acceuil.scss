@@ -12,230 +12,44 @@ body {
   padding: 0;
 }
 
-.swiper {
+.info-map {
   width: 100%;
   height: 100%;
-  position: relative;
-  --swiper-pagination-bottom: 7%;
-  --swiper-pagination-bullet-size: 15px;
-  --swiper-pagination-bullet-inactive-color: #f1f1f1;
-  --swiper-pagination-bullet-inactive-opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  .swiper-wrapper {
-    height: 95vh;
-  }
+  .bouton-map {
+    margin-left: 20px;
+    width: 40%;
+    height: 100%;
 
-  .swiper-slide {
-    object-fit: cover;
-  }
+    .segment-map {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
 
-  .image-slider-center-bottom {
-    object-position: center bottom;
-  }
+      a {
+        padding: 30px 100px;
+        background-color: grey;
+        border-radius: 10px;
 
-  .text-swiper {
-    position: absolute;
-    width: 100%;
-    color: #f1f1f1;
-    bottom: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    text-align: center;
-    z-index: 1;
+      }
+    }
 
     h1 {
-      font-size: 60px;
       @include font-bold;
-    }
-
-    p {
-      font-size: 50px;
-      @include font-light;
-    }
-  }
-}
-
-#map {
-  width: 60%;
-  height: 700px;
-  margin-bottom: 10px;
-  position: relative;
-  margin: auto;
-}
-
-.swiper2 {
-  width: 100%;
-  padding: 100px 0;
-  background-image: url("/assets/images/slider/slider-middle/slider-middle1.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  height: 65%
-}
-
-.mySwiper2 {
-  --swiper-pagination-bottom: 5%;
-  --swiper-pagination-bullet-size: 15px;
-  --swiper-pagination-bullet-inactive-color: #f1f1f1;
-  --swiper-pagination-bullet-inactive-opacity: 1;
-  overflow-x: hidden;
-
-  .text-slide2 {
-    text-align: center;
-  }
-
-  .swiper-wrapper {
-    width: 20%;
-    height: 300px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 50px 10px;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin: 30px 0;
-  }
-
-  .swiper-pagination2 {
-    text-align: center;
-  }
-
-  .slider-middle1 {
-    background-image: url("https://swiperjs.com/demos/images/nature-1.jpg");
-
-    h1 {
-      font-size: 20px;
-      color: #f1f1f1;
-    }
-
-    p {
-      font-size: 15px;
-      color: #f1f1f1;
+      font-size: clamp(1rem, 5vw, 2rem);
+      text-align: center;
     }
   }
 
-  .slider-middle2 {
-    background-image: url("https://swiperjs.com/demos/images/nature-2.jpg");
-  }
-
-  .slider-middle3 {
-    background-image: url("https://swiperjs.com/demos/images/nature-3.jpg");
-  }
-
-  .slider-middle4 {
-    background-image: url("https://swiperjs.com/demos/images/nature-4.jpg");
-  }
-
-  .slider-middle5 {
-    background-image: url("https://swiperjs.com/demos/images/nature-5.jpg");
-  }
-
-  .slider-middle6 {
-    background-image: url("https://swiperjs.com/demos/images/nature-6.jpg");
-  }
-
-  .slider-middle7 {
-    background-image: url("https://swiperjs.com/demos/images/nature-7.jpg");
-  }
-
-  .slider-middle8 {
-    background-image: url("https://swiperjs.com/demos/images/nature-8.jpg");
-  }
-
-  .slider-middle9 {
-    background-image: url("https://swiperjs.com/demos/images/nature-10.jpg");
-  }
-}
-
-.swiper3 {
-  width: 100%;
-  padding: 100px 0;
-  background-image: url("/assets/images/slider/slider-middle/slider-middle1.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  height: 65%
-}
-
-.mySwiper3 {
-  --swiper-pagination-bottom: 5%;
-  --swiper-pagination-bullet-size: 15px;
-  --swiper-pagination-bullet-inactive-color: #f1f1f1;
-  --swiper-pagination-bullet-inactive-opacity: 1;
-  overflow-x: hidden;
-
-  .text-slide2 {
-    text-align: center;
-  }
-
-  .swiper-wrapper {
-    width: 20%;
-    height: 300px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 50px 10px;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin: 30px 0;
-  }
-
-  .swiper-pagination2 {
-    text-align: center;
-  }
-
-  .slider-middle1 {
-    background-image: url("https://swiperjs.com/demos/images/nature-1.jpg");
-
-    h1 {
-      font-size: 20px;
-      color: #f1f1f1;
-    }
-
-    p {
-      font-size: 15px;
-      color: #f1f1f1;
-    }
-  }
-
-  .slider-middle2 {
-    background-image: url("https://swiperjs.com/demos/images/nature-2.jpg");
-  }
-
-  .slider-middle3 {
-    background-image: url("https://swiperjs.com/demos/images/nature-3.jpg");
-  }
-
-  .slider-middle4 {
-    background-image: url("https://swiperjs.com/demos/images/nature-4.jpg");
-  }
-
-  .slider-middle5 {
-    background-image: url("https://swiperjs.com/demos/images/nature-5.jpg");
-  }
-
-  .slider-middle6 {
-    background-image: url("https://swiperjs.com/demos/images/nature-6.jpg");
-  }
-
-  .slider-middle7 {
-    background-image: url("https://swiperjs.com/demos/images/nature-7.jpg");
-  }
-
-  .slider-middle8 {
-    background-image: url("https://swiperjs.com/demos/images/nature-8.jpg");
-  }
-
-  .slider-middle9 {
-    background-image: url("https://swiperjs.com/demos/images/nature-10.jpg");
+  #map {
+    width: 50%;
+    height: 85%;
+    margin-bottom: 10px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
   }
 }

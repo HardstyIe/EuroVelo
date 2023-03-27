@@ -1,7 +1,7 @@
 .main-contact {
-margin-left: 25%;
-margin-RIGHT: 25%;
-font-size:x-large;
+  margin-left: 25%;
+  margin-RIGHT: 25%;
+  font-size: x-large;
 
 
         .PARAGRAPHEcONTACT {
@@ -11,14 +11,14 @@ font-size:x-large;
             display: flex;
             justify-content: center;
 
-            h1 {
-                font-size: 70px
-            }
-        }
-
-    .marge-paragraphe {
-        margin-bottom: 60px;
+    h1 {
+      font-size: 70px
     }
+  }
+
+  .marge-paragraphe {
+    margin-bottom: 60px;
+  }
 
     .formu input {
         width: 100%;
@@ -40,37 +40,42 @@ font-size:x-large;
         resize: vertical;
         background-color: rgba(128, 128, 128, 0.13);
 
-    }
-    span {
-        color: rgb(214, 141, 4);
+  }
+
+  span {
+    color: rgb(214, 141, 4);
+  }
+
+  .caseAcocher {
+    display: flex;
+
+    input {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      margin-bottom: 40px;
     }
 
-    .caseAcocher {
-        display: flex;
-        input {
-            width: 30px;
-            height: 30px;
-            margin-right: 20px;
-            margin-bottom: 40px;
-        }
-        p {
-            margin-top: 0px;
-        }
+    p {
+      margin-top: 0;
+    }
 
-    }
-    .boutonEnvoyerContact {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .buttonContact {
-        padding: 15px 20px 15px 20px;
-        border-radius: 5px;
-        font-size:x-large;
-        border: none;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
-        color: white;
-        background-color: rgb(98, 192, 229);
-    }
+  }
+
+  .boutonEnvoyerContact {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .buttonContact {
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+    font-size: x-large;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+    color: white;
+    background-color: rgb(98, 192, 229);
+  }
 }
 
 #popup-contact-bas {
@@ -86,25 +91,26 @@ font-size:x-large;
     z-index: 100;
     background-color: rgb(98, 192, 229);
 
-    .popup-contactGauche {
-        margin-right: 10px;
-        display: flex;
-        align-items: center;
-        
-    }
-    .popup-contactDroite {
-        display: flex;
-        align-items: center;
+  .popup-contactGauche {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
 
-        a {
-            padding: 10px 20px 10px 20px;
-            background-color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            color: rgb(98, 192, 229);
+  }
 
-        }
+  .popup-contactDroite {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding: 10px 20px 10px 20px;
+      background-color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      color: rgb(98, 192, 229);
+
     }
+  }
 
 }
 

@@ -1,62 +1,79 @@
+fetch('http://90.110.218.245:5003/api/avis')
+  .then(response => response.json())
+  .then(async data => {
+    let avis = data.data
+    for (let i = 0; i < avis.length; i++) {
+      const {
+        Dates,
+        Nom,
+        Course,
+        Securite,
+        Balisage,
+        Interets,
+        Services,
+        Parcours,
+        Commentaire,
+        Nbreponse,
+        Lire
+      } = avis[i].attributes
 
-fetch('scriptAvis.json') 
-    .then(res=>console.log(res))
+      const date = new Date(Dates)
+      const dateFormatted = new Intl.DateTimeFormat('fr-FR', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+      }).format(date)
 
-// for (let i = 0; i < avis.length; i++) {
+      const enfant = `
+      <article>
+      <p class="avisDate"><span>Date de Publication:</span> ${dateFormatted}</p>
+      <h2 class="avisNom"><span>Nom:</span> ${Nom}</h2>
+      <p class="avisType"><span>Itinéraire du Parcours:</span> ${Course}</p>
+      <div class="notesAvis">
+      <p>${Securite}</p>
+      <p>${Balisage}</p>
+      <p>${Interets}</p>
+      <p>${Services}</p>
+      <img src=${await rate([
+        Securite,
+        Balisage,
+        Interets,
+        Services
+      ])} id="avisRating" style="height:25px"/>
+      
+      </div>
+      <p class="avisParcours"><span>Type de Parcours:</span> ${Parcours}</p>
+      <p class="avisComment">${Commentaire}</p>
+      <p class="nombreReponse"><span>Nombre de Réponse:</span> ${Nbreponse}</p>
+      <a href="" className="avisLire"><span>${Lire}</span></a>
+      </article>
+      `
+      document.querySelector('.avisHtml').innerHTML += enfant
+    }
+  })
 
-//     const article = avis[i];
-//     // Récupération de l'élément du DOM qui accueillera les fiches
-//     const sectionFiches = document.querySelector(".avisHtml");
-//     // Création d’une balise dédiée à une pièce automobile
-//     const avisElement = document.createElement("article");
-//     // Création des balises 
-//     const datesElement = document.createElement("p");
-//     datesElement.innerText = article.Dates;
+function numAverage(a) {
+  let b = a.length,
+    c = 0,
+    i = 0
+  for (i = 0; i < b; i++) {
+    c += parseInt(a[i])
+  }
+  return c / b
+}
 
-//     const nomElement = document.createElement("h2");
-//     nomElement.innerText = article.Nom;
+async function rate(arr) {
+  const response = await fetch(
+    `http://90.110.218.245:5003/api/stars/${Math.trunc(
+      numAverage(arr) * 2 + 1
+    )}`
+  )
 
-//     const courseElement = document.createElement("p");
-//     courseElement.innerText = article.Course;
+  const data = await response.json()
 
-//     const securiteElement = document.createElement("p");
-//     securiteElement.innerText = article.Securite;
+  const rating = data.data.attributes.url
 
-//     const balisageElement = document.createElement("p");
-//     balisageElement.innerText = article.Balisage;
-
-//     const interetsElement = document.createElement("p");
-//     interetsElement.innerText = article.Interets;
-
-//     const servicesElement = document.createElement("p");
-//     servicesElement.innerText = article.Services;
-
-//     const parcoursElement = document.createElement("p");
-//     parcoursElement.innerText = article.Parcours;
-
-//     const commentaireElement = document.createElement("p");
-//     commentaireElement.innerText = article.Commentaire;
-
-//     const reponseElement = document.createElement("p");
-//     reponseElement.innerText = article.Nbreponse;
-
-//     const lireElement = document.createElement("p");
-//     lireElement.innerText = article.Lire;
-
-    
-
-    
-//     // On rattache la balise article a la section Fiches
-//     sectionFiches.appendChild(avisElement);
-//     avisElement.appendChild(datesElement);
-//     avisElement.appendChild(nomElement);
-//     avisElement.appendChild(courseElement);
-//     avisElement.appendChild(securiteElement);
-//     avisElement.appendChild(balisageElement);
-//     avisElement.appendChild(interetsElement);
-//     avisElement.appendChild(servicesElement);
-//     avisElement.appendChild(parcoursElement);
-//     avisElement.appendChild(commentaireElement);
-//     avisElement.appendChild(reponseElement);
-//     avisElement.appendChild(lireElement);
-//  }
+  return 'http://90.110.218.245:5003' + rating
+}

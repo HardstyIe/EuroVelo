@@ -95,11 +95,8 @@ article .milieuPage {
   }
 
   .titreListe {
-    position: absolute;
-    left: 68%;
-    top: 63%;
-
-    transform: translate(-50%, -50%);
+    position: relative;
+    right: 400px;
     background-color: white;
     padding: 20px;
     height: 60%;
@@ -177,14 +174,17 @@ aside {
 
 
 @media screen and (max-width: 1107px) {
-  .aligntoptext, p {
+
+  .aligntoptext,
+  p {
     display: flex;
     flex-direction: column;
     z-index: 1;
   }
-  article .milieuPage .titreListe ul li .traitorange{
-   display: flex;
-   flex-direction: column;
+
+  article .milieuPage .titreListe ul li .traitorange {
+    display: flex;
+    flex-direction: column;
 
   }
 }
