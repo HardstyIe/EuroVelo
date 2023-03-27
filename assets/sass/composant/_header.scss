@@ -85,7 +85,7 @@ header {
     display: flex;
     flex-direction: row;
     z-index: 2;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 
     .logoNav {
       width: 15%;
@@ -215,3 +215,4 @@ header {
       padding-right: 50px;
     }
   }
+}
