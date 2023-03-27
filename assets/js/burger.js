@@ -23,13 +23,23 @@
 
 const burgerMenu = document.querySelector('.ti-menu');
 const sidebar = document.querySelector('.sidebar');
+const closeBtn = document.querySelector('.sideClose');
 
 
 burgerMenu.addEventListener('click', function() {
   if (sidebar.style.display === 'none') {
     sidebar.style.display = 'flex';
+    sidebar.classList.toggle('active');
   } else {
     sidebar.style.display = 'none';
   }
 
+});
+
+closeBtn.addEventListener('click', function() {
+  if (sidebar.style.display === 'flex') {
+    sidebar.style.display = 'none'; 
+  } else {
+    sidebar.style.display = 'flex';
+  }
 });
