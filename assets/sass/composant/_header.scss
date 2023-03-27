@@ -30,6 +30,11 @@ header {
       padding: 15px;
     }
 
+    i:hover {
+      transition: 0.3s;
+      background-color: $color-secondary-greenGrass;
+    }
+
     a {
       color: #f4f4f4;
     }
@@ -50,6 +55,9 @@ header {
 
     a {
       color: #f4f4f4;
+    }
+    a:hover {
+      color: $color-secondary-greenGrass;
     }
   }
 
@@ -107,14 +115,14 @@ header {
 
     .ti-search {
       margin-right: 50px;
-      color: #0da249;
+      color: $color-secondary-greenGrass;
       font-size: 30px;
       cursor: pointer;
     }
 
     .ti-close {
       margin-right: 50px;
-      color: #0da249;
+      color: $color-secondary-greenGrass;
       font-size: 30px;
       cursor: pointer;
     }

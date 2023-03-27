@@ -18,13 +18,16 @@ nav {
       font-weight: bold;
     }
 
+    a:hover {
+      color: $color-secondary-greenGrass;
+    }
 
     .actuNav {
-      color: #db3e0e;
+      color: $color-secondary-red;
     }
 
     .passNav {
-      color: #0da249;
+      color: $color-secondary-greenGrass;
     }
   }
 }
