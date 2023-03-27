@@ -170,3 +170,23 @@
 .navInfoPratique {
     z-index: 3;
 }
+
+@media (max-width: 1100px) {
+    .boxInfoPratique {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 880px) {
+    .boxInfoPratique {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+    }
+
+    .texteInfoPratique {
+        left: 25%;
+    }
+}
+
