@@ -152,6 +152,8 @@ fetch(descmapURL)
       article.innerHTML = generateHTML
 
       container.append(article)
+
+      const article = document.querySelector('#informationMap')
     }
   })
 
