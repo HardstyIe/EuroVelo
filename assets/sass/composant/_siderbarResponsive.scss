@@ -1,8 +1,7 @@
 .sidebar {
     display: none;
-    width: 200px;
+    width: 200%;
     height: 100vh;
-    background-color: #ccc;
     position: fixed;
     top: 0;
     left: -200px;
@@ -12,3 +11,24 @@
   .sidebar.active {
     left: 0;
   }
+
+
+.ti-menu {
+    cursor: pointer;
+    display: none;
+    padding-left: 5%;
+    align-self: center;
+    font-size: 30px;
+    color: #231f20;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .ti-menu {
+        display: flex;
+        width: 25%;
+    }
+
+}
