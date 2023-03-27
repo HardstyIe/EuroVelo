@@ -28,9 +28,9 @@ fetch('http://90.110.218.245:5003/api/avis')
 
       const enfant = `
       <article>
-      <p class="avisDate">Date de Publication: ${dateFormatted}</p>
-      <h2 class="avisNom">Nom: ${Nom}</h2>
-      <p class="avisType">Itinéraire du Parcours: ${Course}</p>
+      <p class="avisDate"><span>Date de Publication:</span> ${dateFormatted}</p>
+      <h2 class="avisNom"><span>Nom:</span> ${Nom}</h2>
+      <p class="avisType"><span>Itinéraire du Parcours:</span> ${Course}</p>
       <div class="notesAvis">
       <p>${Securite}</p>
       <p>${Balisage}</p>
@@ -41,12 +41,13 @@ fetch('http://90.110.218.245:5003/api/avis')
         Balisage,
         Interets,
         Services
-      ])} class="avisRating"/>
+      ])} id="avisRating" style="height:25px"/>
+      
       </div>
-      <p class="avisParcours">Type de Parcours: ${Parcours}</p>
+      <p class="avisParcours"><span>Type de Parcours:</span> ${Parcours}</p>
       <p class="avisComment">${Commentaire}</p>
-      <p class="nombreReponse">${Nbreponse}</p>
-      <p class="boutonAvis">${Lire}</p>
+      <p class="nombreReponse"><span>Nombre de Réponse:</span> ${Nbreponse}</p>
+      <a href="" className="avisLire"><span>${Lire}</span></a>
       </article>
       `
       document.querySelector('.avisHtml').innerHTML += enfant

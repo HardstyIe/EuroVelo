@@ -3,11 +3,13 @@ body {
 }
 
 header {
-  position: absolute;
   width: 100%;
-  z-index: 2;
 }
 
+.sliderAbsolute {
+  position: absolute;
+  z-index: 200000;
+}
 
 .hautNav {
   display: flex;
@@ -130,13 +132,13 @@ header {
   form {
     width: 80%;
 
-      input {
-        width: 100%;
-        margin-left: 5%;
-        padding-bottom: 5px;
-        border-bottom: 0.5px solid white;
-      }    
-  }  
+    input {
+      width: 100%;
+      margin-left: 5%;
+      padding-bottom: 5px;
+      border-bottom: 0.5px solid white;
+    }
+  }
 
   .boutonBarre {
     font-size: 30px;
