@@ -1,3 +1,40 @@
+// nav {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+//   align-items: center;
+//   list-style: none;
+
+
+//   li {
+//     margin: 0 10px;
+//     display: inline-flex;
+
+//     a {
+//       display: block;
+//       padding: 10px;
+//       color: #000;
+//       text-decoration: none;
+//       font-weight: bold;
+//     }
+
+//     a:hover {
+//       color: $color-secondary-greenGrass;
+//     }
+
+//     .actuNav {
+//       color: $color-secondary-red;
+//     }
+
+//     .passNav {
+//       color: $color-secondary-greenGrass;
+//     }
+//   }
+// }
+
+
+
+
 nav {
   display: flex;
   flex-direction: row;
