@@ -1,0 +1,14 @@
+.sidebar {
+    display: none;
+    width: 200px;
+    height: 100vh;
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }

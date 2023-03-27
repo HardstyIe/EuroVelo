@@ -10,4 +10,14 @@ document.querySelector('#open-menu').addEventListener('click', () => {
   }
 })
 
+/////////////////////////////////////////////////////////////////////////////////////////
+
+const menuBurger = document.querySelector('.btn-burger');
+const sidebar = document.querySelector('.sidebar');
+
+menuBurger.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+
+
 
