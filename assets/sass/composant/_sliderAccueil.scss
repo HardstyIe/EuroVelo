@@ -9,6 +9,7 @@
   --swiper-pagination-bullet-inactive-opacity: 1;
 
   .swiper-wrapper {
+    filter: brightness(0.7);
     height: 95vh;
   }
 
@@ -29,7 +30,7 @@
     flex-direction: column;
     justify-items: center;
     text-align: center;
-    z-index: 1;
+    z-index: 3;
 
     h1 {
       font-size: 60px;
@@ -78,7 +79,7 @@
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 50px 10px;
     background-position: center;
     background-size: cover;
@@ -183,7 +184,7 @@
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 50px 10px;
     background-position: center;
     background-size: cover;
