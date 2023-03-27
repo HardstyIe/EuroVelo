@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!--Mettre la nword-->
+  <!--Mettre la navbar-->
   <header id="navigation">
 
     <div class="hautNav" id="hautNav">
@@ -91,6 +91,10 @@
         <a href="#"><i class="ti-search"></i></a>
       </div>
     </div>
+  </header>
+  <!-- Fin de la navbar -->
+
+  <main>
   <!-- La classe topPage représente le haut de la page -->
   <div class="topPage">
     <h1>Devenir Accueil Vélo</h1>
@@ -104,6 +108,7 @@
   
 
     <article>
+      <!-- Ici on met l'image et le bloc de texte qui devra se situer en partie sur l'image -->
       <div class="milieuPage">
         <img src="../images/a-propos/devenir-accueil-velo.jpg" alt="Photo de présentation Accueil Velo">
 
@@ -123,7 +128,7 @@
       </div>
 
     </article>
-  
+  <!-- Listes se situants en bas de la page -->
   <div class="basDePage">
     <h3>Puis-je devenir Accueil Vélo ?</h3>
     <div class="espaceTitreBas"></div>
@@ -165,35 +170,34 @@
         bienvenue, adhésifs)</li>
     </ol>
   </aside>
-</header>
+
+
 
   <!-- Partie de page "quiSommeNous" -->
   <article class="quiSommeNous">
+    <div class="backdrop_quiSommeNous">
 
-    <!-- DIV pour pouvoir appliquer l'image en fond -->
-    <div class="imageDeFondQuiSommeNous"></div>
-
-    <!-- Partie contenant les images, le texte et les liens -->
-    <div class="ensembleTexteQuiSommeNous">
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
 
         <!-- DIV contenant les images -->
         <div class="imagesQuiSommeNous">
 
-            <!-- Images avec les étoiles -->
-            <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+          <!-- Images avec les Ã©toiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
 
-            <!-- DIV contenant les images liens -->
-            <div class="logoQuiSommeNous">
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
 
-                <!-- Lien image facebook -->
-                <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
-                        alt="logo facebook"></a>
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
+                alt="logo facebook"></a>
 
-                <!-- Lien image instagram -->
-                <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
-                        alt="logo instagram"></a>
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
 
-            </div>
+          </div>
 
         </div>
 
@@ -201,31 +205,30 @@
         <!-- Partie contenant le texte et les liens -->
         <section class="deuxiemePartiQuiSommeNous">
 
-            <!-- DIV contenant le titre et le texte -->
-            <div class="texteQuiSommeNous">
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
 
-                <h2>Qui sommes-nous?</h2>
+            <h2>Qui sommes-nous?</h2>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore magni perferendis velit
-                    laborum id?</p>
+            <p>L'eurovélo 5 est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une ambition commune : positionner l'eurovélo 5 comme un itinéraire d'excellence du tourisme à vélo en France et à travers l'Europe.</p>
 
-            </div>
+          </div>
 
-            <!-- DIV contenant les liens -->
-            <div class="liensQuiSommeNous">
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
 
-                <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
 
-                <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
 
-            </div>
+          </div>
 
         </section>
-
+      </div>
     </div>
 
-</article>
-
+  </article>
+</main>
 <!--Mettre le footer-->
 <footer>
   <div class="footerPartiGauche">
@@ -249,7 +252,7 @@
     </div>
   </div>
 </footer>
-
+<!-- Mettre les balises script pour lier le HTML aux fichiers JavaScript -->
 
 
   <script src="../EuroVelo/assets/js/slider.js"></script>
@@ -260,4 +263,5 @@
 </body>
 
 </html>
-
+<!-- Fin de la page -->
+<!-- 2 "warning" au w3c validator, pas d'erreurs. -->
