@@ -1,9 +1,9 @@
-var map = L.map('map').setView([50.7606273570878, 2.2339190414235413], 10);
-const mapURL= "http://62.4.21.200:1337"
-const allURL= "http://62.4.21.200:1337/api/infos-maps?populate=*";
-const descmapURL= "http://62.4.21.200:1337/api/description-maps?populate=*";
-const url = "http://62.4.21.200:1337/uploads/map_b35ed6785e.xml";
-const temoinURL= 'http://62.4.21.200:1337/api/testimonies?populate=*';
+var map = L.map('map').setView([50.7606273570878, 2.2339190414235413], 10)
+const mapURL = 'http://62.4.21.200:1337'
+const allURL = 'http://62.4.21.200:1337/api/infos-maps?populate=*'
+const descmapURL = 'http://62.4.21.200:1337/api/description-maps?populate=*'
+const url = 'http://62.4.21.200:1337/uploads/map_b35ed6785e.xml'
+const temoinURL = 'http://62.4.21.200:1337/api/testimonies?populate=*'
 
 // L.tileLayer('https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey={apikey}', {
 //     attribution: '&copy; CTRLS all right reserved',
@@ -11,99 +11,99 @@ const temoinURL= 'http://62.4.21.200:1337/api/testimonies?populate=*';
 //     maxZoom: 22
 //   }).addTo(map);
 
-
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+L.tileLayer(
+  'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png',
+  {
     attribution: '&copy; CTRLS all rights reserved',
     maxZoom: 22
-  }).addTo(map);
-
+  }
+).addTo(map)
 
 fetch(allURL)
   .then(response => response.json())
   .then(data => {
-    for (let i = 0; i < data.meta.pagination.total; i++) {      
-    
+    for (let i = 0; i < data.meta.pagination.total; i++) {
       gpx = mapURL + data.data[i].attributes.coordinate.data.attributes.url
       new L.GPX(gpx, {
-        async: true, 
+        async: true,
         gpx_options: {
-            joinTrackSegments: false
-          },
-          marker_options: {
-            startIconUrl: null,
-            endIconUrl: null,
-            shadowUrl: null,
-            iconSize: [20,30]
-          },
-          polyline_options: {
-            color: 'orange',
-            weight: 8,
-            
-          }
+          joinTrackSegments: false
+        },
+        marker_options: {
+          startIconUrl: null,
+          endIconUrl: null,
+          shadowUrl: null,
+          iconSize: [20, 30]
+        },
+        polyline_options: {
+          color: 'orange',
+          weight: 8
+        }
+      })
+        .on('loaded', function () {
+          map.setView([50.7606273570878, 2.2339190414235413], 10)
         })
-        .on('loaded', function() {
-        map.setView([50.7606273570878, 2.2339190414235413], 10)
-      })
-      .on('mouseover', function() {
-        this.setStyle({
-            color: '#e5b9d5' 
-        });
-      })
-      .on('mouseout', function() {
-        this.setStyle({
+        .on('mouseover', function () {
+          this.setStyle({
+            color: '#e5b9d5'
+          })
+        })
+        .on('mouseout', function () {
+          this.setStyle({
             color: 'orange'
-        });
-      })
-      .on('click', function(e){
-        resetClass()
-        map.fitBounds(e.target.getBounds());
-        hoverSegment(data.data[i].id)
-        findMapDescByID(data.data[i].id)
-        this.setStyle({
-          color: '#e5b9d5' 
-      });
-      })
-  .addTo(map);
-}})
-
-
-
-
-
-function hoverSegment(e){
-  fetch(descmapURL)
-  .then(response => response.json())
-  .then(data => {
-    for (let i = 0; i < data.meta.pagination.total; i++) {
-      if(data.data[i].attributes.id_infos == e){
-        $(".itineraire-map-informations-second-section").removeClass("hidden");
-        $(".itineraire-map-informations-first-section").addClass("hidden");
-      }
+          })
+        })
+        .on('click', function (e) {
+          resetClass()
+          map.fitBounds(e.target.getBounds())
+          hoverSegment(data.data[i].id)
+          findMapDescByID(data.data[i].id)
+          this.setStyle({
+            color: '#e5b9d5'
+          })
+        })
+        .addTo(map)
     }
   })
+
+function hoverSegment(e) {
+  fetch(descmapURL)
+    .then(response => response.json())
+    .then(data => {
+      for (let i = 0; i < data.meta.pagination.total; i++) {
+        if (data.data[i].attributes.id_infos == e) {
+          $('.itineraire-map-informations-second-section').removeClass('hidden')
+          $('.itineraire-map-informations-first-section').addClass('hidden')
+        }
+      }
+    })
 }
 
-function clickArticle(e){
-  hoverSegment(e);
-  findMapDescByID(e);
+function clickArticle(e) {
+  hoverSegment(e)
+  findMapDescByID(e)
 }
 
-let container = document.querySelector(".itineraire-map-informations")
+let container = document.querySelector('.itineraire-map-informations')
 
 fetch(descmapURL)
   .then(response => response.json())
-  .then(data =>{
-
+  .then(data => {
     for (let i = 0; i < data.meta.pagination.total; i++) {
+      let article = document.createElement('div')
 
-      let article = document.createElement("div")
-      
       let generateHTML = `
       
-      <article class="itineraire-map-informations-section" onclick="clickArticle(${data.data[i].attributes.id_infos})">
+      <article class="itineraire-map-informations-section" onclick="clickArticle(${
+        data.data[i].attributes.id_infos
+      })">
                 <div class="itineraire-map-informations-global-div">
                     <div class="itineraire-map-informations-image-div">
-                        <img src="${mapURL + data.data[i].attributes.image.data.attributes.formats.thumbnail.url}" alt="" class="itineraire-map-informations-image">
+                        <img src="${
+                          mapURL +
+                          data.data[i].attributes.image.data.attributes.formats
+                            .thumbnail.url
+                        }" alt="" class="itineraire-map-informations-image">
                     </div>
                     <div class="itineraire-map-informations-text-global">
                         <div class="itineraire-map-informations-habitude">
@@ -112,13 +112,33 @@ fetch(descmapURL)
                             </span>
                         </div>
                         <div class="itineraire-map-informations-difficulte">
-                            <span class="itineraire-map-informations-difficulte-habitude ${data.data[i].attributes.habitude_nb == 1 ? "itineraire-map-informations-difficulte-habitude-blue": data.data[i].attributes.habitude_nb == 2 ? "itineraire-map-informations-difficulte-habitude-red": "itineraire-map-informations-difficulte-habitude-green"}">
-                            ${data.data[i].attributes.habitude_nb == 1 ? "J'ai l'habitude": data.data[i].attributes.habitude_nb == 2 ? "Je me dépasse": "Je débute / En famille"}
-                            <span class="dot ${data.data[i].attributes.habitude_nb == 1 ? "dot-blue": data.data[i].attributes.habitude_nb == 2 ? "dot-red": "dot-green"}"></span>
+                            <span class="itineraire-map-informations-difficulte-habitude ${
+                              data.data[i].attributes.habitude_nb == 1
+                                ? 'itineraire-map-informations-difficulte-habitude-blue'
+                                : data.data[i].attributes.habitude_nb == 2
+                                ? 'itineraire-map-informations-difficulte-habitude-red'
+                                : 'itineraire-map-informations-difficulte-habitude-green'
+                            }">
+                            ${
+                              data.data[i].attributes.habitude_nb == 1
+                                ? "J'ai l'habitude"
+                                : data.data[i].attributes.habitude_nb == 2
+                                ? 'Je me dépasse'
+                                : 'Je débute / En famille'
+                            }
+                            <span class="dot ${
+                              data.data[i].attributes.habitude_nb == 1
+                                ? 'dot-blue'
+                                : data.data[i].attributes.habitude_nb == 2
+                                ? 'dot-red'
+                                : 'dot-green'
+                            }"></span>
                             </span>
                         </div>
                         <h2>
-                            <a href="#">${data.data[i].attributes.depart} > ${data.data[i].attributes.arrive}</a>
+                            <a href="#">${data.data[i].attributes.depart} > ${
+        data.data[i].attributes.arrive
+      }</a>
                         </h2>
                         <p class="itineraire-map-informations-description">
                         ${data.data[i].attributes.description}
@@ -130,38 +150,34 @@ fetch(descmapURL)
       `
 
       article.innerHTML = generateHTML
-      
+
       container.append(article)
     }
-
   })
 
+let container2 = document.querySelector(
+  '.itineraire-map-informations-second-section'
+)
 
-
-let container2 = document.querySelector(".itineraire-map-informations-second-section")
-
-
-  function findMapDescByID(e){
-
-  
+function findMapDescByID(e) {
   fetch(descmapURL)
-  .then(response => response.json())
-  .then(data =>{
+    .then(response => response.json())
+    .then(data => {
+      for (let i = 0; i < data.meta.pagination.total; i++) {
+        if (e == data.data[i].attributes.id_infos) {
+          let article = document.createElement('div')
+          article.setAttribute('id', 'itineraire-map-informations-tempdiv')
 
-    for (let i = 0; i < data.meta.pagination.total; i++) {
-      if(e == data.data[i].attributes.id_infos){
-
-      let article = document.createElement("div")
-      article.setAttribute('id','itineraire-map-informations-tempdiv')
-      
-      let generateHTML = `
+          let generateHTML = `
       <div class="itineraire-map-informations-second-section-header">
                 <a href="#" id="back-arrow" class="itineraire-map-informations-second-section-backarrow" onclick="resetClass()">
                 <i class="fa-solid fa-arrow-left-long"></i>
                 </a>
                 <div>
                     <h2>
-                        ${data.data[i].attributes.depart} > ${data.data[i].attributes.arrive}
+                        ${data.data[i].attributes.depart} > ${
+            data.data[i].attributes.arrive
+          }
                     <a href="#">L'EuroVelo</a>
                     </h2>
                 </div>
@@ -183,8 +199,20 @@ let container2 = document.querySelector(".itineraire-map-informations-second-sec
           
           <div class="itineraire-map-informations-second-body actif">
         
-            <div class="itineraire-map-informations-second-body-theme ${data.data[i].attributes.habitude_nb == 1 ? "itineraire-map-informations-difficulte-habitude-blue": data.data[i].attributes.habitude_nb == 2 ? "itineraire-map-informations-difficulte-habitude-red": "itineraire-map-informations-difficulte-habitude-green"}">
-                <span>${data.data[i].attributes.habitude_nb == 1 ? "J'ai l'habitude": data.data[i].attributes.habitude_nb == 2 ? "Je me dépasse": "Je débute / En famille"}
+            <div class="itineraire-map-informations-second-body-theme ${
+              data.data[i].attributes.habitude_nb == 1
+                ? 'itineraire-map-informations-difficulte-habitude-blue'
+                : data.data[i].attributes.habitude_nb == 2
+                ? 'itineraire-map-informations-difficulte-habitude-red'
+                : 'itineraire-map-informations-difficulte-habitude-green'
+            }">
+                <span>${
+                  data.data[i].attributes.habitude_nb == 1
+                    ? "J'ai l'habitude"
+                    : data.data[i].attributes.habitude_nb == 2
+                    ? 'Je me dépasse'
+                    : 'Je débute / En famille'
+                }
                 </span>
 
                 </div>
@@ -197,9 +225,27 @@ let container2 = document.querySelector(".itineraire-map-informations-second-sec
                 </div>
                 <div class="itineraire-map-informations-second-body-infos-difficulte">
                     <div class="niveau-difficulte">
-                        <span class="${data.data[i].attributes.habitude_nb == 1 ? "itineraire-map-informations-difficulte-habitude-blue": data.data[i].attributes.habitude_nb == 2 ? "itineraire-map-informations-difficulte-habitude-red": "itineraire-map-informations-difficulte-habitude-green"}">
-                        <span>${data.data[i].attributes.habitude_nb == 1 ? "J'ai l'habitude": data.data[i].attributes.habitude_nb == 2 ? "Je me dépasse": "Je débute / En famille"}
-                            <span class="dot ${data.data[i].attributes.habitude_nb == 1 ? "dot-blue": data.data[i].attributes.habitude_nb == 2 ? "dot-red": "dot-green"}"></span>
+                        <span class="${
+                          data.data[i].attributes.habitude_nb == 1
+                            ? 'itineraire-map-informations-difficulte-habitude-blue'
+                            : data.data[i].attributes.habitude_nb == 2
+                            ? 'itineraire-map-informations-difficulte-habitude-red'
+                            : 'itineraire-map-informations-difficulte-habitude-green'
+                        }">
+                        <span>${
+                          data.data[i].attributes.habitude_nb == 1
+                            ? "J'ai l'habitude"
+                            : data.data[i].attributes.habitude_nb == 2
+                            ? 'Je me dépasse'
+                            : 'Je débute / En famille'
+                        }
+                            <span class="dot ${
+                              data.data[i].attributes.habitude_nb == 1
+                                ? 'dot-blue'
+                                : data.data[i].attributes.habitude_nb == 2
+                                ? 'dot-red'
+                                : 'dot-green'
+                            }"></span>
 
                         </span>
                     </div>
@@ -209,7 +255,11 @@ let container2 = document.querySelector(".itineraire-map-informations-second-sec
 
 
             <div class="itineraire-map-informations-second-body-img-div">
-                       <img src="${mapURL + data.data[i].attributes.image.data.attributes.formats.thumbnail.url}" alt="" class="itineraire-map-informations-second-body-img">
+                       <img src="${
+                         mapURL +
+                         data.data[i].attributes.image.data.attributes.formats
+                           .thumbnail.url
+                       }" alt="" class="itineraire-map-informations-second-body-img">
                     </div>
                     <div class="itineraire-map-informations-second-body-depart-arrive">
                        <div class="itineraire-map-informations-second-body-depart">
@@ -284,7 +334,11 @@ let container2 = document.querySelector(".itineraire-map-informations-second-sec
                     </div>
         
                     <div class="itineraire-map-avis-div-img">
-                      <img src="${mapURL + data.data[i].attributes.image.data.attributes.formats.thumbnail.url}" class="itineraire-map-avis-img">
+                      <img src="${
+                        mapURL +
+                        data.data[i].attributes.image.data.attributes.formats
+                          .thumbnail.url
+                      }" class="itineraire-map-avis-img">
                     </div>
                   
                   </div>
@@ -295,7 +349,9 @@ let container2 = document.querySelector(".itineraire-map-informations-second-sec
                 <div class="itineraire-map-avis-comments-avis-title">
                   <h2>L'avis des voyageurs</h2>
                   <div class="itineraire-map-avis-comments-avis-soustitre">
-                  sur ${data.data[i].attributes.depart} / ${data.data[i].attributes.arrive}
+                  sur ${data.data[i].attributes.depart} / ${
+            data.data[i].attributes.arrive
+          }
                   </div>
                 </div>
                 <div class="itineraire-map-avis-comments-avis-comments">
@@ -365,18 +421,17 @@ let container2 = document.querySelector(".itineraire-map-informations-second-sec
                    </div>
               </div>
 `
-      article.innerHTML = generateHTML
-      
-      container2.append(article)
-    }
-  }
-  })
+          article.innerHTML = generateHTML
+
+          container2.append(article)
+        }
+      }
+    })
 }
 
-function resetClass(){
+function resetClass() {
   const e = document.getElementById('itineraire-map-informations-tempdiv')
-  if(e)
-  e.remove();
-    $(".itineraire-map-informations-second-section").addClass("hidden");
-    $(".itineraire-map-informations-first-section").removeClass("hidden");
+  if (e) e.remove()
+  $('.itineraire-map-informations-second-section').addClass('hidden')
+  $('.itineraire-map-informations-first-section').removeClass('hidden')
 }
