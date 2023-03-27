@@ -22,7 +22,7 @@ html {
 margin: 100px;
 }
 
-.boutonsParcous {
+.boutonsParcours {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,10 +77,12 @@ margin: 100px;
       height: 100%;
       object-fit: cover;
       cursor: pointer;
+      z-index: 1;
       
       img:hover {
         filter: blur(4px);
       }
+
 #heart {
   height: 20px;
   width: 20px;
@@ -103,25 +105,28 @@ margin: 100px;
         position: relative;
         top: 50px;
         border: 1px solid;
-        background-color: white;
-        border-color: white;
+        background-color: $color-secondary-orange;
+        border-color: $color-secondary-orange;
         transform: translateX(200%);
         z-index: 3;
+        color: white;
       }
 
       .dureeSejour {
         position: relative;
         top: 50px;
-        background-color: white;
-        border-color: white;
+        border: 1px solid;
+        background-color: $color-secondary-orange;
+        border-color: $color-secondary-orange;
         transform: translateX(100%);
         z-index: 3;
+        color: white;
 
       }
 
       img {
         width: 100%;
-        height: 100%;
+        height: 80%;
         object-fit: cover;
         position: relative;
         top: 10px;
@@ -130,4 +135,179 @@ margin: 100px;
     }
   }
 } 
- 
+ //Deuxième partie
+ .secondGrid {
+  .mirrorMid {
+    display: flex;
+    justify-content: space-around;
+  }
+   h3 {
+    padding-left: 30px;
+   }
+   a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 30px;
+   }
+  
+  .gridMid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 500px);
+    grid-gap: 20px;
+    justify-content: space-evenly;
+  
+    .grid-itemMid {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      z-index: 1;
+      
+      img:hover {
+        filter: blur(4px);
+      }
+
+#heart {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 50px;
+  left: 70%;
+  z-index: 3;
+}
+
+#heartDeux {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 50px;
+  left: 55%;
+  z-index: 3;
+}
+
+      .alasemaine {
+        position: relative;
+        top: 50px;
+        border: 1px solid;
+        background-color: $color-secondary-orange;
+        border-color: $color-secondary-orange;
+        transform: translateX(200%);
+        z-index: 3;
+        color: white;
+      }
+
+      .dureeSejour {
+        position: relative;
+        top: 50px;
+        border: 1px solid;
+        background-color: $color-secondary-orange;
+        border-color: $color-secondary-orange;
+        transform: translateX(100%);
+        z-index: 3;
+        color: white;
+
+      }
+
+      img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+} 
+
+//Dernière partie : 
+.thirdGrid {
+  .mirrorEnd {
+    display: flex;
+    justify-content: space-around;
+  }
+   h4 {
+    padding-left: 30px;
+   }
+   a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 30px;
+   }
+  
+  .gridEnd {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 500px);
+    grid-gap: 20px;
+    justify-content: space-evenly;
+  
+    .grid-itemEnd {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      z-index: 1;
+      
+      img:hover {
+        filter: blur(4px);
+      }
+
+#heart {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 50px;
+  left: 70%;
+  z-index: 3;
+}
+
+#heartDeux {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 50px;
+  left: 55%;
+  z-index: 3;
+}
+
+      .alasemaine {
+        position: relative;
+        top: 50px;
+        border: 1px solid;
+        background-color: $color-secondary-orange;
+        border-color: $color-secondary-orange;
+        transform: translateX(200%);
+        z-index: 3;
+        color: white;
+      }
+
+      .dureeSejour {
+        position: relative;
+        top: 50px;
+        border: 1px solid;
+        background-color: $color-secondary-orange;
+        border-color: $color-secondary-orange;
+        transform: translateX(100%);
+        z-index: 3;
+        color: white;
+
+      }
+
+      img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+} 
+
