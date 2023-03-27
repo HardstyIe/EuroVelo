@@ -14,16 +14,14 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <link rel="stylesheet" href="/assets/sass/main.css" />
-  <title>Document</title>
+  <title>Info pratique</title>
 </head>
 
 <body>
 
+  <header id="navigation" class="navInfoPratique">
 
-
-  <!-- <header id="navigation">
-
-    <div class="hautNav" id="hautNav">
+    <div class="hautNav" id="hautNavMention">
 
       <div class="hautNavGauche">
         <div class="lienReseaux">
@@ -37,19 +35,11 @@
             <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
           </div>
         </div>
-        <form class="submitNav">
-          <div class="formNewsletter">
-            <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
-            <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
-            <div class="inscritNav">
-              <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
-            </div>
-          </div>
-        </form>
+        
       </div>
 
       <div class="hautNavDroite">
-        <div class="lienPersoNav">
+        <div class="lienPersoNav" id="lienPersoNavMention">
           <a href="">Espace pro</a>
           <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
           <a href="">Espace personnel</a>
@@ -70,7 +60,7 @@
           <ul>
             <li><a href="#">L'ITINERAIRE</a></li>
             <li><a href="#">TEMOIGNAGES</a></li>
-            <li><a href="#">INFOS PRATIQUES</a></li>
+            <li><a href="/assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
             <li><a href="#">SUGGESTIONS</a></li>
             <li><a href="#">INSPIRATIONS</a></li>
             <li>
@@ -99,338 +89,351 @@
     </div>
 
 
-  </header> -->
+  </header>
 
-  <main>
+  <main class="mainInfoPratique">
 
     <article>
 
-      <h1>Infos pratiques</h1>
+        <h1 class="titreInfoPratique">Infos pratiques</h1>
 
-      <section>
+        <section class="boxInfoPratique">
 
-        <div class="imagesLiensInfoPratique">
+            <div class="box1InfoPratique">
 
-          <div class="box1InfoPratique">
+                <a href="">
 
-            <a href="">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/presentation.png" alt="">
 
-              <div class="imageInfoGeneralesInfoPratique">
+                    <div>
 
-                <p>Information générales</p>
+                        <p class="texte3InfoPratique">Information générales</p>
 
-                <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+                        <h2 class="h2InfoPratique2">Présentation de l'itinéraire EuroVelo 5</h2>
 
-                <h2>Présentation de l'itinéraire EuroVelo 5</h2>
+                    </div>
 
-              </div>
-
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="box2InfoPratique">
-
-          <a href="">
-
-            <div class="imageseGuider1InfoPratique">
-
-              <p>Se guider</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Guides et Cartes</h2>
+                </a>
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
-        </div>
+                <a href="">
 
-        <div class="box3InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/carteVeloHDF.png" alt="">
 
-          <a href="">
+                    <div>
 
-            <div class="imageHebergementsInfoPratique">
+                        <p class="texteInfoPratique">Se guider</p>
 
-              <p>Hébergement</p>
+                        <h2 class="h2InfoPratique">Guides et Cartes</h2>
 
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+                    </div>
 
-              <h2>Où dormir</h2>
-
-            </div>
-
-          </a>
-
-        </div>
-
-        <div class="box4InfoPratique">
-
-          <a href="" >
-
-            <div class="imageService1InfoPratique">
-
-              <p>Service</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Louer un vélo</h2>
+                </a>
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
-        </div>
+                <a href="">
 
-        <div class="box5InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/oudormir.png" alt="">
 
-          <a href="" class="imageOrganisationInfoPratique">
+                    <div>
 
-            <div>
+                        <p class="texteInfoPratique">Hébergement</p>
 
-              <p>Organisation</p>
+                        <h2 class="h2InfoPratique">Où dormir</h2>
 
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+                    </div>
 
-              <h2>Comment organiser son voyage à vélo?</h2>
-
-            </div>
-
-          </a>
-
-        </div>
-
-        <div class="box6InfoPratique">
-
-          <a href="" class="imagePratique1InfoPratique">
-
-            <div>
-
-              <p>Pratique</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Foire Aux Questions</h2>
+                </a>
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
-        </div>
+                <a href="">
 
-        <div class="box7InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/louervelo.png" alt="">
 
-          <a href="">
-
-            <div class="imagePratique2InfoPratique">
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Accéder à l'itinéraire</h2>
-
-              <p>Pratique</p>
-
-              <p>
-                (En train, en bus, avion, voiture, bateau)
-              </p>
+                    <div>
+      
+                      <p class="texteInfoPratique">Service</p>
+                
+                      <h2 class="h2InfoPratique">Louer un vélo</h2>
+      
+                    </div>
+      
+                  </a>
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
-        </div>
+                <a href="">
 
-        <div class="box8InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/organiser.png" alt="">
 
-          <a href="">
-
-            <div class="imageseGuider2InfoPratique">
-
-              <p>Se guider</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Les traces GPS</h2>
-
-            </div>
-
-          </a>
-
-        </div>
-
-        <div class="box9InfoPratique">
-
-          <a href="">
-
-            <div class="imageService2InfoPratique">
-
-              <p>Service</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Service porte-vélo entre Calais et la Belgique</h2>
+                    <div>
+      
+                      <p class="texteInfoPratique">Organisation</p>
+                
+                      <h2 class="h2InfoPratique">Comment organiser son voyage à vélo?</h2>
+      
+                    </div>
+      
+                  </a>
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
-        </div>
+                <a href="">
 
-        <div class="box10InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/faq.png" alt="">
 
-          <a href="">
-
-            <div class="imageService3InfoPratique">
-
-              <p>Service</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Transfert de bagages, vélos et personnes</h2>
-
-            </div>
-
-          </a>
-
-        </div>
-
-        <div class="box11InfoPratique">
-
-          <a href="">
-
-            <div class="imageService4InfoPratique">
-
-              <p>Service</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Séjours clés en main</h2>
+                    <div>
+      
+                      <p class="texteInfoPratique">Pratique</p>
+                
+                      <h2 class="h2InfoPratique">Foire Aux Questions</h2>
+      
+                    </div>
+      
+                  </a> 
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
-        </div>
+                <a href="">
 
-        <div class="box12InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/gps.png" alt="">
 
-          <a href="">
-
-            <div class="imageTemoignagesInfoPratique">
-
-              <p>Témoignages</p>
-
-              <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-              <h2>Retour d'expériences</h2>
+                    <div>
+      
+                      <p class="texteInfoPratique">Se guider</p>
+                
+                      <h2 class="h2InfoPratique">Les traces GPS</h2>
+      
+                    </div>
+      
+                  </a>          
 
             </div>
 
-          </a>
+            <div class="box2InfoPratique">
 
+                <a href="">
 
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/porte-velo.png" alt="">
 
-          <div class="box13InfoPratique">
+                    <div>
+      
+                      <p class="texteInfoPratique">Service</p>
+                
+                      <h2 class="h2InfoPratique">Service porte-vélo entre Calais et la Belgique</h2>
+      
+                    </div>
+      
+                  </a>
 
-            <a href="">
+            </div>
 
-              <div class="imageActualites1InfoPratique">
+            <div class="box2InfoPratique">
 
-                <p>Actualités</p>
+                <a href="">
 
-                <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/32114475218_076e0ba288_o.png" alt="">
 
-                <h2>Aménagements récents</h2>
+                    <div>
+      
+                      <p class="texteInfoPratique">Service</p>
+                
+                      <h2 class="h2InfoPratique">Séjours clés en main</h2>
+      
+                    </div>
+      
+                  </a>
 
-              </div>
+            </div>
 
-            </a>
+            <div class="box2InfoPratique">
 
-          </div>
+                <a href="">
 
-          <div class="box14InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/VisiteVelodejour_H0001.png" alt="">
 
-            <a href="">
+                    <div>
+      
+                      <p class="texteInfoPratique">Témoignages</p>
+                
+                      <h2 class="h2InfoPratique">Retour d'expériences</h2>
+      
+                    </div>
+      
+                  </a>
 
-              <div class="imagePratique3InfoPratique">
+            </div>
 
-                <p>Pratique</p>
+            <div class="box2InfoPratique">
 
-                <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+                <a href="">
 
-                <h2>Signalez / consultez des anomalies sur l'EuroVelo 5</h2>
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/amenagement.png" alt="">
 
-              </div>
+                    <div>
+      
+                      <p class="texteInfoPratique">Actualités</p>
+                
+                      <h2 class="h2InfoPratique">Aménagements récents</h2>
+      
+                    </div>
+      
+                  </a>
 
-            </a>
+            </div>
 
-          </div>
+            <div class="box2InfoPratique">
 
-          <div class="box15InfoPratique">
+                <a href="">
 
-            <a href="">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/signalement_avec_logo.png" alt="">
 
-              <div class="imageActualites2InfoPratique">
+                    <div>
+      
+                      <p class="texteInfoPratique">Pratique</p>
+                
+                      <h2 class="h2InfoPratique4">Signalez / consultez des anomalies sur l'EuroVelo 5</h2>
+      
+                    </div>
+      
+                  </a>
 
-                <p>Actualités</p>
+            </div>
 
-                <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+            <div class="box2InfoPratique">
 
-                <h2>Travaux en cours</h2>
+                <a href="">
 
-              </div>
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/infos-travaux.png" alt="">
 
-            </a>
+                    <div>
+      
+                      <p class="texteInfoPratique">Actualités</p>
+                
+                      <h2 class="h2InfoPratique">Travaux en cours</h2>
+      
+                    </div>
+      
+                  </a>
 
-          </div>
+            </div>
 
-          <div class="box16InfoPratique">
+            <div class="box2InfoPratique">
 
-            <a href="">
+                <a href="">
 
-              <div class="imagePratique4InfoPratique">
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/utileSurPlace.png" alt="">
 
-                <p>Pratique</p>
+                    <div>
+      
+                      <p class="texteInfoPratique">Pratique</p>
+                
+                      <h2 class="h2InfoPratique">Infos utiles sur place</h2>
+      
+                    </div>
+      
+                  </a>
 
-                <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
+            </div>
 
-                <h2>Infos utiles sur place</h2>
+            <div class="box2InfoPratique">
 
-              </div>
+                <a class="lienInfoPratique" href="">
 
-            </a>
+                    <img class="imagesInfoPratique" src="/assets/images/infoPratiques/itineraires-connectes.png" alt="">
 
-          </div>
+                    <div>
+      
+                      <p class="texteInfoPratique">Service</p>
+                
+                      <h2 class="h2InfoPratique3">Les itinéraires connectés à l'EuroVelo 5</h2>
+      
+                    </div>
+      
+                  </a>
 
-          <div class="box17InfoPratique">
+            </div>
 
-            <a href="">
-
-              <div class="imagePratique5InfoPratique">
-
-                <p>Service</p>
-
-                <img src="/assets/images/logos/coeur.png" alt="image d'un coeur">
-
-                <h2>Les itinéraires connectés à l'EuroVelo 5</h2>
-
-              </div>
-
-            </a>
-
-          </div>
-
-        </div>
-      </section>
+        </section>
 
     </article>
 
-  </main>
+</main>
 
-  <footer>
+
+  <!-- Partie de page "quiSommeNous" -->
+  <article class="quiSommeNous">
+    <div class="backdrop_quiSommeNous">
+
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
+
+        <!-- DIV contenant les images -->
+        <div class="imagesQuiSommeNous">
+
+          <!-- Images avec les étoiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
+
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
+                alt="logo facebook"></a>
+
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Partie contenant le texte et les liens -->
+        <section class="deuxiemePartiQuiSommeNous">
+
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
+
+            <h2>Qui sommes-nous?</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore magni perferendis velit
+              laborum id?</p>
+
+          </div>
+
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
+
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </article>
+
+  <footer class="footerInfoPratique">
     <div class="footerPartiGauche">
       <ul>
         <li><a href="">Espace pro / presse</a></li>
@@ -450,7 +453,10 @@
         <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
             src="assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
       </div>
+    </div>
   </footer>
+
+  
 
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
@@ -464,6 +470,7 @@
   <script src="/assets/js/burger.js"></script>
   <script src="/assets/js/nav.js"></script>
   <script src="/assets/leaflet(map)/leaflet.js"></script>
+  <script src="/assets/js/info-pratque.js"></script>
 
 
 </body>

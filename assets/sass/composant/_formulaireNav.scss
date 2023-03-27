@@ -18,11 +18,12 @@
     }
 
     .inscritNav {
-        background-color: #0da249;
+        background-color: $color-secondary-greenGrass;
         padding: 8px;
         font-weight: 800;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+        cursor: pointer;
     }
 }
 

@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="../sass/vendors/themify-icons.css">
   <link rel="stylesheet" href="../sass/main.css">
   <link rel="stylesheet" href="/path/to/leaflet.css" />
-  <title>Document</title>
+  <title>Mentions légales</title>
 </head>
 
 <body>
 
-  <header id="navigation">
+  <header id="navigation" class="navInfoPratique">
 
     <div class="hautNav" id="hautNavMention">
 
@@ -31,15 +31,7 @@
             <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
           </div>
         </div>
-        <form class="submitNav">
-          <div class="formNewsletter">
-            <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
-            <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
-            <div class="inscritNav">
-              <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
-            </div>
-          </div>
-        </form>
+        
       </div>
 
       <div class="hautNavDroite">
@@ -64,7 +56,7 @@
           <ul>
             <li><a href="#">L'ITINERAIRE</a></li>
             <li><a href="#">TEMOIGNAGES</a></li>
-            <li><a href="#">INFOS PRATIQUES</a></li>
+            <li><a href="/assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
             <li><a href="#">SUGGESTIONS</a></li>
             <li><a href="#">INSPIRATIONS</a></li>
             <li>
@@ -94,6 +86,7 @@
 
 
   </header>
+  
 
   <div class="container">
 
@@ -248,10 +241,9 @@
 
   <div>
 
-    <article class="quiSommeNous">
-
-      <!-- DIV pour pouvoir appliquer l'image en fond -->
-      <div class="imageDeFondQuiSommeNous"></div>
+    <!-- Partie de page "quiSommeNous" -->
+  <article class="quiSommeNous" id="quiSommeNousMention">
+    <div class="backdrop_quiSommeNous">
 
       <!-- Partie contenant les images, le texte et les liens -->
       <div class="ensembleTexteQuiSommeNous">
@@ -301,10 +293,10 @@
           </div>
 
         </section>
-
       </div>
+    </div>
 
-    </article>
+  </article>
 
   </div>
 

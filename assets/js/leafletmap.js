@@ -44,7 +44,7 @@ fetch(allURL)
         })
         .on('mouseout', function () {
           this.setStyle({
-            color: 'orange'
+            color: 'blue'
           })
         })
         .on('click', function (e) {
