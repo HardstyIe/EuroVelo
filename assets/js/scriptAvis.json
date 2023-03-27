@@ -1,31 +1,13 @@
 {
-    "data": [
-        {
-            "id": 1,
-            "attributes": {
-                "Dates": "2023-03-14T16:56:00.000Z",
-                "Nom": "Didier",
-                "Course": "Valenciennes/Lille",
-                "Securite": "5/5",
-                "Balisage": "5/5",
-                "Interets": "5/5",
-                "Services": "4/5",
-                "Parcours": "Decouverte",
-                "Commentaire": "Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu faire un aller retour de Biscarosse plage à Arcachon. Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je dirai et arrivé la première côte",
-                "Nbreponse": 0,
-                "Lire": "LIRE",
-                "createdAt": "2023-03-21T08:20:14.993Z",
-                "updatedAt": "2023-03-21T08:24:49.558Z",
-                "publishedAt": "2023-03-21T08:24:49.538Z"
-            }
-        }
-    ],
-    "meta": {
-        "pagination": {
-            "page": 1,
-            "pageSize": 25,
-            "pageCount": 1,
-            "total": 1
-        }
-    }
+    "Dates": "2023-03-14T16:56:00.000Z",
+    "Nom": "Didier",
+    "Course": "Valenciennes/Lille",
+    "Securite": "5/5",
+    "Balisage": "5/5",
+    "Interets": "5/5",
+    "Services": "4/5",
+    "Parcours": "Decouverte",
+    "Commentaire": "Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu faire un aller retour de Biscarosse plage à Arcachon. Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je dirai et arrivé la première côte",
+    "Nbreponse": 0,
+    "Lire": "_LIRE_"
 }

@@ -5,15 +5,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/sass/vendors/normalize.css">
-  <link rel="stylesheet" href="assets/sass/vendors/flaticons.css">
-  <link rel="stylesheet" href="assets/sass/vendors/themify-icons.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/normalize.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/flaticons.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/themify-icons.css">
   <link rel="stylesheet" href="../sass/main.css">
   <link rel="stylesheet" href="/path/to/leaflet.css" />
+
   <title>contact</title>
 </head>
 
 <body>
+
+  <header id="navigation">
+
+    <div class="hautNav" id="hautNav">
+
+      <div class="hautNavGauche">
+        <div class="lienReseaux">
+          <div class="instagramNav">
+            <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><i class="ti-instagram"></i></a>
+          </div>
+          <div class="youtubeNav">
+            <a href="https://www.youtube.com/watch?v=NuIbOMSzZPQin" target="_blank"><i class="ti-youtube"></i></a>
+          </div>
+          <div class="facebookNav">
+            <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
+          </div>
+        </div>
+        <form class="submitNav">
+          <div class="formNewsletter">
+            <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
+            <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
+            <div class="inscritNav">
+              <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="hautNavDroite">
+        <div class="lienPersoNav">
+          <a href="">Espace pro</a>
+          <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
+          <a href="">Espace personnel</a>
+          <a href=""><img src="/assets/images/image-nav/france.png" alt="français"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="basNav">
+
+      <div class="logoNav">
+        <img src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
+      </div>
+
+      <div class="navGauche">
+        <nav>
+          <ul>
+            <li><a href="#">L'ITINERAIRE</a></li>
+            <li><a href="#">TEMOIGNAGES</a></li>
+            <li><a href="#">INFOS PRATIQUES</a></li>
+            <li><a href="#">SUGGESTIONS</a></li>
+            <li><a href="#">INSPIRATIONS</a></li>
+            <li>
+              <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
+            </li>
+            <li>
+              <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="navDroite">
+        <i class="ti-search"></i>
+      </div>
+
+    </div>
+    <div class="search-container">
+      <form action="/search">
+        <input type="text" placeholder="Recherche..." name="q">
+      </form>
+
+      <div class="boutonBarre">
+        <a href="#"><i class="ti-search"></i></a>
+      </div>
+    </div>
+
+
+  </header>
+
+
+
   <main class="main-contact">
     <div class="titreContact">
       <h1>Demande d'information</h1>
@@ -52,7 +136,7 @@
           <input class="buttonContact" type="submit" value="ENVOYER LE MESSAGE">
         </div>
 
-        <p>
+        <p class="PARAGRAPHEcONTACT">
           Les données collectées dans le cadre de ce formulaire font l’objet d’un traitement par La Vélomaritime ayant
           pour finalité de répondre à votre demande d’informations. Conformément à la réglementation en vigueur relative
           à la protection des données personnelles, vous pouvez exercer vos droits ou obtenir toute information
@@ -64,6 +148,87 @@
     </div>
 
   </main>
+  
+
+  <article class="quiSommeNous">
+    <div class="backdrop_quiSommeNous">
+
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
+
+        <!-- DIV contenant les images -->
+        <div class="imagesQuiSommeNous">
+
+          <!-- Images avec les étoiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
+
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
+                alt="logo facebook"></a>
+
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Partie contenant le texte et les liens -->
+        <section class="deuxiemePartiQuiSommeNous">
+
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
+
+            <h2>Qui sommes-nous?</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore magni perferendis velit
+              laborum id?</p>
+
+          </div>
+
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
+
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </article>
+<footer class="footercontact">
+
+<div class="footerPartiGauche">
+  <ul>
+    <li><a href="">Espace pro / presse</a></li>
+    <li><a href="">FAQ</a></li>
+    <li><a href="/assets/html-pages/mention.html">Mentions légales</a></li>
+    <li><a href="">Gestion des cookies</a></li>
+  </ul>
+</div>
+<div class="footerPartiDroite">
+  <div>
+    <ul>
+      <li class="rea">Réalisation</li>
+      <li><a class="bzzz" href="www.moustic.biz">B<span class="zzz">ZZZZZZZZ</span></a></li>
+    </ul>
+  </div>
+  <div class="veloFranceTourisme">
+    <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
+        src="/assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
+  </div>
+</footer>
+
+
 
 
   <div id="popup-contact-bas">
@@ -74,7 +239,11 @@
       <a href="">En savoir plus</a>
     </div>
   </div>
+
+
+  <script src="../js/avis.js"></script>
   <script src="/assets/js/popup.js"></script>
+  <script src="/assets/js/nav.js"></script>
 </body>
 
 </html>
