@@ -1,0 +1,979 @@
+#siwprepere {
+  // margin-left: 37%;
+  z-index: 9;
+  width: 320px;
+  display: flex;
+  margin: auto;
+
+  .swipebullet {
+    background: white;
+    border-radius: 2px;
+    opacity: 1;
+    width: 30px;
+    height: 3px;
+    margin: 0px 5px;
+    content: "";
+  }
+
+  .swipebullet-active {
+    background: $color-secondary-litePink;
+  }
+}
+
+.hometitle {
+  text-align: center;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 2.625rem;
+  margin-bottom: -10px;
+}
+
+.homesubtitle {
+  text-align: center;
+  // width: 70%;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 2.625rem;
+  margin: 0px auto 50px auto;
+}
+
+
+.maindiapo {
+  width: 100%;
+}
+
+.elements {
+  display: flex;
+
+  // transform: translateX(-100%);
+  .element {
+    flex: 1 0 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 95vh;
+      object-fit: cover;
+    }
+  }
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  top: 70vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caption1 {
+  position: absolute;
+  width: 100%;
+  top: 25vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.diapo {
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 390px) {
+  .diapo {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .caption1 {
+    top: 13vh;
+    margin: auto;
+  }
+
+  .caption {
+    top: 40vh;
+    margin: auto;
+  }
+
+  .hometitle {
+    font-size: 40px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .homesubtitle {
+    font-size: 26px;
+    text-align: center;
+    width: 85%;
+    padding: 10px 0px;
+    margin: auto;
+
+  }
+}
+
+
+.presentation {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+
+  .titleHome {
+    padding: 60px 10px 20px 10px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 2.5rem;
+    width: 60%;
+    margin: auto;
+    color: #231f20;
+    line-height: 1.5em;
+  }
+
+  .descHome {
+    padding: 10px;
+    width: 70%;
+    color: #585858;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin: auto;
+    padding-bottom: 10px;
+    font-family: 'Mukta Mahee';
+
+    a {
+      text-decoration: none;
+      color: $color-secondary-litePink;
+    }
+  }
+}
+
+
+// .findaccueil{
+//     display: block;
+//     width: 65%;
+//     margin-left: 20%;
+// }
+//     .texteaccueilvelo {
+//         .imgav {
+//             width: 30px;
+//             padding-right: 60px;
+//             float: left;
+//         }
+//         .petittitre {
+//             font-family: 'Poppins';
+//             font-size: 2.25rem;
+//             font-weight: 300;
+//             text-align: left;
+//         }
+//         .descriptionAV {
+//             font-family: 'Mukta Mahee';
+//             font-size: 1rem;
+//             text-align: left;
+//         }
+//     }
+//     #contenairemenuaccueil {
+//         display: flex; 
+//         flex-wrap: wrap;
+//         gap: 30px;
+//         // margin-left: 24%; 
+//             #menuun, #menudeux, #menutrois, #menuquatre, #menucinq {
+//                 .surmenu {
+//                     position: absolute;
+//                     font-family: 'Mukta Mahee';
+//                     z-index: 4;
+//                     width: 100%;
+//                     font-weight: 700;
+//                     font-size: 1.125rem;
+//                     // translate: (0, -50%);
+//                     color: white;
+//                     text-align: center;
+//                     width: 160px;
+//                     overflow: hidden;
+//                 }
+//                 .menuflex {
+//                     border-radius: 5px;
+//                     position: relative; 
+//                     z-index: 2;
+//                     position: absolute;
+//                     background: rgba(0,0,0, 0.4);
+//                     display: block;
+//                     flex: 16.6666666667%;
+//                     // max-width: 16.6666667%;
+//                     height: 30%
+
+//                 }
+//                 img {
+//                     width: 170px;
+//                     height: 230px;
+//                     object-fit: cover;
+//                 }
+//             }
+//     }
+
+
+#gridaccueil {
+  // width: 1150px;
+  margin: auto;
+  padding-bottom: 40px;
+
+  .titregridaccueil {
+    font-family: 'Poppins';
+    font-size: 42px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .soustitregridaccueil {
+    font-family: 'Mukta Mahee';
+    color: #585858;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+.mapaccueil {
+  width: 1000px;
+  height: 300px;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 390px) {
+  .presentation {
+    .titleHome {
+      font-size: 28px;
+      width: 90%;
+    }
+
+    .descHome {
+      font-size: 18px;
+      width: 90%;
+    }
+  }
+
+  #gridaccueil {
+    width: 370px;
+    margin: auto;
+
+    .titregridaccueil {
+      font-size: 32px;
+    }
+
+    .soustitregridaccueil {
+      font-size: 16px;
+      width: 80%;
+      line-height: 1.5rem;
+      margin: auto;
+    }
+  }
+
+  .mapaccueil {
+    display: none;
+  }
+}
+
+.nav-itineraire {
+  background-color: white;
+
+  div a {
+    color: black
+  }
+}
+
+.itineraire-body {
+  overflow-y: hidden;
+}
+
+.scroll {
+  overflow-y: scroll;
+  scrollbar-width: auto;
+}
+
+.itineraire-main {
+  display: flex;
+  margin-top: 135px;
+
+  #map {
+    justify-content: right;
+    height: 86vh;
+    width: 67%;
+  }
+
+  .itineraire-map-left {
+    width: 33%;
+    height: 87vh;
+    justify-content: left;
+
+    .itineraire-map-options {
+      display: flex;
+
+      a {
+        color: gray;
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+
+        span {
+          text-align: center;
+          font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: inherit;
+          font-size: inherit;
+          margin: 0;
+          text-transform: uppercase;
+        }
+
+        &.actif {
+          color: $color-secondary-litePink;
+          border-bottom: 3px solid $color-secondary-litePink;
+        }
+
+      }
+    }
+
+    .itineraire-map-download {
+      text-align: center;
+      margin: 10px;
+
+      a {
+        font-weight: 600;
+        font-size: .875rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        color: $color-secondary-litePink;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    .itineraire-map-informations {
+      div {
+
+        .itineraire-map-informations-section {
+          margin-bottom: 5px;
+          margin-top: 5px;
+          font-family: "Mukta Mahee", sans-serif;
+          cursor: pointer;
+
+          .itineraire-map-informations-habitude {
+            width: 100%;
+            margin-left: -15px;
+
+            span {
+              width: 100%;
+              display: inline-block;
+              background-color: orange;
+              font-weight: 600;
+              font-size: .875rem;
+              text-decoration: none;
+              color: white;
+              padding: 5px 10px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+
+            }
+          }
+
+          .itineraire-map-informations-global-div {
+            display: flex;
+            border-radius: 5px;
+            height: 190px;
+            overflow: hidden;
+
+            .itineraire-map-informations-image-div {
+              height: 190px;
+              width: 190px;
+
+              img {
+                height: 190px;
+                width: 190px;
+                overflow: hidden;
+                object-fit: cover;
+              }
+            }
+
+            .itineraire-map-informations-text-global {
+              padding: 10px 30px 10px 15px;
+
+              h2 {
+                font-size: 1.25rem;
+                font-weight: 600;
+                font-family: Poppins, sans-serif;
+                margin: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+                a {
+                  text-decoration: none;
+                  color: inherit;
+                }
+
+              }
+
+              .itineraire-map-informations-description {
+                margin: 10px 0 0 0;
+                font-size: 1.125rem;
+                color: #585858;
+                line-height: 1.5em;
+                text-align: justify;
+                font-family: "Mukta Mahee", sans-serif;
+                font-weight: 500;
+              }
+
+            }
+
+            .itineraire-map-informations-difficulte {
+              font-family: "Mukta Mahee", sans-serif;
+              font-weight: 400;
+
+              .itineraire-map-informations-difficulte-habitude {
+                display: inline-block;
+                padding: 5px 35px 5px 10px;
+                font-weight: 600;
+                font-size: .875rem;
+
+              }
+
+            }
+          }
+
+          &:hover .itineraire-map-informations-section {
+            border-radius: 5px;
+          }
+
+          &:hover .itineraire-map-informations-global-div {
+            box-shadow: 2px 2px 2px 2px lightgray;
+          }
+
+          &:hover .itineraire-map-informations-text-global {
+            background-color: black;
+          }
+
+          &:hover .itineraire-map-informations-text-global .itineraire-map-informations-description,
+          &:hover h2 {
+            color: white;
+          }
+
+          &:hover .itineraire-map-informations-image {
+            transition: all .2s ease-out;
+            filter: blur(4px);
+          }
+
+          .itineraire-map-informations-image {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .itineraire-map-informations-gps {
+      background: $color-secondary-litePink;
+      position: relative;
+
+      .itineraire-global-gps-form {
+        padding: 30px;
+
+      }
+
+      .itineraire-global-gps-form-field {
+        .field-etape .field input {
+          transition: all .2s ease-out;
+          background: 0 0;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, .5);
+          padding: 10px 40px 10px 0;
+          color: #fff;
+          font-family: "Mukta Mahee", sans-serif;
+          font-weight: 600;
+          font-size: .9375rem;
+
+          &::placeholder {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.itineraire-map-informations-difficulte-habitude-blue {
+  color: #3498DB;
+}
+
+.itineraire-map-informations-difficulte-habitude-red {
+  color: #e6473e;
+}
+
+.itineraire-map-informations-difficulte-habitude-green {
+  color: #56be81;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.itineraire-map-informations-second-section-header {
+  position: relative;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 5px 70px 5px 50px;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+
+  h2 a {
+    text-decoration: none;
+    color: $color-secondary-litePink;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    display: block;
+  }
+
+  i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    color: black;
+  }
+}
+
+
+
+.itineraire-informations-second-section-options {
+  display: flex;
+  width: 100%;
+
+  a {
+    color: gray;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+
+    span {
+      text-align: center;
+      font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: inherit;
+      font-size: inherit;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    &.actif {
+      color: $color-secondary-litePink;
+      border-bottom: 3px solid $color-secondary-litePink;
+    }
+  }
+}
+
+.dot {
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-blue {
+  background-color: #3498DB;
+}
+
+.dot-red {
+  background-color: #e6473e;
+}
+
+.dot-green {
+  background-color: #56be81;
+}
+
+
+.itineraire-map-informations-second-body {
+
+
+  .itineraire-map-informations-second-body-theme {
+    font-family: "Mukta Mahee", sans-serif;
+    font-weight: 400;
+    background: #f59c00;
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+
+    span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  .itineraire-map-informations-second-body-infos {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #f4f4f4;
+    padding: 10px 0;
+    font-family: "Mukta Mahee", sans-serif;
+    font-weight: 400;
+
+    .itineraire-map-informations-second-body-infos-distance,
+    .itineraire-map-informations-second-body-infos-difficulte,
+    .itineraire-map-informations-second-body-infos-duree {
+      padding: 0 30px 0 0;
+      font-size: 1rem;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  .itineraire-map-informations-second-body-img-div {
+    width: 100%;
+
+    .itineraire-map-informations-second-body-img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  .itineraire-map-informations-second-body-depart-arrive {
+    padding: 10px 15px;
+    background: #f4f4f4;
+    font-family: "Mukta Mahee", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: black
+    }
+
+    .itineraire-map-informations-second-body-arrive {
+      text-align: right;
+    }
+  }
+
+}
+
+.itineraire-map-informations-second-body-container {
+  .itineraire-map-informations-second-body-description {
+    white-space: pre-line;
+    font-family: "Mukta Mahee", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+}
+
+.itineraire-map-informations-second-footer-bot {
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
+  height: 28px;
+  top: 0 !important;
+  bottom: 0 !important;
+  padding: 15px;
+  width: 100%;
+  background: $color-secondary-litePink;
+  transition: all .2s ease-out;
+  padding-left: 3%;
+
+  .itineraire-map-informations-second-footer-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .itineraire-map-informations-second-footer-bot-btn {
+      width: 33%;
+
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 13px;
+        font-size: .875rem;
+      }
+    }
+
+    .itineraire-map-informations-second-footer-bot-btn-page {
+      text-align: center;
+    }
+  }
+}
+
+.itineraire-map-informations-second-footer-top {
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+  position: relative;
+  z-index: 51;
+  width: 100%;
+  background: #f5f5f5;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 15px 0 15px;
+  display: block;
+  text-align: center;
+
+  .itineraire-map-informations-second-footer-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .itineraire-map-informations-second-footer-btn {
+      width: 33%;
+
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: $color-secondary-litePink;
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 13px;
+        font-size: .875rem;
+      }
+    }
+  }
+}
+
+.itineraire-map-avis-div-global {
+  #itineraire-temoignages {
+    background: #f4f4f4;
+    padding-bottom: 120px;
+    padding-top: 40px;
+
+    .itineraire-map-avis-temoignages {
+      padding: 0 15px 50px;
+
+      .itineraire-map-avis-title {
+        text-align: left;
+        position: relative;
+
+        .itineraire-map-avis-title-h2 {
+          margin: 0 10px;
+          color: $color-secondary-litePink;
+          font-size: 1.75rem;
+          font-family: Poppins, sans-serif;
+          font-weight: 300;
+        }
+      }
+
+      .itineraire-map-avis-div-img {
+        overflow: hidden;
+        width: 470px;
+        height: 265px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+
+        .itineraire-map-avis-img {
+          width: 470px;
+          height: 265px;
+          border-radius: 5px;
+
+          &:hover {
+            filter: blur(3px);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+
+    .itineraire-map-avis-comments-avis {
+      padding: 0 15px;
+      text-align: left;
+      font-size: 1.75rem;
+
+      h2 {
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        margin: 0;
+        color: $color-secondary-litePink;
+      }
+
+      .itineraire-map-avis-comments-avis-soustitre {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .itineraire-map-avis-comments-avis-row {
+        display: flex;
+        font-size: medium;
+        font-family: Poppins, sans-serif;
+
+        .itineraire-map-avis-comments-avis-co-deco {
+          padding-left: 15px;
+          padding-right: 15px;
+
+          a {
+            text-decoration: none;
+            color: $color-secondary-litePink;
+          }
+        }
+
+      }
+
+    }
+
+    .itineraire-map-avis-comments-avis-notes {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 50%;
+      font-family: "Mukta Mahee", sans-serif;
+      font-weight: 500;
+      font-size: 1.125rem;
+      text-align: left;
+
+      .itineraire-map-avis-comments-avis-notes-count {
+        color: #eea622;
+        font-family: "Mukta Mahee", sans-serif;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .itineraire-main {
+    margin-top: 80px;
+  }
+
+  #map {
+    display: none;
+  }
+
+  .itineraire-main {
+    .itineraire-map-left {
+      width: 100%
+    }
+  }
+
+  .itineraire-main .itineraire-map-left .itineraire-map-informations-first-section .itineraire-map-informations div .itineraire-map-informations-section .itineraire-map-informations-global-div {
+    height: 125px;
+    width: 100%;
+
+    .itineraire-map-informations-image-div {
+      height: 125px;
+      width: 90px;
+
+      img {
+        height: 125px;
+        width: 90px;
+      }
+    }
+
+    .itineraire-map-informations-text-global {
+      width: 100%;
+
+      .itineraire-map-informations-description {
+        display: none;
+      }
+    }
+  }
+
+  .itineraire-main .itineraire-map-left .itineraire-map-informations div .itineraire-map-informations-section .itineraire-map-informations-global-div .itineraire-map-informations-text-global h2 {
+    font-size: .875rem;
+  }
+
+  .itineraire-map-informations-second-footer-top {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .itineraire-map-informations-second-footer-bot {
+    display: none;
+  }
+
+  .itineraire-map-avis-div-global #itineraire-temoignages .itineraire-map-avis-temoignages .itineraire-map-avis-img {
+    width: 100%;
+  }
+
+  .itineraire-map-avis-div-global {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .itineraire-map-avis-div-global #itineraire-temoignages .itineraire-map-avis-temoignages .itineraire-map-avis-title {
+    text-align: center;
+  }
+
+  .itineraire-map-avis-div-global #itineraire-temoignages .itineraire-map-avis-comments-avis-notes {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .itineraire-map-avis-div-global #itineraire-temoignages .itineraire-map-avis-comments-avis {
+    text-align: center;
+  }
+
+  .itineraire-map-avis-comments-avis-row {
+    flex-direction: column;
+  }
+
+  .itineraire-map-avis-div-global #itineraire-temoignages .itineraire-map-avis-comments-avis .itineraire-map-avis-comments-avis-soustitre {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .itineraire-map-avis-div-global #itineraire-temoignages .itineraire-map-avis-comments-avis h2 {
+    font-size: 1.75rem;
+  }
+
+  .itineraire-map-informations-second-body-container .itineraire-map-informations-second-body-description {
+    margin-left: 10px
+  }
+}
