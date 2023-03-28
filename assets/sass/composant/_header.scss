@@ -2,19 +2,16 @@ body {
   background-color: rgb(181, 188, 188);
 }
 
-header {
-  width: 100%;
-}
-
-.sliderAbsolute {
+#navigation {
+  font-family: $font-primary-light;
   position: absolute;
-  z-index: 200000;
+  width: 100%;
+  z-index: 2;
 }
 
 .hautNav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #f4f4f4;
   background-color: rgba(0, 0, 0, 0.3);
 
@@ -44,7 +41,7 @@ header {
   }
 
   .lienPersoNav {
-    width: 70%;
+    width: 100%;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -64,155 +61,150 @@ header {
     }
   }
 
+}
 
+.hautNavGauche {
+  width: 10%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .hautNavGauche {
-    width: 50%;
+.hautNavDroite {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.basNav {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+
+  .logoNav {
+    width: 15%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding-left: 3px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    #logo {
+      width: 30%;
+    }
+
+    #logoMarque {
+      width: 60%;
+    }
   }
 
-  .hautNavDroite {
-    width: 50%;
+  .navGauche {
+    width: 80%;
+    display: flex;
+  }
+
+  .navDroite {
+    width: 5%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-  }
-
-  .basNav {
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: row;
-    z-index: 2;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-
-    .logoNav {
-      width: 15%;
-      display: flex;
-      justify-content: space-evenly;
-      padding-left: 3px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-
-      #logo {
-        width: 30%;
-      }
-
-      #logoMarque {
-        width: 60%;
-      }
-    }
-
-    .navGauche {
-      width: 80%;
-      display: flex;
-    }
-
-    .navDroite {
-      width: 5%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      // margin-right: 50px;
-      align-items: center;
-
-      .ti-search {
-        margin-right: 50px;
-        color: $color-secondary-greenGrass;
-        font-size: 30px;
-        cursor: pointer;
-      }
-
-      .ti-close {
-        margin-right: 50px;
-        color: $color-secondary-greenGrass;
-        font-size: 30px;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .search-container {
-    display: none;
-    width: 100%;
+    // margin-right: 50px;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(0, 0, 0);
-    border-radius: 2.5px;
-    color: #f4f4f4;
-    font-size: 25px;
-    height: 70px;
 
-    form {
-      width: 80%;
-
-      input {
-        width: 100%;
-        margin-left: 5%;
-        padding-bottom: 5px;
-        border-bottom: 0.5px solid white;
-      }
-    }
-
-    .boutonBarre {
+    .ti-search {
+      margin-right: 50px;
+      color: $color-secondary-greenGrass;
       font-size: 30px;
-      width: 20%;
-      padding-left: 15%;
-      padding-top: 0.5%;
-
-      a {
-        color: #f4f4f4;
-      }
-    }
-  }
-
-  #navigation {
-    z-index: 3;
-  }
-
-
-  @media (max-width:1200px) {
-    .hautNav {
-      display: none;
+      cursor: pointer;
     }
 
-    nav {
-      display: none;
-    }
-
-    .basNav {
-      justify-content: flex-end;
-      width: 100%;
-
-      .navGauche {
-        width: 0%;
-        display: none;
-      }
-
-      .navDroite {
-        width: 25%;
-
-        .ti-search {
-          margin-right: 30px;
-        }
-
-        .ti-close {
-          margin-right: 30px;
-        }
-      }
-
-      .logoNav {
-        width: 50%;
-      }
-    }
-  }
-
-
-  @media (max-width: 795px) {
-    .boutonBarre {
-      padding-right: 50px;
+    .ti-close {
+      margin-right: 50px;
+      color: $color-secondary-greenGrass;
+      font-size: 30px;
+      cursor: pointer;
     }
   }
 }
+
+.search-container {
+  display: none;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2.5px;
+  color: #f4f4f4;
+  font-size: 25px;
+  height: 70px;
+
+  form {
+    width: 80%;
+
+    input {
+      width: 100%;
+      margin-left: 5%;
+      padding-bottom: 5px;
+      border-bottom: 0.5px solid white;
+    }
+  }
+
+  .boutonBarre {
+    font-size: 30px;
+    width: 20%;
+    padding-left: 15%;
+    padding-top: 0.5%;
+
+    a {
+      color: #f4f4f4;
+    }
+  }
+}
+
+
+@media (max-width:1200px) {
+  .hautNav {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .basNav {
+    justify-content: flex-end;
+    width: 100%;
+
+    .navGauche {
+      width: 0%;
+      display: none;
+    }
+
+    .navDroite {
+      width: 25%;
+
+      .ti-search {
+        margin-right: 30px;
+      }
+
+      .ti-close {
+        margin-right: 30px;
+      }
+    }
+
+    .logoNav {
+      width: 50%;
+    }
+  }
+}
+
+
+// @media (max-width: 795px) {
+//   .boutonBarre {
+//     padding-right: 50px;
+//   }
+// }
