@@ -2,16 +2,27 @@ body {
   background-color: rgb(181, 188, 188);
 }
 
+.sliderAbsolute {
+  position: absolute;
+  width: 100%;
+}
+
 header {
   font-family: $font-primary-light;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 2;
 }
 
+.close {
+  .sideClose {
+    height: 20px;
+    width: 20px;
+  }
+}
 
 .hautNav {
-  padding: 7px 0;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,10 +30,12 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 
   .lienReseaux {
+    padding-top: 10px;
     font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100%;
 
     i {
       background-color: rgba(0, 0, 0, 0.5);
@@ -36,6 +49,12 @@ header {
 
     a {
       color: #f4f4f4;
+    }
+
+    .instagramNav,
+    .youtubeNav,
+    .facebookNav {
+      height: 100%;
     }
 
   }
@@ -54,6 +73,7 @@ header {
 
     a {
       color: #f4f4f4;
+      font-size: clamp(0.7rem, 1vw, 1.15rem);
     }
 
     a:hover {
@@ -85,9 +105,7 @@ header {
     width: 15%;
     display: flex;
     justify-content: space-evenly;
-    padding-left: 3px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 3px;
 
     #logo {
       width: 30%;
@@ -175,6 +193,7 @@ header {
   .basNav {
     justify-content: flex-end;
     width: 100%;
+    height: 150px;
 
     .navGauche {
       width: 0%;
@@ -194,14 +213,32 @@ header {
     }
 
     .logoNav {
-      width: 50%;
+      width: 40%;
+      gap: 100px;
+
+      #logo {
+        width: auto;
+      }
+
+      #logoMarque {
+        width: auto;
+      }
     }
   }
 }
 
 
+
 @media (max-width: 795px) {
   .boutonBarre {
     padding-right: 50px;
+  }
+
+  #logoMarque {
+    display: none;
+  }
+
+  #logo {
+    width: max-content;
   }
 }
