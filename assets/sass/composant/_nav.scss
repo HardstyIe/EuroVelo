@@ -42,29 +42,35 @@ nav {
   align-items: center;
   list-style: none;
 
+  ul {
+    display: flex;
 
-  li {
-    margin: 0 10px;
-    display: inline-flex;
+    li {
+      margin: 0 10px;
+      font-size: clamp(0.5rem, 5vw, 1rem);
+      height: 50px;
+      display: flex;
+      align-items: center;
 
-    a {
-      display: block;
-      padding: 10px;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-    }
+      a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
 
-    a:hover {
-      color: $color-secondary-greenGrass;
-    }
+      a:hover {
+        color: $color-secondary-greenGrass;
+      }
 
-    .actuNav {
-      color: $color-secondary-red;
-    }
+      .actuNav {
+        color: $color-secondary-red;
+      }
 
-    .passNav {
-      color: $color-secondary-greenGrass;
+      .passNav {
+        color: $color-secondary-greenGrass;
+      }
     }
   }
 }
