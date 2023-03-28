@@ -1,0 +1,45 @@
+.gridEspacePro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+
+.flexEspacePro {
+    display: flex;
+    gap: 15px;
+}
+
+// .flexEspacePro h2, .flexEspacePro p {
+//     margin-left: 20%;
+// }
+
+.imageEspacePro {
+    width: 80%;
+    height: auto;
+}
+
+.connecterEspacePro {
+    margin-right: 10%;
+    width: 20%;
+}
+
+.raccourciEspacePro {
+    border: solid green;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 12px #555;
+}
+
+.blocRaccourciEspacePro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
