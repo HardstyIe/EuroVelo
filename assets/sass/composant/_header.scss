@@ -11,7 +11,7 @@ header {
   font-family: $font-primary-light;
   position: relative;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
 }
 
 .close {
@@ -100,6 +100,7 @@ header {
   display: flex;
   flex-direction: row;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
 
   .logoNav {
     width: 15%;
