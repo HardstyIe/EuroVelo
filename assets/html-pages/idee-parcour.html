@@ -5,17 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/sass/vendors/flaticons.css">
-  <link rel="stylesheet" href="/assets/sass/vendors/themify-icons.css">
+  <link rel="stylesheet" href="assets/sass/vendors/normalize.css">
+  <link rel="stylesheet" href="assets/sass/vendors/flaticons.css">
+  <link rel="stylesheet" href="assets/sass/vendors/themify-icons.css">
   <link rel="stylesheet" href="/assets/sass/main.css">
-  <link rel="stylesheet" href="/assets/sass/vendors/normalize.css">
   <link rel="stylesheet" href="/path/to/leaflet.css">
   <title>Parcours</title>
 </head>
 
 <body>
 
+  <!--Mettre navbar-->
   <header id="navigation">
+
     <div class="hautNav" id="hautNav">
 
       <div class="hautNavGauche">
@@ -30,17 +32,16 @@
             <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
           </div>
         </div>
-      </div>
-
-      <form class="submitNav">
-        <div class="formNewsletter">
-          <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
-          <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
-          <div class="inscritNav">
-            <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
+        <form class="submitNav">
+          <div class="formNewsletter">
+            <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
+            <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
+            <div class="inscritNav">
+              <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
 
       <div class="hautNavDroite">
         <div class="lienPersoNav">
@@ -50,43 +51,12 @@
           <a href=""><img src="/assets/images/image-nav/france.png" alt="français"></a>
         </div>
       </div>
-    </div>
 
+    </div>
     <div class="basNav">
 
-      <!--/////////////////////////////////////  SIDEBAR (VISIBLE UNIQUEMENT EN TAILLE MOBILE)  //////////////////////////////////////////-->
-
-      <i class="ti-menu"></i>
-
-      <div class="sidebar">
-
-        <div class="close">
-          <img src="/assets/images/image-nav/icons8-cross-64.png" alt="" class="sideClose"
-            style="height: 30px; width: 30px;">
-        </div>
-
-        <div class="sideNav">
-          <ul>
-            <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="#">L'ITINERAIRE</a></li>
-            <li><a href="#">TEMOIGNAGES</a></li>
-            <li><a href="assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
-            <li><a href="#">SUGGESTIONS</a></li>
-            <li><a href="#">INSPIRATIONS</a></li>
-            <li>
-              <a class="actuSide" href="#">ACTUALITES <img src="assets/images/image-nav/bulle.png" alt=""></a>
-            </li>
-            <li>
-              <a class="passSide" href="#">PASSEPORT <img src="assets/images/image-nav/carte.png" alt="carte"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- FIN SIDEBAR -->
       <div class="logoNav">
-        <img id="logo" src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
-        <img id="logoMarque" src="/assets/images/eurovelo-logo/logo_officiel.png" alt="">
+        <img src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
       </div>
 
       <div class="navGauche">
@@ -94,7 +64,7 @@
           <ul>
             <li><a href="#">L'ITINERAIRE</a></li>
             <li><a href="#">TEMOIGNAGES</a></li>
-            <li><a href="assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
+            <li><a href="#">INFOS PRATIQUES</a></li>
             <li><a href="#">SUGGESTIONS</a></li>
             <li><a href="#">INSPIRATIONS</a></li>
             <li>
@@ -311,23 +281,12 @@
 
 
 
-  <!-- Librairie -->
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-  <script src="/assets/leaflet(map)/leaflet.js"></script>
-  <script src="/assets/js/gpx.js"></script>
-
-
-  <!-- Script js  -->
-  <!-- <script src="/assets/js/leafletmap.js"></script> -->
-  <script src="/assets/js/map.js"></script>
-  <script src="/assets/js/slider.js"></script>
-  <script src="/assets/js/burger.js"></script>
+  <!--Mettre le footer-->
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/burger.js"></script>
+  <script src="/path/to/leaflet.js"></script>
+  <script src="/assets/js/popup.js"></script>
   <script src="/assets/js/nav.js"></script>
-  <script src="/assets/js/avis.js"></script>
 </body>
 
 </html>
