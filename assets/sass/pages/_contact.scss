@@ -4,12 +4,13 @@
   font-size: x-large;
 
 
-        .PARAGRAPHEcONTACT {
-            margin-top: 20px;
-        }
-        .titreContact {
-            display: flex;
-            justify-content: center;
+  .PARAGRAPHEcONTACT {
+    margin-top: 20px;
+  }
+
+  .titreContact {
+    display: flex;
+    justify-content: center;
 
     h1 {
       font-size: 70px
@@ -20,25 +21,26 @@
     margin-bottom: 60px;
   }
 
-    .formu input {
-        width: 100%;
-        height: 45px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 35px;
-        margin-top: 10px;
-        background-color: rgba(128, 128, 128, 0.13);
+  .formu input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.13);
 
-    }
-    textarea {
-        width: 100%;
-        height: 250px;
-        border: none;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        resize: vertical;
-        background-color: rgba(128, 128, 128, 0.13);
+  }
+
+  textarea {
+    width: 100%;
+    height: 250px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: rgba(128, 128, 128, 0.13);
 
   }
 
@@ -79,17 +81,17 @@
 }
 
 #popup-contact-bas {
-    display: none;
-    justify-content: center;
-    height: 70px;
-    margin: 0px;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    color: white;
-    font-size: 30px;
-    z-index: 100;
-    background-color: rgb(98, 192, 229);
+  display: none;
+  justify-content: center;
+  height: 70px;
+  margin: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  z-index: 100;
+  background-color: rgb(98, 192, 229);
 
   .popup-contactGauche {
     margin-right: 10px;
@@ -114,33 +116,40 @@
 
 }
 
+#caseAcceptation {
+  border: 1px solid black;
+}
+
 @media all and (min-width: 768px) and (max-width: 1366px) {
-    .main-contact .titreContact h1 {
-        font-size: 40px;
-    }
-    .main-contact {
-        margin-left: 15%;
-        margin-RIGHT: 15%;
-        font-size: large;
-    }
-    #popup-contact-bas {
-        height: 55px;
-        font-size: medium;
-    }
+  .main-contact .titreContact h1 {
+    font-size: 40px;
+  }
+
+  .main-contact {
+    margin-left: 15%;
+    margin-RIGHT: 15%;
+    font-size: large;
+  }
+
+  #popup-contact-bas {
+    height: 55px;
+    font-size: medium;
+  }
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) {
-    .main-contact .titreContact h1 {
-        font-size: 40px;
-    }
-    
-    .main-contact {
-        margin-left: 5%;
-        margin-RIGHT: 5%;
-        font-size: medium;
-    }
-    #popup-contact-bas {
-        font-size: small;
-        height: 45px;
-    }
+  .main-contact .titreContact h1 {
+    font-size: 40px;
+  }
+
+  .main-contact {
+    margin-left: 5%;
+    margin-RIGHT: 5%;
+    font-size: medium;
+  }
+
+  #popup-contact-bas {
+    font-size: small;
+    height: 45px;
+  }
 }
