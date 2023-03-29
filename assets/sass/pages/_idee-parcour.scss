@@ -1,53 +1,54 @@
 html {
-    @include font-light;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  .boldEnd {
-    @include font-bold;
-  }
+  @include font-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+.boldEnd {
+  @include font-bold;
+}
 
 .titleparcours {
-    display: flex;
-    justify-content: center;
-    padding-top: 220px;
-    h1 {
-        font-size: clamp(1rem, 2.5vw, 2rem);
-    }
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+  }
 }
 
 .espacetp {
-margin: 100px;
+  margin: 100px;
 }
 
 .boutonsParcours {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+
+  button {
+    color: $color-secondary-aquaBlue;
+    border: 1px solid;
+    border-color: $color-secondary-aquaBlue;
+    width: 150px;
+    height: 50px;
     cursor: pointer;
-    
-    button {
-        color: $color-secondary-aquaBlue;
-        border: 1px solid;
-        border-color: $color-secondary-aquaBlue;
-        width: 150px;
-        height: 50px;
-        cursor: pointer;
-    }
+  }
 }
 
 .reinitial {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    a {
-        text-decoration: none;
-        color: $color-secondary-blueSky;
-    }
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
+    color: $color-secondary-blueSky;
+  }
 }
 
 .firstGrid {
@@ -55,16 +56,18 @@ margin: 100px;
     display: flex;
     justify-content: space-around;
   }
-   h2 {
+
+  h2 {
     padding-left: 30px;
-   }
-   a {
+  }
+
+  a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding-left: 30px;
-   }
-  
+  }
+
   .gridTop {
     display: grid;
     width: 100%;
@@ -72,35 +75,35 @@ margin: 100px;
     grid-template-columns: repeat(3, 500px);
     grid-gap: 20px;
     justify-content: space-evenly;
-  
+
     .grid-itemTop {
       width: 100%;
       height: 100%;
       object-fit: cover;
       cursor: pointer;
       z-index: 1;
-      
+
       img:hover {
         filter: blur(4px);
       }
 
-#heart {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 50px;
-  left: 70%;
-  z-index: 3;
-}
+      .heart {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 50px;
+        left: 70%;
+        z-index: 3;
+      }
 
-#heartDeux {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 50px;
-  left: 55%;
-  z-index: 3;
-}
+      .heartDeux {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 50px;
+        left: 55%;
+        z-index: 3;
+      }
 
       .alasemaine {
         position: relative;
@@ -135,23 +138,26 @@ margin: 100px;
       }
     }
   }
-} 
- //Deuxième partie
- .secondGrid {
+}
+
+//Deuxième partie
+.secondGrid {
   .mirrorMid {
     display: flex;
     justify-content: space-around;
   }
-   h3 {
+
+  h3 {
     padding-left: 30px;
-   }
-   a {
+  }
+
+  a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding-left: 30px;
-   }
-  
+  }
+
   .gridMid {
     display: grid;
     width: 100%;
@@ -159,35 +165,35 @@ margin: 100px;
     grid-template-columns: repeat(3, 500px);
     grid-gap: 20px;
     justify-content: space-evenly;
-  
+
     .grid-itemMid {
       width: 100%;
       height: 100%;
       object-fit: cover;
       cursor: pointer;
       z-index: 1;
-      
+
       img:hover {
         filter: blur(4px);
       }
 
-#heart {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 50px;
-  left: 70%;
-  z-index: 3;
-}
+      .heart {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 50px;
+        left: 70%;
+        z-index: 3;
+      }
 
-#heartDeux {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 50px;
-  left: 55%;
-  z-index: 3;
-}
+      .heartDeux {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 50px;
+        left: 55%;
+        z-index: 3;
+      }
 
       .alasemaine {
         position: relative;
@@ -222,7 +228,7 @@ margin: 100px;
       }
     }
   }
-} 
+}
 
 //Dernière partie : 
 .thirdGrid {
@@ -230,16 +236,18 @@ margin: 100px;
     display: flex;
     justify-content: space-around;
   }
-   h4 {
+
+  h4 {
     padding-left: 30px;
-   }
-   a {
+  }
+
+  a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding-left: 30px;
-   }
-  
+  }
+
   .gridEnd {
     display: grid;
     width: 100%;
@@ -247,35 +255,35 @@ margin: 100px;
     grid-template-columns: repeat(3, 500px);
     grid-gap: 20px;
     justify-content: space-evenly;
-  
+
     .grid-itemEnd {
       width: 100%;
       height: 100%;
       object-fit: cover;
       cursor: pointer;
       z-index: 1;
-      
+
       img:hover {
         filter: blur(4px);
       }
 
-#heart {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 50px;
-  left: 70%;
-  z-index: 3;
-}
+      .heart {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 50px;
+        left: 70%;
+        z-index: 3;
+      }
 
-#heartDeux {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 50px;
-  left: 55%;
-  z-index: 3;
-}
+      .heartDeux {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 50px;
+        left: 55%;
+        z-index: 3;
+      }
 
       .alasemaine {
         position: relative;
@@ -310,5 +318,4 @@ margin: 100px;
       }
     }
   }
-} 
-
+}

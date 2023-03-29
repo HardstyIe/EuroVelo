@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="/assets/sass/vendors/flaticons.css">
   <link rel="stylesheet" href="/assets/sass/vendors/themify-icons.css">
   <link rel="stylesheet" href="/assets/sass/main.css">
-  <link rel="stylesheet" href="/assets/leaflet(map)/leaflet.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/normalize.css">
+  <link rel="stylesheet" href="/path/to/leaflet.css">
   <title>Parcours</title>
 </head>
 
 <body>
 
-  <div class="sliderAbsolute">
   <header id="navigation">
     <div class="hautNav" id="hautNav">
 
@@ -28,8 +28,7 @@
             <a href="https://www.youtube.com/watch?v=NuIbOMSzZPQin" target="_blank"><i class="ti-youtube"></i></a>
           </div>
           <div class="facebookNav">
-            <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i
-                class="ti-facebook"></i></a>
+            <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
           </div>
         </div>
       </div>
@@ -63,7 +62,8 @@
       <div class="sidebar">
 
         <div class="close">
-          <img src="assets/images/image-nav/icons8-cross-64.png" alt="" class="sideClose">
+          <img src="/assets/images/image-nav/icons8-cross-64.png" alt="" class="sideClose"
+            style="height: 30px; width: 30px;">
         </div>
 
         <div class="sideNav">
@@ -124,200 +124,211 @@
     </div>
 
   </header>
-</div>
 
-
-<main>
-  <div class="titleparcours">
-  <h1>Nos suggestions de parcours</h1>
-  </div>
-  <span class="espacetp"></span>
-  <div class="boutonsParcours">
-    <button>Type de parcours</button>
-    <button>Difficultés</button>
-    <button>Durées</button>
-    <button>Thématiques</button>
-    <button>Destinations</button>
-    <!-- Ne pas oublier de rajouter des images dans les boutons-->
-  </div>
-  <div class="reinitial">
-    <a href="idee-parcour.html">Réinitialiser tous les filtres</a>
-  </div>
-</main>
-<section class="firstGrid">
-  <div class="mirrorTop">
-  <h2>Les inspirations</h2>
-  <a href="idee-parcour.html">VOIR TOUTES LES INSPIRATIONS</a>
-</div>
-  <div class="gridTop">
-    <div class="grid-itemTop">
-      <button class="alasemaine">A la Semaine</button>
-      <img id="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider.jpg" alt="Première photo">
-  
+  <main>
+    <div class="titleparcours">
+      <h1>Nos suggestions de parcours</h1>
     </div>
-    <div class="grid-itemTop">
-      <button class="dureeSejour">Court séjour (3 à 5 jours)</button>
-      <img id="heartDeux" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider2.jpg" alt="Deuxième photo">
+    <span class="espacetp"></span>
+    <div class="boutonsParcours">
+      <button>Type de parcours</button>
+      <button>Difficultés</button>
+      <button>Durées</button>
+      <button>Thématiques</button>
+      <button>Destinations</button>
+      <!-- Ne pas oublier de rajouter des images dans les boutons-->
     </div>
-    <div class="grid-itemTop">
-      <button class="alasemaine">A la Semaine</button>
-      <img id="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider3.jpg" alt="Troisième photo">
+    <div class="reinitial">
+      <a href="idee-parcour.html">Réinitialiser tous les filtres</a>
     </div>
-  </div>
-</section>
-
-<section class="secondGrid">
-  <div class="mirrorMid">
-  <h3>Les séjours</h3>
-  <a href="idee-parcour.html">VOIR TOUS LES SEJOURS</a>
-</div>
-  <div class="gridMid">
-    <div class="grid-itemMid">
-      <button class="alasemaine">A la Semaine</button>
-      <img id="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider.jpg" alt="Première photo">
-  
+  </main>
+  <section class="firstGrid">
+    <div class="mirrorTop">
+      <h2>Les inspirations</h2>
+      <a href="idee-parcour.html">VOIR TOUTES LES INSPIRATIONS</a>
     </div>
-    <div class="grid-itemMid">
-      <button class="dureeSejour">Court séjour (3 à 5 jours)</button>
-      <img id="heartDeux" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider2.jpg" alt="Deuxième photo">
-    </div>
-    <div class="grid-itemMid">
-      <button class="alasemaine">A la Semaine</button>
-      <img id="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider3.jpg" alt="Troisième photo">
-    </div>
-  </div>
-</section>
-
-
-<section class="thirdGrid">
-  <div class="mirrorEnd">
-  <h4>Les boucles</h4>
-  <a href="idee-parcour.html">VOIR TOUTES LES BOUCLES</a>
-</div>
-  <div class="gridEnd">
-    <div class="grid-itemEnd">
-      <button class="alasemaine">A la Semaine</button>
-      <img id="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider.jpg" alt="Première photo">
-  
-    </div>
-    <div class="grid-itemEnd">
-      <button class="dureeSejour">Court séjour (3 à 5 jours)</button>
-      <img id="heartDeux" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider2.jpg" alt="Deuxième photo">
-    </div>
-    <div class="grid-itemEnd">
-      <button class="alasemaine">A la Semaine</button>
-      <img id="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
-      <img src="../images/slider/photo-slider3.jpg" alt="Troisième photo">
-    </div>
-  </div>
-</section>
-
-<!-- Partie de page "quiSommeNous" -->
-<article class="quiSommeNous">
-  <div class="backdrop_quiSommeNous">
-
-    <!-- Partie contenant les images, le texte et les liens -->
-    <div class="ensembleTexteQuiSommeNous">
-
-      <!-- DIV contenant les images -->
-      <div class="imagesQuiSommeNous">
-
-        <!-- Images avec les Ã©toiles -->
-        <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
-
-        <!-- DIV contenant les images liens -->
-        <div class="logoQuiSommeNous">
-
-          <!-- Lien image facebook -->
-          <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
-              alt="logo facebook"></a>
-
-          <!-- Lien image instagram -->
-          <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
-              alt="logo instagram"></a>
-
-        </div>
+    <div class="gridTop">
+      <div class="grid-itemTop">
+        <button class="alasemaine">A la Semaine</button>
+        <img class="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider.jpg" alt="Première photo">
 
       </div>
+      <div class="grid-itemTop">
+        <button class="dureeSejour">Court séjour (3 à 5 jours)</button>
+        <img class="heartDeux" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider2.jpg" alt="Deuxième photo">
+      </div>
+      <div class="grid-itemTop">
+        <button class="alasemaine">A la Semaine</button>
+        <img class="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider3.jpg" alt="Troisième photo">
+      </div>
+    </div>
+  </section>
+
+  <section class="secondGrid">
+    <div class="mirrorMid">
+      <h3>Les séjours</h3>
+      <a href="idee-parcour.html">VOIR TOUS LES SEJOURS</a>
+    </div>
+    <div class="gridMid">
+      <div class="grid-itemMid">
+        <button class="alasemaine">A la Semaine</button>
+        <img class="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider.jpg" alt="Première photo">
+
+      </div>
+      <div class="grid-itemMid">
+        <button class="dureeSejour">Court séjour (3 à 5 jours)</button>
+        <img class="heartDeux" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider2.jpg" alt="Deuxième photo">
+      </div>
+      <div class="grid-itemMid">
+        <button class="alasemaine">A la Semaine</button>
+        <img class="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider3.jpg" alt="Troisième photo">
+      </div>
+    </div>
+  </section>
 
 
-      <!-- Partie contenant le texte et les liens -->
-      <section class="deuxiemePartiQuiSommeNous">
+  <section class="thirdGrid">
+    <div class="mirrorEnd">
+      <h4>Les boucles</h4>
+      <a href="idee-parcour.html">VOIR TOUTES LES BOUCLES</a>
+    </div>
+    <div class="gridEnd">
+      <div class="grid-itemEnd">
+        <button class="alasemaine">A la Semaine</button>
+        <img class="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider.jpg" alt="Première photo">
 
-        <!-- DIV contenant le titre et le texte -->
-        <div class="texteQuiSommeNous">
+      </div>
+      <div class="grid-itemEnd">
+        <button class="dureeSejour">Court séjour (3 à 5 jours)</button>
+        <img class="heartDeux" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider2.jpg" alt="Deuxième photo">
+      </div>
+      <div class="grid-itemEnd">
+        <button class="alasemaine">A la Semaine</button>
+        <img class="heart" src="../images/logos/coeur.png" alt="Photo de coeur">
+        <img src="../images/slider/photo-slider3.jpg" alt="Troisième photo">
+      </div>
+    </div>
+  </section>
 
-          <h2>Qui sommes-nous?</h2>
+  <!-- Partie de page "quiSommeNous" -->
+  <article class="quiSommeNous">
+    <div class="backdrop_quiSommeNous">
 
-          <p>L'eurovélo 5 est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une ambition commune : positionner l'eurovélo 5 comme un itinéraire d'excellence du tourisme à vélo en France et à travers l'Europe.</p>
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
+
+        <!-- DIV contenant les images -->
+        <div class="imagesQuiSommeNous">
+
+          <!-- Images avec les Ã©toiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
+
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
+                alt="logo facebook"></a>
+
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
+
+          </div>
 
         </div>
 
-        <!-- DIV contenant les liens -->
-        <div class="liensQuiSommeNous">
 
-          <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+        <!-- Partie contenant le texte et les liens -->
+        <section class="deuxiemePartiQuiSommeNous">
 
-          <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
 
-        </div>
+            <h2>Qui sommes-nous?</h2>
 
-      </section>
+            <p>L'eurovélo 5 est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une
+              ambition commune : positionner l'eurovélo 5 comme un itinéraire d'excellence du tourisme à vélo en France
+              et à travers l'Europe.</p>
+
+          </div>
+
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
+
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </article>
+
+  <!--Mettre le footer-->
+  <footer>
+    <div class="footerPartiGauche">
+      <ul>
+        <li><a href="">Espace pro / presse</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="/assets/html-pages/mention.html">Mentions légales</a></li>
+        <li><a href="">Gestion des cookies</a></li>
+      </ul>
+    </div>
+    <div class="footerPartiDroite">
+      <div>
+        <ul>
+          <li class="rea">Réalisation</li>
+          <li><a class="bzzz" href="www.moustic.biz">B<span class="zzz">ZZZZZZZZ</span></a></li>
+        </ul>
+      </div>
+      <div class="veloFranceTourisme">
+        <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
+            src="/assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Ajout du popup qui apparaît lorsqu'on scroll -->
+  <div id="popup-contact-bas">
+    <div class="popup-contactGauche">
+      <p>Découvrir le tracé Eurovélo 5 : </p>
+    </div>
+    <div class="popup-contactDroite">
+      <a href="/index.html">En savoir plus</a>
     </div>
   </div>
-
-</article>
-</main>
-<!--Mettre le footer-->
-<footer>
-<div class="footerPartiGauche">
-  <ul>
-    <li><a href="">Espace pro / presse</a></li>
-    <li><a href="">FAQ</a></li>
-    <li><a href="/assets/html-pages/mention.html">Mentions légales</a></li>
-    <li><a href="">Gestion des cookies</a></li>
-  </ul>
-</div>
-<div class="footerPartiDroite">
-  <div>
-    <ul>
-      <li class="rea">Réalisation</li>
-      <li><a class="bzzz" href="www.moustic.biz">B<span class="zzz">ZZZZZZZZ</span></a></li>
-    </ul>
-  </div>
-  <div class="veloFranceTourisme">
-    <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
-        src="/assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
-  </div>
-</div>
-</footer>
-<!-- Ajout du popup qui apparaît lorsqu'on scroll -->
-<div id="popup-contact-bas">
-<div class="popup-contactGauche">
-  <p>Découvrir le tracé Eurovélo 5 : </p>
-</div>
-<div class="popup-contactDroite">
-  <a href="/index.html">En savoir plus</a>
-</div>
-</div>
-<!-- Mettre les balises script pour lier le HTML aux fichiers JavaScript -->
+  <!-- Mettre les balises script pour lier le HTML aux fichiers JavaScript -->
 
 
 
-<!--Mettre le footer-->
-  <script src="assets/js/slider.js"></script>
-  <script src="assets/js/burger.js"></script>
-  <script src="/path/to/leaflet.js"></script>
-  <script src="/assets/js/popup.js"></script>
+  <!-- Librairie -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="/assets/leaflet(map)/leaflet.js"></script>
+  <script src="/assets/js/gpx.js"></script>
+
+
+  <!-- Script js  -->
+  <!-- <script src="/assets/js/leafletmap.js"></script> -->
+  <script src="/assets/js/map.js"></script>
+  <script src="/assets/js/slider.js"></script>
+  <script src="/assets/js/burger.js"></script>
   <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/avis.js"></script>
 </body>
 
 </html>
