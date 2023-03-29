@@ -379,9 +379,9 @@ h4,
   .alasemaine {
     position: sticky;
   }
-  main {
-    margin-top: 200px;
-  }
+  //main {
+   // margin-top: 200px;
+ // }
 .heart,
 .heartDeux {
   position: static;
@@ -457,6 +457,7 @@ h4,
     justify-items: flex-start;
 
   }
+  
   .firstGrid {
     a {
       display: flex;
@@ -468,9 +469,7 @@ h4,
    flex-direction: column;
    justify-content: flex-start;
   }
-  .alasemaine {
-    position: static;
-  }
+ 
   .secondGrid .gridMid {
     display:flex ;
     flex-direction: column;
