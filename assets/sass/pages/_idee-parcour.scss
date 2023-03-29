@@ -31,12 +31,16 @@ h4,
   cursor: pointer;
 
   button {
-    color: $color-secondary-aquaBlue;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
     border: 1px solid;
     border-color: $color-secondary-aquaBlue;
     width: 150px;
     height: 50px;
     cursor: pointer;
+    padding: 10px 10px 10px 20px;
+    background-color: $color-secondary-aquaBlue;
   }
 }
 
@@ -59,6 +63,7 @@ h4,
 
   h2 {
     padding-left: 30px;
+    margin-right: 900px;
   }
 
   a {
@@ -111,7 +116,7 @@ h4,
         border: 1px solid;
         background-color: $color-secondary-orange;
         border-color: $color-secondary-orange;
-        transform: translateX(200%);
+        transform: translateX(250%);
         z-index: 3;
         color: white;
       }
@@ -122,7 +127,7 @@ h4,
         border: 1px solid;
         background-color: $color-secondary-orange;
         border-color: $color-secondary-orange;
-        transform: translateX(100%);
+        transform: translateX(130%);
         z-index: 3;
         color: white;
 
@@ -149,6 +154,7 @@ h4,
 
   h3 {
     padding-left: 30px;
+    margin-right: 900px;
   }
 
   a {
@@ -201,7 +207,7 @@ h4,
         border: 1px solid;
         background-color: $color-secondary-orange;
         border-color: $color-secondary-orange;
-        transform: translateX(200%);
+        transform: translateX(250%);
         z-index: 3;
         color: white;
       }
@@ -212,7 +218,7 @@ h4,
         border: 1px solid;
         background-color: $color-secondary-orange;
         border-color: $color-secondary-orange;
-        transform: translateX(100%);
+        transform: translateX(130%);
         z-index: 3;
         color: white;
 
@@ -239,6 +245,7 @@ h4,
 
   h4 {
     padding-left: 30px;
+    margin-right: 900px;
   }
 
   a {
@@ -291,7 +298,7 @@ h4,
         border: 1px solid;
         background-color: $color-secondary-orange;
         border-color: $color-secondary-orange;
-        transform: translateX(200%);
+        transform: translateX(250%);
         z-index: 3;
         color: white;
       }
@@ -302,7 +309,7 @@ h4,
         border: 1px solid;
         background-color: $color-secondary-orange;
         border-color: $color-secondary-orange;
-        transform: translateX(100%);
+        transform: translateX(130%);
         z-index: 3;
         color: white;
 
@@ -318,4 +325,190 @@ h4,
       }
     }
   }
+}
+
+// Media queries
+
+@media screen and (max-width: 768px){
+  .boutonsParcours {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+
+  }
+  .firstGrid {
+    a {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .firstGrid .gridTop {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  }
+  .secondGrid .gridMid {
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .thirdGrid .gridEnd {
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+  }
+  .firstGrid,
+  .secondGrid,
+  .thirdGrid {
+    margin-left: 10px;
+    margin-left: 10px;
+    a {
+      margin-left: -100%;
+      margin-top: 30px;
+    }
+  }
+  }
+  .alasemaine {
+    position: sticky;
+  }
+  //main {
+   // margin-top: 200px;
+ // }
+.heart,
+.heartDeux {
+  position: static;
+}
+
+@media only screen and (max-width: 1200px) {
+  .boutonsParcours {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+
+  }
+  .firstGrid {
+    a {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .firstGrid .gridTop {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  }
+  .alasemaine {
+    position: sticky;
+  }
+  .secondGrid .gridMid {
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .thirdGrid .gridEnd {
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  a {
+    margin-bottom: 30px;
+  }
+  .firstGrid,
+  .secondGrid,
+  .thirdGrid {
+    margin-left: 10px;
+    a {
+      margin-left: -100%;
+      margin-top: 30px;
+    }
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  .heart,
+.heartDeux {
+  position: static;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  .boutonsParcours {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+
+  }
+  
+  .firstGrid {
+    a {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .firstGrid .gridTop {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  }
+ 
+  .secondGrid .gridMid {
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .thirdGrid .gridEnd {
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  a {
+    margin-bottom: 30px;
+  }
+  .firstGrid,
+  .secondGrid,
+  .thirdGrid {
+    margin-left: 10px;
+    a {
+      margin-right: 200%;
+    }
+    
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  .heart,
+  .heartDeux {
+  position: static;
+}
 }
