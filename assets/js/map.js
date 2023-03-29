@@ -376,50 +376,7 @@ function findMapDescByID(e) {
                 </div>
 
 
-                <div class="itineraire-map-informations-second-footer-top">
-                       <div class="itineraire-map-informations-second-footer-row">
-                           <div class="itineraire-map-informations-second-footer-btn">
-                               <a href="#">
-                                   <i class="fa-solid fa-heart-circle-plus"></i>
-                                   <span>Carnet de Voyage</span>
-                               </a>
-                           </div>
-                           <div class="itineraire-map-informations-second-footer-btn">
-                               <a href="#">
-                                   <i class="fa-solid fa-download"></i>
-                                   <span>Tracé GPS</span>
-                               </a>
-                           </div>
-                           <div class="itineraire-map-informations-second-footer-btn">
-                               <a href="#">
-                                   <i class="fa-solid fa-print"></i>
-                                   <span>Fiche PDF</span>
-                               </a>
-                           </div>
-                       </div>
-                   </div>
-                    <div class="itineraire-map-informations-second-footer-bot">
-                       <div class="itineraire-map-informations-second-footer-row">
-                           <div class="itineraire-map-informations-second-footer-bot-btn">
-                               <a href="#">
-                                   <i class="fa-solid fa-arrow-left-long"></i>
-                                   <span>Étape Précédente</span>
-                               </a>
-                           </div>
-                           <div class="itineraire-map-informations-second-footer-bot-btn itineraire-map-informations-second-footer-bot-btn-page">
-                               <a href="#">
-                                   <span>5/10</span>
-                               </a>
-                           </div>
-                           <div class="itineraire-map-informations-second-footer-bot-btn">
-                               <a href="#">
-                                   <span>Étape Suivante</span>
-                                   <i class="fa-solid fa-arrow-right-long"></i>
-                               </a>
-                           </div>
-                       </div>
-                   </div>
-              </div>
+              
 `
           article.innerHTML = generateHTML
 
