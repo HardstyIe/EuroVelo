@@ -90,8 +90,8 @@ body {
 
     .blocAvis .avisHtml {
       width: 100%;
-      margin: 10px;
-      gap: 5px;
+      margin: 0px;
+      gap: 0px;
       display: flex;
       flex-direction: column;
 
@@ -111,7 +111,7 @@ body {
     }
 
     .info-map .bouton-map .segment-map {
-
+      gap: 5px;
 
       a {
         padding: 5px 10px;
@@ -119,15 +119,15 @@ body {
     }
 
     .info-map .bouton-map {
-      width: 90%;
-      margin: auto;
+      width: 100%;
+      margin-left: 0px;
 
       h1 {
         font-family: "Mukta Mahee", sans-serif;
         font-weight: bold;
         font-size: small;
         text-align: center;
-        margin-bottom: 13px;
+        margin-bottom: 13px
       }
 
     }
@@ -153,4 +153,14 @@ body {
       height: 100%;
     }
   }
+
+  .basNav {
+    justify-content: flex-start;
+  }
+  body .swiper3 {
+    padding: 20px 0;
+}
+body .swiper2 {
+  padding: 30px 0;
+}
 }
