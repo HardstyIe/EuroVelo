@@ -30,10 +30,18 @@ fetch('http://90.110.218.245:5003/api/avis')
       const enfant = `
       <article>
       <p class="avisDate"> ${dateFormatted}</p>
+      <div class="nom-moyenne">
       <h2 class="avisNom"> ${Nom}</h2>
+      <img src=${await rate([
+        Securite,
+        Balisage,
+        Interets,
+        Services
+      ])} id="avisRating" style="height:25px"/>
+      </div>
       <p class="avisType"><span> ${Course}</p>
       <div class="notesAvis">
-      <div class="column-avis">
+      
        <div class="notes">
         <p>${Securite}</p>
         <p>Sécurité</p>
@@ -49,16 +57,9 @@ fetch('http://90.110.218.245:5003/api/avis')
        <div class="notes">
         <p>${Services}</p>
         <p>Services</p>
+      
        </div>
-       </div>
-       <div class="moyenne">
-       <p class="median">Moyenne des notes :</p>
-      <img src=${await rate([
-        Securite,
-        Balisage,
-        Interets,
-        Services
-      ])} id="avisRating" style="height:25px"/>
+      
       </div>
       </div>
       <p class="avisParcours"> ${Parcours}</p>
