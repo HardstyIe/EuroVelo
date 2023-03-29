@@ -1,4 +1,6 @@
 .blocAvis {
+  background-color: $color-secondary-greenGrass;
+
   h1 {
     @include font-bold;
     font-size: clamp(1rem, 5vw, 3rem);
@@ -12,6 +14,7 @@
   }
 
   .avisHtml {
+    min-height: 400px;
     width: 80%;
     margin: auto;
     display: grid;
@@ -20,6 +23,8 @@
     gap: 70px;
 
     article {
+      height: 90%;
+      position: relative;
       background-color: #bebebe;
       padding: 20px;
       width: 80%;
@@ -29,27 +34,26 @@
 
       .avisComment {
         line-height: 20px;
+        @include font-light;
       }
 
       .avisNom {
         font-size: 20px;
       }
 
+      .nom-moyenne {
+        display: flex;
+        justify-content: space-between;
+      }
+
       .notes {
+        padding: 10px 0;
         text-align: center;
         line-height: 1.15rem;
       }
 
-      .column-avis {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        padding-top: 5px;
-      }
-
       .notesAvis {
         display: flex;
-        flex-direction: column;
       }
 
       .avisType {
@@ -77,8 +81,13 @@
       }
 
       .answer-read {
+        width: 100%;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        left: 0;
 
         .avisLire {
           color: $color-secondary-greenGrass;
