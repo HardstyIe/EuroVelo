@@ -2,27 +2,40 @@ body {
   background-color: rgb(181, 188, 188);
 }
 
-#navigation {
-  font-family: $font-primary-light;
+.sliderAbsolute {
   position: absolute;
+  width: 100%;
+}
+
+header {
+  font-family: $font-primary-light;
+  position: relative;
   width: 100%;
   z-index: 2;
 }
 
+.close {
+  .sideClose {
+    height: 20px;
+    width: 20px;
+  }
+}
+
 .hautNav {
+  height: 50px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   color: #f4f4f4;
   background-color: rgba(0, 0, 0, 0.3);
 
   .lienReseaux {
     padding-top: 10px;
-    padding-bottom: 1.3%;
     font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 25%;
+    height: 100%;
 
     i {
       background-color: rgba(0, 0, 0, 0.5);
@@ -38,10 +51,16 @@ body {
       color: #f4f4f4;
     }
 
+    .instagramNav,
+    .youtubeNav,
+    .facebookNav {
+      height: 100%;
+    }
+
   }
 
   .lienPersoNav {
-    width: 100%;
+    width: 70%;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -54,6 +73,7 @@ body {
 
     a {
       color: #f4f4f4;
+      font-size: clamp(0.7rem, 1vw, 1.15rem);
     }
 
     a:hover {
@@ -64,15 +84,12 @@ body {
 }
 
 .hautNavGauche {
-  width: 10%;
-  padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .hautNavDroite {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -82,15 +99,13 @@ body {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 
   .logoNav {
     width: 15%;
     display: flex;
     justify-content: space-evenly;
-    padding-left: 3px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 3px;
 
     #logo {
       width: 30%;
@@ -178,6 +193,7 @@ body {
   .basNav {
     justify-content: flex-end;
     width: 100%;
+    height: 150px;
 
     .navGauche {
       width: 0%;
@@ -197,14 +213,32 @@ body {
     }
 
     .logoNav {
-      width: 50%;
+      width: 40%;
+      gap: 100px;
+
+      #logo {
+        width: auto;
+      }
+
+      #logoMarque {
+        width: auto;
+      }
     }
   }
 }
 
 
-// @media (max-width: 795px) {
-//   .boutonBarre {
-//     padding-right: 50px;
-//   }
-// }
+
+@media (max-width: 795px) {
+  .boutonBarre {
+    padding-right: 50px;
+  }
+
+  #logoMarque {
+    display: none;
+  }
+
+  #logo {
+    width: max-content;
+  }
+}
