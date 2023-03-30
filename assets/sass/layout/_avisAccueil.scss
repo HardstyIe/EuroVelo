@@ -1,0 +1,106 @@
+.blocAvis {
+  background-color: $color-secondary-greenGrass;
+
+  h1 {
+    @include font-bold;
+    font-size: clamp(1rem, 5vw, 3rem);
+    text-align: center;
+    padding: 30px;
+  }
+
+  .notesAvis {
+    display: flex;
+    gap: 20px;
+  }
+
+  .avisHtml {
+    min-height: 400px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 70px;
+
+    article {
+      height: 90%;
+      position: relative;
+      background-color: #bebebe;
+      padding: 20px;
+      width: 80%;
+      margin-bottom: 50px;
+      line-height: 30px;
+      border-radius: 10px;
+
+      .avisComment {
+        line-height: 20px;
+        @include font-light;
+      }
+
+      .avisNom {
+        font-size: 20px;
+      }
+
+      .nom-moyenne {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .notes {
+        padding: 10px 0;
+        text-align: center;
+        line-height: 1.15rem;
+      }
+
+      .notesAvis {
+        display: flex;
+      }
+
+      .avisType {
+        background-color: $color-secondary-orange;
+        color: #f1f1f1;
+        width: fit-content;
+        padding: 0 10px;
+        @include font-light;
+        font-size: 13px;
+      }
+
+      .moyenne {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        img {
+          width: 60%;
+        }
+      }
+
+      .avisParcours {
+        @include font-bold;
+      }
+
+      .answer-read {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .avisLire {
+          color: $color-secondary-greenGrass;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 320px) and (max-width: 768px) {
+
+    .avisHtml article {
+      width: 95%;
+    }
+  }
+
+}

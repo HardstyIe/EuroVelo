@@ -1,0 +1,245 @@
+body {
+  background-color: rgb(181, 188, 188);
+}
+
+.sliderAbsolute {
+  position: absolute;
+  width: 100%;
+}
+
+header {
+  font-family: $font-primary-light;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.close {
+  .sideClose {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.hautNav {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #f4f4f4;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  .lienReseaux {
+    padding-top: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+
+    i {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+    }
+
+    i:hover {
+      transition: 0.3s;
+      background-color: $color-secondary-greenGrass;
+    }
+
+    a {
+      color: #f4f4f4;
+    }
+
+    .instagramNav,
+    .youtubeNav,
+    .facebookNav {
+      height: 100%;
+    }
+
+  }
+
+  .lienPersoNav {
+    width: 70%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      margin-top: 7px;
+    }
+
+    a {
+      color: #f4f4f4;
+      font-size: clamp(0.7rem, 1vw, 1.15rem);
+    }
+
+    a:hover {
+      color: $color-secondary-greenGrass;
+    }
+  }
+
+}
+
+.hautNavGauche {
+  display: flex;
+  flex-direction: row;
+}
+
+.hautNavDroite {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.basNav {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+
+  .logoNav {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 3px;
+
+    #logo {
+      width: 30%;
+    }
+
+    #logoMarque {
+      width: 60%;
+    }
+  }
+
+  .navGauche {
+    width: 80%;
+    display: flex;
+  }
+
+  .navDroite {
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    // margin-right: 50px;
+    align-items: center;
+
+    .ti-search {
+      margin-right: 50px;
+      color: $color-secondary-greenGrass;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .ti-close {
+      margin-right: 50px;
+      color: $color-secondary-greenGrass;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+.search-container {
+  display: none;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2.5px;
+  color: #f4f4f4;
+  font-size: 25px;
+  height: 70px;
+
+  form {
+    width: 80%;
+
+    input {
+      width: 100%;
+      margin-left: 5%;
+      padding-bottom: 5px;
+      border-bottom: 0.5px solid white;
+    }
+  }
+
+  .boutonBarre {
+    font-size: 30px;
+    width: 20%;
+    padding-left: 15%;
+    padding-top: 0.5%;
+
+    a {
+      color: #f4f4f4;
+    }
+  }
+}
+
+
+@media (max-width:1200px) {
+  .hautNav {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .basNav {
+    justify-content: flex-end;
+    width: 100%;
+    height: 150px;
+
+    .navGauche {
+      width: 0%;
+      display: none;
+    }
+
+    .navDroite {
+      width: 25%;
+
+      .ti-search {
+        margin-right: 30px;
+      }
+
+      .ti-close {
+        margin-right: 30px;
+      }
+    }
+
+    .logoNav {
+      width: 40%;
+      gap: 100px;
+
+      #logo {
+        width: auto;
+      }
+
+      #logoMarque {
+        width: auto;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 795px) {
+  .boutonBarre {
+    padding-right: 50px;
+  }
+
+  #logoMarque {
+    display: none;
+  }
+
+  #logo {
+    width: max-content;
+  }
+}

@@ -1,0 +1,193 @@
+.titreInfoPratique {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 50px;
+}
+
+.titreTexteInfoPratique {
+    text-align: center;
+    margin: 5%;
+}
+
+.boxInfoPratique {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5 , 1fr);
+    grid-gap: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;  
+}
+
+.mainInfoPratique {
+    padding-top: 10%;
+}
+
+.box1InfoPratique {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1InfoPratique:hover {
+    transform: scale(1.1);
+    transition: 0.5s; 
+}
+
+.box2InfoPratique:hover {
+    transform: scale(1.1);
+    transition: 0.5s; 
+}
+
+.box2InfoPratique {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesInfoPratique {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.imagesInfoPratique:hover {
+   filter: blur(3px);
+   transform: scale(1);
+   transition: 0.5s;
+}
+
+.box3InfoPratique {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.texte3InfoPratique {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 25%;
+    border: solid orange;
+    background-color: orange;
+    text-align: center;
+    width: 50%;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.texteInfoPratique {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 30%;
+    border: solid orange;
+    background-color: orange;
+    text-align: center;
+    width: 40%;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.h2InfoPratique {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 5%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.h2InfoPratique2 {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 5%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.h2InfoPratique3 {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 5%;
+    width: 100%;
+    max-width: 250px;
+    margin: 5%;
+}
+
+.h2InfoPratique4 {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    /* left: 5%; */
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.lienInfoPratique {
+    text-align: center;
+}
+
+#quiSommeNousInfoPratique {
+    margin-top: 10%;
+}
+
+.footerInfoPratique {
+    margin-top: 2%;
+}
+
+.navInfoPratique {
+    z-index: 3;
+}
+
+@media (max-width: 1100px) {
+    .boxInfoPratique {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 880px) {
+    .boxInfoPratique {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+    }
+
+    .texteInfoPratique {
+        left: 25%;
+    }
+}
+

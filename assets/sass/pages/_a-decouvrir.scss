@@ -1,0 +1,230 @@
+html {
+  @include font-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+.boldEnd {
+  @include font-bold;
+}
+
+
+
+
+.topPage {
+  padding-top: 220px;
+  h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    text-align: center;
+  }
+
+
+
+  .conteneurhdp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+
+
+    .aligntoptext {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      width: 60%;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    .boutonSection {
+      margin-top: 30px;
+      border: 2px solid;
+      padding: 10px;
+      font-weight: bold;
+      color: $color-secondary-aquaBlue;
+    }
+  }
+}
+
+
+//remettre article .milieuPage si jamais ça ne fonctionne pas
+ .milieuPage {
+  position: relative;
+  margin: auto;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-right: 300px;
+  }
+
+  //Création des traits oranges en haut et en bas du bloc "Pourqoi .. "
+  .traitorange {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 30px;
+    height: 4px;
+    margin: 0 10px;
+    background-color: $color-secondary-orange;
+    z-index: 1;
+  }
+
+  //Positionnement de la liste sur l'image
+  .titreListe {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    width: calc(100% - 350px);
+    max-width: 600px;
+
+    h2 {
+      padding: 10px;
+      background-color: white;
+    }
+
+    // Penser à remettre les points devant la liste ul
+    ul {
+      list-style-type: disc;
+    }
+
+    li {
+      margin-bottom: 65px;
+      margin-left: 45px;
+    }
+  }
+}
+
+
+.basDePage {
+  margin-left: 400px;
+  text-align: justify;
+
+  h3 {
+    font-size: 1.5em;
+
+  }
+
+  .espaceTitreBas {
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 50px;
+  }
+
+  p {
+    margin: 10px;
+  }
+}
+
+
+a {
+  color: $color-secondary-aquaBlue;
+}
+
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  gap: 30px;
+  width: 40%;
+
+  h4 {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+
+  ol {
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+}
+
+
+// Media queries
+// max-width : dès que l'écran est plus petit que 
+// min-width : dès que l'écran est plus grand que
+
+@media only screen and (max-width: 1200px) {
+  article .milieuPage {
+    img {
+      margin-right: 150px;
+    }
+    .titreListe {
+      width: calc(100% - 200px);
+      max-width: unset;
+    }
+  }
+  .basDePage {
+    margin-left: 0;
+    text-align: center;
+  }
+  aside {
+    margin-left: 0;
+    width: 100%;
+  }
+  #popup-contact-bas {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topPage .conteneurhdp .aligntoptext {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  article .milieuPage {
+    img {
+      margin-right: 0;
+    }
+    .titreListe {
+      position: static;
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .topPage .conteneurhdp .aligntoptext {
+    font-size: 14px;
+  }
+  article .milieuPage .titreListe {
+    h2 {
+      font-size: 18px;
+    }
+    li {
+      margin-bottom: 45px;
+      margin-left: 35px;
+    }
+  }
+  .basDePage {
+    font-size: 14px;
+  }
+  aside {
+    ol {
+      margin-left: 30px;
+    }
+  }
+}

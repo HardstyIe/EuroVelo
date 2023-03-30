@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/sass/vendors/normalize.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/flaticons.css">
+  <link rel="stylesheet" href="/assets/sass/vendors/themify-icons.css"">
+  <link rel=" stylesheet" href="/assets/font-awesome/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+  <link rel="stylesheet" href="/assets/leaflet(map)/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+  <link rel="stylesheet" href="/assets/sass/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="sliderAbsolute">
+    <header id="navigation">
+      <div class="hautNav" id="hautNav">
+
+        <div class="hautNavGauche">
+          <div class="lienReseaux">
+            <div class="instagramNav">
+              <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><i class="ti-instagram"></i></a>
+            </div>
+            <div class="youtubeNav">
+              <a href="https://www.youtube.com/watch?v=NuIbOMSzZPQin" target="_blank"><i class="ti-youtube"></i></a>
+            </div>
+            <div class="facebookNav">
+              <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i
+                  class="ti-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <form class="submitNav">
+          <div class="formNewsletter">
+            <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
+            <input id="mailNewsletter" class="mailNav" type="email" placeholder="Votre adresse mail">
+            <div class="inscritNav">
+              <input type="submit" class="boutonFormNav" value="JE M'INSCRIS">
+            </div>
+          </div>
+        </form>
+
+        <div class="hautNavDroite">
+          <div class="lienPersoNav">
+            <a href="/assets/html-pages/espace-pro.html">Espace pro</a>
+            <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
+            <a href="">Espace personnel</a>
+            <a href=""><img src="/assets/images/image-nav/france.png" alt="français"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="basNav">
+
+        <!--/////////////////////////////////////  SIDEBAR (VISIBLE UNIQUEMENT EN TAILLE MOBILE)  //////////////////////////////////////////-->
+
+        <i class="ti-menu"></i>
+
+        <div class="sidebar">
+
+          <div class="close">
+            <img src="assets/images/image-nav/icons8-cross-64.png" alt="" class="sideClose">
+          </div>
+
+          <div class="sideNav">
+            <ul>
+              <li><a href="index.html">ACCUEIL</a></li>
+              <li><a href="#">L'ITINERAIRE</a></li>
+              <li><a href="#">TEMOIGNAGES</a></li>
+              <li><a href="assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
+              <li><a href="#">SUGGESTIONS</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li>
+                <a class="actuSide" href="assets/html-pages/actualites.html">ACTUALITES <img
+                    src="assets/images/image-nav/bulle.png" alt=""></a>
+              </li>
+              <li>
+                <a class="passSide" href="#">PASSEPORT <img src="assets/images/image-nav/carte.png" alt="carte"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FIN SIDEBAR -->
+        <div class="logoNav">
+          <img id="logo" src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
+          <img id="logoMarque" src="/assets/images/eurovelo-logo/logo_officiel.png" alt="">
+        </div>
+
+        <div class="navGauche">
+          <nav>
+            <ul>
+              <li><a href="#">L'ITINERAIRE</a></li>
+              <li><a href="#">TEMOIGNAGES</a></li>
+              <li><a href="assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
+              <li><a href="#">SUGGESTIONS</a></li>
+              <li><a href="assets/html-pages/contact.html">CONTACT</a></li>
+              <li>
+                <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
+              </li>
+              <li>
+                <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navDroite">
+          <i class="ti-search"></i>
+        </div>
+
+      </div>
+      <div class="search-container">
+        <form action="/search">
+          <input type="text" placeholder="Recherche..." name="q">
+        </form>
+
+        <div class="boutonBarre">
+          <a href="#"><i class="ti-search"></i></a>
+        </div>
+      </div>
+
+    </header>
+  </div>
+
+  <!-- ////////////////////////////////////////////////////////////// FIN NAVBAR  //////////////////////////////////////////////////////////// -->
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <img src="/assets/images/slider/photo-slider.jpg" class="swiper-slide" alt="">
+      <img src="/assets/images/slider/photo-slider2.jpg" class="swiper-slide" alt="">
+      <img src="/assets/images/slider/photo-slider3.jpg" class="swiper-slide" alt="">
+      <img src="/assets/images/slider/photo-slider4.jpg" class="swiper-slide" alt="">
+      <img src="/assets/images/slider/photo-slider5.jpg" class="swiper-slide" alt="">
+      <img src="/assets/images/slider/photo-slider6.jpg" class="swiper-slide" alt="">
+      <img src="/assets/images/slider/photo-slider7.jpg" class="swiper-slide image-slider-center-bottom" alt="">
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="text-swiper">
+      <h1>L'Eurovélo 5</h1>
+      <p>L'Eurovélo, L'Europe en roue libre !</p>
+    </div>
+
+  </div>
+
+  <article class="presentation">
+
+    <h2 class="titleHome"> EuroVelo 5 - L'Eurovélo, 617 kms à vélo sur les routes Françaises</h2>
+
+    <p class="descHome">Prêt à vivre en pleine nature? L'Eurovélo,
+      <a href="itineraire.html">véloroute continue à 100%</a>
+      vous invite en famille ou entre amis à découvrir le patrimoine extraordinaire du nord de la France... à deux
+      roues!
+      L'itinéraire débute à Calais et se termine à Martelange. Cet intinéraire à vélo traverse le Nord de la France,
+      jusqu'à la frontière belge.
+      De nombreuses étapes vous réservent de belles surprise, en plus de traverser Lille, vous découvrirez la nature.
+      Au départ de la côte baignée par la mer du Nord, en passant par le marais Audomarois, traversez également les
+      villes de Lens, connue pour son public rouge et or, et de Lille, la capitale des Flandres,
+      où un break sera le bienvenue pour goûter la gastronomie nordiste.
+    </p>
+
+    <p class="descHome">Avec une part importante des voies partagées, c'est un itinéraire idéal pour les cyclistes en
+      recherche d'évasion, de défi, de découverte culturelle et gastronomique.
+      Vous n'avez pas l'habitude du vélo? Profitez-en pour vous remettre en selle!
+    </p>
+  </article>
+
+
+  <main class="itineraire-main">
+
+    <div class="itineraire-map-left scroll">
+      <div class="itineraire-map-informations-first-section">
+        <div class="itineraire-map-options">
+          <a href="#" class="etapes actif">
+            <span>
+              Les étapes
+            </span>
+          </a>
+
+          <a href="#" class="gps inactif">
+            <span>
+              Mon GPS
+            </span>
+          </a>
+        </div>
+        <div class="itineraire-map-download">
+          <a href="downloads/map.xml">
+            <span>
+
+              Téléchargez le .GPX de l'eurovelo 5
+
+            </span>
+          </a>
+        </div>
+
+        <div class="itineraire-map-informations actif">
+
+        </div>
+      </div>
+
+      <div class="itineraire-map-informations-gps hidden">
+
+        <div class="itineraire-global-gps">
+          <form class="itineraire-global-gps-form">
+            <div class="itineraire-global-gps-form-field">
+              <div class="field-etape" data-id="0" draggable="true">
+                <div class="field">
+                  <input data-id="0" class="autocomplete-address" type="text" autocomplete="off"
+                    placeholder="Lieu de départ">
+                </div>
+              </div>
+              <div class="field-etape" data-id="1" draggable="true">
+                <div class="field">
+                  <input data-id="1" class="autocomplete-address" type="text" autocomplete="off"
+                    placeholder="Lieu d'arrivée">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+
+      <div class="itineraire-map-informations-second-section hidden">
+
+      </div>
+
+
+    </div>
+
+    <div id="map"></div>
+
+  </main>
+
+
+
+
+  <div class="swiper2 mySwiper2">
+    <div class="text-slide2">
+      <h1>Ils l'ont fait!</h1>
+      <p>Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur L'EurVélo 5.
+        Inspirez-vous
+        !</p>
+    </div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slider-middle1">
+        <h1>Les 110km de cynthia en solo</h1>
+        <p>un premier voyage a velo de 16 jours , avec 110km au compteur</p>
+      </div>
+      <div class="swiper-slide slider-middle2">
+        <p>Petite balade dans les bois de boubou</p>
+      </div>
+      <div class="swiper-slide slider-middle3">
+        <p>Visite des ruelle de lisbonne</p>
+      </div>
+      <div class="swiper-slide slider-middle4">
+        <p>Pasage devant la cathedrale de barnabé</p>
+      </div>
+      <div class="swiper-slide slider-middle5">
+        <p>Benjamin qui apprend a faire du vélo</p>
+      </div>
+      <div class="swiper-slide slider-middle6">
+        <p>Petite pause devant la plage Malo les Bains</p>
+      </div>
+      <div class="swiper-slide slider-middle7">
+        <p>Promenade des les vosges</p>
+      </div>
+      <div class="swiper-slide slider-middle8">
+        <p>Le lac du locness</p>
+      </div>
+      <div class="swiper-slide slider-middle9">
+        <p>Le pont saint michel</p>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="blocAvis">
+    <h1>Vos Avis</h1>
+    <div class="avisHtml">
+    </div>
+  </div>
+  <div class="swiper3 mySwiper3">
+    <div class="text-slide2">
+      <h1>Ils l'ont fait!</h1>
+      <p>Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur L'EurVélo 5.
+        Inspirez-vous
+        !</p>
+    </div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slider-middle1">
+        <h1>Les 110km de cynthia en solo</h1>
+        <p>un premier voyage a velo de 16 jours , avec 110km au compteur</p>
+      </div>
+      <div class="swiper-slide slider-middle2">
+      </div>
+      <div class="swiper-slide slider-middle3">
+        <h1>Spoil:</h1>
+        <p>il s'est pété la geule 5m plus tard</p>
+      </div>
+      <div class="swiper-slide slider-middle4">
+      </div>
+      <div class="swiper-slide slider-middle5">
+      </div>
+      <div class="swiper-slide slider-middle6">
+      </div>
+      <div class="swiper-slide slider-middle7">
+      </div>
+      <div class="swiper-slide slider-middle8">
+      </div>
+      <div class="swiper-slide slider-middle9">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Partie de page "quiSommeNous" -->
+  <article class="quiSommeNous">
+    <div class="backdrop_quiSommeNous">
+
+      <!-- Partie contenant les images, le texte et les liens -->
+      <div class="ensembleTexteQuiSommeNous">
+
+        <!-- DIV contenant les images -->
+        <div class="imagesQuiSommeNous">
+
+          <!-- Images avec les étoiles -->
+          <img class="logo5QuiSommeNous" src="/assets/images/eurovelo-logo/logo5.jpg" alt="">
+
+          <!-- DIV contenant les images liens -->
+          <div class="logoQuiSommeNous">
+
+            <!-- Lien image facebook -->
+            <a class="facebookQuiSommeNous" href=""><img src="/assets/images/logos/facebook.png"
+                alt="logo facebook"></a>
+
+            <!-- Lien image instagram -->
+            <a class="instagramQuiSommeNous" href=""><img src="/assets/images/logos/instagram.png"
+                alt="logo instagram"></a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Partie contenant le texte et les liens -->
+        <section class="deuxiemePartiQuiSommeNous">
+
+          <!-- DIV contenant le titre et le texte -->
+          <div class="texteQuiSommeNous">
+
+            <h2>Qui sommes-nous?</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore magni perferendis velit
+              laborum id?</p>
+
+          </div>
+
+          <!-- DIV contenant les liens -->
+          <div class="liensQuiSommeNous">
+
+            <a class="enSavoirPlusQuiSommeNous" href="">EN SAVOIR PLUS</a>
+
+            <a class="contacterQuiSommeNous" href="">NOUS CONTACTER</a>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </article>
+
+  <footer>
+    <div class="footerPartiGauche">
+      <ul>
+        <li><a href="/assets/html-pages/espace-pro.html">Espace pro / presse</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="/assets/html-pages/mention.html">Mentions légales</a></li>
+        <li><a href="">Gestion des cookies</a></li>
+      </ul>
+    </div>
+    <div class="footerPartiDroite">
+      <div>
+        <ul>
+          <li class="rea">Réalisation</li>
+          <li><a class="bzzz" href="www.moustic.biz">B<span class="zzz">ZZZZZZZZ</span></a></li>
+        </ul>
+      </div>
+      <div class="veloFranceTourisme">
+        <a href="https://www.francevelotourisme.com/"><img class="franceVeloTourisme"
+            src="assets/images/francetourisme.png" alt="photo de france velo tourisme"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Librairie -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+  <script src='https://unpkg.com/leaflet.mapkitmutant@latest/Leaflet.MapkitMutant.js'></script>
+  <script src="/assets/leaflet(map)/leaflet.js"></script>
+  <script src="/assets/js/gpx.js"></script>
+
+
+  <!-- Script js  -->
+  <!-- <script src="/assets/js/leafletmap.js"></script> -->
+  <script src="/assets/js/map.js"></script>
+  <script src="/assets/js/slider.js"></script>
+  <script src="/assets/js/burger.js"></script>
+  <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/avis.js"></script>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/assets/js/itineraire.js"></script>
+
+</body>
+
+</html>

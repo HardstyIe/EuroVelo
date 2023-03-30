@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 10px;
+      font-size: clamp(0.5rem, 5vw, 1rem);
+      height: 50px;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      a:hover {
+        color: $color-secondary-greenGrass;
+      }
+
+      .actuNav {
+        color: $color-secondary-red;
+      }
+
+      .passNav {
+        color: $color-secondary-greenGrass;
+      }
+    }
+  }
+}
