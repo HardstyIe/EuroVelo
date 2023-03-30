@@ -253,3 +253,9 @@
     background-image: url("/assets/images/slider/i6.jpg");
   }
 }
+
+@media all and (max-width: 400) {
+  .swiper3 {
+    --swiper-pagination-bottom: 0%;
+  }
+}

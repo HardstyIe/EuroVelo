@@ -1,15 +1,15 @@
 .titreMentionsLegales {
-    text-align: center;
-    margin-bottom: 5%;
-    padding-top: 10%;
-    font-size: 400%;
+  text-align: center;
+  margin-bottom: 5%;
+  padding-top: 10%;
+  font-size: 400%;
 }
 
 .mentionsLegales {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
-    margin-right: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .editeurDuSite,
@@ -20,7 +20,7 @@
 .duree,
 .loi,
 .donneesPersonnelles {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .editeurDuSite h2,
@@ -31,47 +31,50 @@
 .duree h2,
 .loi h2,
 .donneesPersonnelles h2 {
-    margin-bottom: 2%;
-    font-size: 180%;
+  margin-bottom: 2%;
+  font-size: 180%;
 }
 
 .texteMention {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 #quiSommeNousMention {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 @media(max-width: 900px) {
-    .titreMentionsLegales {
-        margin-bottom: 10%;
-        padding-top: 30%;
-    }
+  .titreMentionsLegales {
+    margin-bottom: 10%;
+    padding-top: 30%;
+  }
 
-    .editeurDuSite,
-    .conceptionDuSite,
-    .confidentialite,
-    .responsabilite,
-    .propriete,
-    .duree,
-    .loi,
-    .donneesPersonnelles
-    {
-        margin-bottom: 15%;
-    }
+  .editeurDuSite,
+  .conceptionDuSite,
+  .confidentialite,
+  .responsabilite,
+  .propriete,
+  .duree,
+  .loi,
+  .donneesPersonnelles {
+    margin-bottom: 15%;
+  }
 }
 
 @media(max-width: 400px) {
-    .titreMentionsLegales {
-        padding-top: 30%;
-    }
+  .titreMentionsLegales {
+    padding-top: 30%;
+  }
+
+  .veloFranceTourisme {
+    display: none;
+  }
 }
 
 #hautNavMention {
-    color: black;
+  color: black;
 }
 
-#lienPersoNavMention a{
-    color: black;
+#lienPersoNavMention a {
+  color: black;
 }

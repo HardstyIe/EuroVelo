@@ -329,34 +329,39 @@ h4,
 
 // Media queries
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .boutonsParcours {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
 
   }
+
   .firstGrid {
     a {
       display: flex;
       justify-content: flex-start;
     }
   }
+
   .firstGrid .gridTop {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
+
   .secondGrid .gridMid {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .thirdGrid .gridEnd {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   h1,
   h2,
   h3,
@@ -365,23 +370,27 @@ h4,
     flex-direction: column;
     position: sticky;
   }
+
   .firstGrid,
   .secondGrid,
   .thirdGrid {
     margin-left: 10px;
-    margin-left: 10px;
+
+
     a {
       margin-left: -100%;
       margin-top: 30px;
     }
   }
-  }
-  .alasemaine {
-    position: sticky;
-  }
-  //main {
-   // margin-top: 200px;
- // }
+}
+
+.alasemaine {
+  position: sticky;
+}
+
+//main {
+// margin-top: 200px;
+// }
 .heart,
 .heartDeux {
   position: static;
@@ -394,31 +403,36 @@ h4,
     justify-items: flex-start;
 
   }
+
   .firstGrid {
     a {
       display: flex;
       justify-content: flex-start;
     }
   }
+
   .firstGrid .gridTop {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
+
   .alasemaine {
     position: sticky;
   }
+
   .secondGrid .gridMid {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .thirdGrid .gridEnd {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  
+
   h1,
   h2,
   h3,
@@ -427,27 +441,31 @@ h4,
     flex-direction: column;
     margin-top: 30px;
   }
-  
+
   a {
     margin-bottom: 30px;
   }
+
   .firstGrid,
   .secondGrid,
   .thirdGrid {
     margin-left: 10px;
+
     a {
       margin-left: -100%;
       margin-top: 30px;
     }
   }
+
   img {
     width: 50%;
     height: 50%;
   }
+
   .heart,
-.heartDeux {
-  position: static;
-}
+  .heartDeux {
+    position: static;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -457,58 +475,63 @@ h4,
     justify-items: flex-start;
 
   }
-  
+
   .firstGrid {
     a {
       display: flex;
       justify-content: flex-start;
     }
   }
+
   .firstGrid .gridTop {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
- 
+
   .secondGrid .gridMid {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .thirdGrid .gridEnd {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  
+
   h1,
   h2,
   h3,
   h4 {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-left: 30px;
+
   }
-  
+
   a {
     margin-bottom: 30px;
   }
+
   .firstGrid,
   .secondGrid,
   .thirdGrid {
     margin-left: 10px;
+
     a {
       margin-right: 200%;
     }
-    
+
   }
+
   img {
     width: 50%;
     height: 50%;
   }
+
   .heart,
   .heartDeux {
-  position: static;
-}
+    position: static;
+  }
 }
