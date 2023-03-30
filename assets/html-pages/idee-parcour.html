@@ -15,23 +15,24 @@
 
 <body>
 
-<!--Mettre navbar-->
-<header id="navigation">
+  <!--Mettre navbar-->
+  <header id="navigation">
+    <div class="hautNav" id="hautNav">
 
-  <div class="hautNav" id="hautNav">
-
-    <div class="hautNavGauche">
-      <div class="lienReseaux">
-        <div class="instagramNav">
-          <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><i class="ti-instagram"></i></a>
-        </div>
-        <div class="youtubeNav">
-          <a href="https://www.youtube.com/watch?v=NuIbOMSzZPQin" target="_blank"><i class="ti-youtube"></i></a>
-        </div>
-        <div class="facebookNav">
-          <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
+      <div class="hautNavGauche">
+        <div class="lienReseaux">
+          <div class="instagramNav">
+            <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><i class="ti-instagram"></i></a>
+          </div>
+          <div class="youtubeNav">
+            <a href="https://www.youtube.com/watch?v=NuIbOMSzZPQin" target="_blank"><i class="ti-youtube"></i></a>
+          </div>
+          <div class="facebookNav">
+            <a href="https://www.facebook.com/EuroVelo/?locale=fr_FRyot" target="_blank"><i class="ti-facebook"></i></a>
+          </div>
         </div>
       </div>
+
       <form class="submitNav">
         <div class="formNewsletter">
           <label class="labelNav" for="mailNewsletter">S'abonner à la newsletter</label>
@@ -41,41 +42,71 @@
           </div>
         </div>
       </form>
-    </div>
 
-    <div class="hautNavDroite">
-      <div class="lienPersoNav">
-        <a href="">Espace pro</a>
-        <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
-        <a href="">Espace personnel</a>
-        <a href=""><img src="/assets/images/image-nav/france.png" alt="français"></a>
+      <div class="hautNavDroite">
+        <div class="lienPersoNav">
+          <a href="/assets/html-pages/espace-pro.html">Espace pro</a>
+          <a href=""><i class="ti-heart"></i> Carnet de voyager</a>
+          <a href="">Espace personnel</a>
+          <a href=""><img src="/assets/images/image-nav/france.png" alt="français"></a>
+        </div>
       </div>
     </div>
 
-  </div>
-<div class="basNav">
+    <div class="basNav">
 
-  <div class="logoNav">
-    <img src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
-  </div>
+      <!--/////////////////////////////////////  SIDEBAR (VISIBLE UNIQUEMENT EN TAILLE MOBILE)  //////////////////////////////////////////-->
 
-  <div class="navGauche">
-    <nav>
-      <ul>
-        <li><a href="#">L'ITINERAIRE</a></li>
-        <li><a href="#">TEMOIGNAGES</a></li>
-        <li><a href="#">INFOS PRATIQUES</a></li>
-        <li><a href="#">SUGGESTIONS</a></li>
-        <li><a href="#">INSPIRATIONS</a></li>
-        <li>
-          <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
-        </li>
-        <li>
-          <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+      <i class="ti-menu"></i>
+
+      <div class="sidebar">
+
+        <div class="close">
+          <img src="assets/images/image-nav/icons8-cross-64.png" alt="" class="sideClose">
+        </div>
+
+        <div class="sideNav">
+          <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="#">L'ITINERAIRE</a></li>
+            <li><a href="#">TEMOIGNAGES</a></li>
+            <li><a href="assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
+            <li><a href="#">SUGGESTIONS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li>
+              <a class="actuSide" href="assets/html-pages/actualites.html">ACTUALITES <img
+                  src="assets/images/image-nav/bulle.png" alt=""></a>
+            </li>
+            <li>
+              <a class="passSide" href="#">PASSEPORT <img src="assets/images/image-nav/carte.png" alt="carte"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FIN SIDEBAR -->
+      <div class="logoNav">
+        <img id="logo" src="/assets/images/eurovelo-logo/logo-eurovelo.png" alt="">
+        <img id="logoMarque" src="/assets/images/eurovelo-logo/logo_officiel.png" alt="">
+      </div>
+
+      <div class="navGauche">
+        <nav>
+          <ul>
+            <li><a href="#">L'ITINERAIRE</a></li>
+            <li><a href="#">TEMOIGNAGES</a></li>
+            <li><a href="assets/html-pages/info-pratique.html">INFOS PRATIQUES</a></li>
+            <li><a href="#">SUGGESTIONS</a></li>
+            <li><a href="assets/html-pages/contact.html">CONTACT</a></li>
+            <li>
+              <a class="actuNav" href="#">ACTUALITES<img src="/assets/images/image-nav/discuter.png" alt="actu"></a>
+            </li>
+            <li>
+              <a class="passNav" href="#">PASSEPORT<img src="/assets/images/image-nav/carte.png" alt="carte"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
   <div class="navDroite">
     <i class="ti-search"></i>
@@ -224,7 +255,10 @@
 
           <h2>Qui sommes-nous?</h2>
 
-          <p>L'eurovélo 5 est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une ambition commune : positionner l'eurovélo 5 comme un itinéraire d'excellence du tourisme à vélo en France et à travers l'Europe.</p>
+            <p>L'eurovélo 5 est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une
+              ambition commune : positionner l'eurovélo 5 comme un itinéraire d'excellence du tourisme à vélo en
+              France
+              et à travers l'Europe.</p>
 
         </div>
 
@@ -279,7 +313,7 @@
 
 
 
-<!--Mettre le footer-->
+  <!--Mettre le footer-->
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/burger.js"></script>
   <script src="/path/to/leaflet.js"></script>
